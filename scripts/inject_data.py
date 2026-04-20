@@ -206,6 +206,25 @@ def main():
         bundle[us_end + 1:]
     )
 
+    # ===== 替换日报页硬编码的日期和核心研判 =====
+    # 取最新一天的日报作为标题日期/核心研判源
+    latest = sorted(data['dailyReports'], key=lambda r: r['date'], reverse=True)[0]
+    y, m, d = latest['date'].split('-')
+    new_date_label = f"{y}年{int(m)}月{int(d)}日"
+    new_subtitle = f"{new_date_label} · 追踪阿里云、腾讯云、火山引擎及大模型厂商最新动态 · 每天 8:00 自动更新"
+    new_insight = latest.get('coreInsight', latest.get('summary', ''))
+
+    # 替换副标题（匹配任意日期前缀）
+    new_bundle = re.sub(
+        r'\d{4}年\d{1,2}月\d{1,2}日 · 追踪阿里云、腾讯云、火山引擎及大模型厂商最新动态 · 每天 8:00 自动更新',
+        new_subtitle,
+        new_bundle
+    )
+    # 替换核心研判（替换原老站固定那段）
+    OLD_INSIGHT = '阿里云四天三次涨价 + 腾讯云AI算力涨价5%，行业进入「算力通胀」周期。华为云基于昇腾国产算力的供应链自主可控优势凸显，是争取价格敏感客户迁移的最佳窗口期。同时，DeepSeek V4已完成华为昇腾芯片适配，将成为华为云差异化竞争的重要筹码。'
+    if OLD_INSIGHT in new_bundle:
+        new_bundle = new_bundle.replace(OLD_INSIGHT, new_insight)
+
     with open(JS_PATH, 'w') as f:
         f.write(new_bundle)
 
