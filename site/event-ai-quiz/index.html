@@ -11,209 +11,221 @@
   --ink:#1B2A4A;
   --accent:#D4380D;
   --bg:#F5F6F8;
-  --radius:16px;
+  --card-bg:#FFFFFF;
+  --text-main:#333333;
+  --text-sub:#666666;
+  --border:#E5E7EB;
+  --radius:8px;
 }
 html,body{
   background:var(--bg);
   font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
-  color:var(--ink);
+  color:var(--text-main);
   min-height:100vh;
   font-size:16px;
   -webkit-text-size-adjust:100%;
 }
-a{color:inherit;}
-.wrap{max-width:520px;margin:0 auto;padding:0 16px 80px;}
-/* 顶栏 */
-.topbar{display:flex;align-items:center;justify-content:space-between;padding:20px 16px 12px;max-width:520px;margin:0 auto;}
-.topbar-logo{display:flex;align-items:center;gap:10px;}
-.topbar-dot{width:32px;height:32px;border-radius:8px;background:var(--ink);}
-.topbar-label{font-size:13px;color:#888;}
-.topbar-title{font-size:14px;font-weight:700;line-height:1.2;}
-.topbar-link{font-size:12px;color:#aaa;text-decoration:underline;}
-/* 进度 */
-.progress-wrap{padding:0 16px 8px;max-width:520px;margin:0 auto;}
-.progress-track{height:6px;background:#e3e6ec;border-radius:99px;overflow:hidden;}
-.progress-fill{height:100%;background:var(--accent);border-radius:99px;transition:width .35s;}
-.progress-label{font-size:12px;color:#aaa;margin-top:4px;}
-/* 卡片 */
-.card{background:#fff;border-radius:var(--radius);box-shadow:0 4px 24px rgba(27,42,74,.08);padding:24px 20px;}
-/* 按钮 */
-.btn{display:block;width:100%;border:none;border-radius:var(--radius);font-size:18px;font-weight:700;padding:16px;cursor:pointer;text-align:center;font-family:inherit;}
-.btn-ink{background:var(--ink);color:#fff;}
-.btn-ink:disabled{opacity:.35;cursor:not-allowed;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:600px;margin:0 auto;padding:0 16px 80px;}
+
+/* 顶栏 (商务极简) */
+.topbar{padding:24px 16px 16px;max-width:600px;margin:0 auto;border-bottom:1px solid rgba(0,0,0,0.05);}
+.topbar-label{font-size:12px;color:var(--text-sub);letter-spacing:1px;text-transform:uppercase;}
+.topbar-title{font-size:16px;font-weight:700;color:var(--ink);margin-top:4px;}
+
+/* 进度条 (细线商务风) */
+.progress-wrap{padding:16px 16px 0;max-width:600px;margin:0 auto;display:none;}
+.progress-track{height:2px;background:var(--border);width:100%;}
+.progress-fill{height:100%;background:var(--accent);transition:width .4s ease;}
+.progress-label{font-size:12px;color:var(--text-sub);margin-top:8px;text-align:right;}
+
+/* 卡片与通用排版 */
+.card{background:var(--card-bg);border:1px solid var(--border);padding:32px 24px;margin-top:16px;box-shadow:0 2px 12px rgba(0,0,0,0.02);}
+.section-title{font-size:22px;font-weight:700;color:var(--ink);line-height:1.4;margin-bottom:8px;}
+.section-desc{font-size:14px;color:var(--text-sub);line-height:1.6;margin-bottom:24px;}
+
+/* 按钮 (硬朗直角或微圆角) */
+.btn{display:block;width:100%;border:none;border-radius:var(--radius);font-size:16px;font-weight:600;padding:16px;cursor:pointer;text-align:center;font-family:inherit;transition:opacity .2s;}
+.btn:active{opacity:0.8;}
+.btn-primary{background:var(--ink);color:#fff;}
+.btn-primary:disabled{opacity:0.4;cursor:not-allowed;}
 .btn-accent{background:var(--accent);color:#fff;}
-.btn-ghost{background:transparent;color:#888;font-size:14px;padding:12px;text-decoration:underline;}
-/* 选项 chip */
-.chips{display:grid;gap:10px;}
+.btn-outline{background:transparent;border:1px solid var(--border);color:var(--text-sub);margin-top:12px;}
+
+/* 选项 Chip (企业调研表风格) */
+.chips{display:grid;gap:12px;}
 .chips-2{grid-template-columns:1fr 1fr;}
 .chips-1{grid-template-columns:1fr;}
-.chip{background:#fff;border:2px solid #e3e6ec;border-radius:12px;padding:14px 12px;font-size:15px;font-weight:500;cursor:pointer;text-align:left;color:var(--ink);font-family:inherit;transition:border-color .15s,background .15s;min-height:48px;line-height:1.35;}
-.chip.active{border-color:var(--accent);background:#FFF1EB;color:var(--accent);font-weight:700;}
-/* 输入 */
-input[type=text],textarea{width:100%;border:2px solid #e3e6ec;border-radius:12px;padding:12px 14px;font-size:15px;font-family:inherit;color:var(--ink);background:#fff;-webkit-appearance:none;outline:none;}
-input[type=text]:focus,textarea:focus{border-color:var(--ink);}
+.chip{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:16px;font-size:14px;font-weight:500;cursor:pointer;text-align:left;color:var(--text-main);font-family:inherit;transition:all .2s;line-height:1.4;}
+.chip:hover{border-color:var(--ink);}
+.chip.active{border-color:var(--ink);background:var(--ink);color:#fff;}
+
+/* 输入框 */
+input[type=text],textarea{width:100%;border:1px solid var(--border);border-radius:var(--radius);padding:14px;font-size:14px;font-family:inherit;color:var(--text-main);background:#fafafa;-webkit-appearance:none;outline:none;transition:border-color .2s;}
+input[type=text]:focus,textarea:focus{border-color:var(--ink);background:#fff;}
 textarea{resize:none;}
-/* 徽章卡 */
-.badge-card{border-radius:20px;padding:32px 24px 28px;text-align:center;position:relative;overflow:hidden;}
-.badge-emoji{font-size:80px;line-height:1;display:block;margin-bottom:12px;}
-.badge-title{font-size:26px;font-weight:900;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.25);}
-.badge-sub{font-size:14px;color:rgba(255,255,255,.85);margin-top:6px;font-weight:500;}
-/* 画像渐变 */
-.grad-addict{background:linear-gradient(135deg,#0f2a5e 0%,#1B2A4A 40%,#2a4a8a 100%);}
-.grad-anxious{background:linear-gradient(135deg,#7b1a0a 0%,#D4380D 50%,#ff6b35 100%);}
-.grad-watcher{background:linear-gradient(135deg,#1a3a2a 0%,#2d6a4f 50%,#52b788 100%);}
-.grad-newbie{background:linear-gradient(135deg,#5c3a00 0%,#c77700 50%,#f4a261 100%);}
-/* 结果描述 */
-.result-desc{font-size:16px;line-height:1.75;color:#333;margin-top:20px;}
-.result-tips{background:#f8f9fb;border-radius:12px;padding:16px;margin-top:14px;font-size:14px;color:#555;line-height:1.7;}
-/* 联系方式块 */
-.contact-block{background:#fff;border-radius:var(--radius);box-shadow:0 4px 24px rgba(27,42,74,.08);padding:24px 20px;margin-top:16px;}
-.contact-block h3{font-size:17px;font-weight:700;}
-.contact-block p{font-size:13px;color:#888;margin-top:4px;line-height:1.5;}
-.contact-fields{display:flex;flex-direction:column;gap:10px;margin-top:16px;}
-.contact-ok{display:none;text-align:center;font-size:13px;color:var(--accent);margin-top:8px;}
+
+/* ===== MBTI风 结果卡 ===== */
+.mbti-card{border-radius:12px;padding:40px 24px;color:#fff;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.15);margin-top:16px;}
+.mbti-code{font-size:64px;font-weight:900;letter-spacing:4px;line-height:1;margin-bottom:8px;font-family:Impact, system-ui, sans-serif;}
+.mbti-title{font-size:20px;font-weight:700;margin-bottom:24px;letter-spacing:1px;opacity:0.95;}
+.mbti-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;}
+.mbti-tag{background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);padding:4px 12px;border-radius:4px;font-size:12px;font-weight:500;backdrop-filter:blur(4px);}
+.mbti-desc{font-size:14px;line-height:1.7;opacity:0.9;margin-bottom:24px;border-top:1px solid rgba(255,255,255,0.2);padding-top:24px;}
+.mbti-solution{background:rgba(255,255,255,0.95);color:var(--ink);padding:20px;border-radius:8px;font-size:14px;line-height:1.6;}
+.mbti-solution-title{font-size:12px;font-weight:700;color:var(--accent);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;}
+
+/* 渐变色系 */
+.bg-DEEP{background:linear-gradient(135deg, #1a2a6c 0%, #112240 50%, #2b5876 100%);}
+.bg-LOST{background:linear-gradient(135deg, #870000 0%, #190A05 100%);}
+.bg-WAIT{background:linear-gradient(135deg, #134E5E 0%, #71B280 100%);}
+.bg-ZERO{background:linear-gradient(135deg, #B79891 0%, #94716B 100%);}
+
+/* 联系方式区块 */
+.contact-block{background:#fff;border:1px solid var(--border);padding:32px 24px;margin-top:24px;}
+.contact-block h3{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:8px;}
+.contact-block p{font-size:13px;color:var(--text-sub);line-height:1.6;margin-bottom:20px;}
+.contact-fields{display:flex;flex-direction:column;gap:12px;}
+.contact-ok{display:none;text-align:center;font-size:14px;color:var(--accent);margin-top:16px;font-weight:500;}
+
 /* 屏幕切换 */
 .screen{display:none;}
 .screen.active{display:block;}
-/* 封面标签 */
-.tag{display:inline-block;border-radius:6px;padding:3px 10px;font-size:12px;font-weight:600;margin-right:6px;margin-top:4px;}
-.tag-ink{background:var(--ink);color:#fff;}
-.tag-accent{background:var(--accent);color:#fff;}
-.tag-gray{background:#eee;color:#666;}
+
+/* Footer */
+.footer{text-align:center;font-size:12px;color:#999;margin-top:40px;line-height:1.8;}
 </style>
 </head>
 <body>
 
 <header class="topbar">
-    <div class="topbar-logo">
-      <div class="topbar-dot"></div>
-      <div>
-        <div class="topbar-label">第十届万物生长大会</div>
-        <div class="topbar-title">华为云调研卷</div>
-      </div>
-    </div>
-  <a class="topbar-link" href="https://pls890429.github.io/aiintelhub/">情报站</a>
+  <div class="topbar-label">第十届万物生长大会</div>
+  <div class="topbar-title">华为云调研卷</div>
 </header>
 
-<div id="progress-wrap" class="progress-wrap" style="display:none;">
+<div id="progress-wrap" class="progress-wrap">
   <div class="progress-track"><div id="progress-fill" class="progress-fill" style="width:0%"></div></div>
-  <div id="progress-label" class="progress-label">第 1 / 3 题</div>
+  <div id="progress-label" class="progress-label">01 / 03</div>
 </div>
 
 <div class="wrap">
 
   <!-- 封面 -->
   <section id="screen-intro" class="screen active">
-    <div class="card" style="margin-top:8px;">
-      <div style="font-size:12px;color:#aaa;margin-bottom:6px;">第十届万物生长大会</div>
-      <h1 style="font-size:26px;font-weight:900;line-height:1.35;">华为云调研卷</h1>
-      <p style="font-size:14px;color:#666;margin-top:12px;line-height:1.6;">面向 IT 企业的 AI 应用成熟度自测</p>
-      <button class="btn btn-accent" style="margin-top:28px;" onclick="goto('q1')">开始诊断</button>
+    <div class="card" style="padding:48px 24px;">
+      <div class="topbar-label" style="margin-bottom:12px;">企业诊断评估</div>
+      <h1 style="font-size:28px;font-weight:800;line-height:1.4;color:var(--ink);">企业 AI 应用成熟度诊断</h1>
+      <p style="font-size:15px;color:var(--text-sub);margin-top:16px;line-height:1.7;">基于应用场景、Token 消耗量与核心痛点三项指标，快速生成您的企业专属 AI 诊断画像。</p>
+      <button class="btn btn-primary" style="margin-top:40px;" onclick="goto('q1')">开始诊断</button>
     </div>
-    <p style="text-align:center;font-size:12px;color:#aaa;margin-top:12px;">预计用时 2 分钟</p>
   </section>
 
   <!-- Q1 -->
   <section id="screen-q1" class="screen">
-    <div class="card" style="margin-top:8px;">
-      <div style="font-size:12px;color:#aaa;margin-bottom:4px;">01 / 03 · 多选</div>
-      <h2 style="font-size:20px;font-weight:800;line-height:1.35;">你们家 AI 都在哪儿干活？</h2>
-      <p style="font-size:13px;color:#888;margin-top:6px;">可多选，场景越多说明你家 AI 越是打工狂</p>
-      <div class="chips chips-2" id="q1-chips" style="margin-top:18px;"></div>
-      <div style="margin-top:12px;">
-        <input type="text" id="q1-other" placeholder="其他场景，直接写…" />
+    <div class="card">
+      <h2 class="section-title">01. 贵司目前在哪些业务场景中引入了 AI 技术？</h2>
+      <p class="section-desc">（多选）评估企业 AI 应用的业务覆盖广度</p>
+      <div class="chips chips-2" id="q1-chips"></div>
+      <div style="margin-top:16px;">
+        <input type="text" id="q1-other" placeholder="其他应用场景（请补充）" />
       </div>
-      <button class="btn btn-ink" id="q1-next" style="margin-top:20px;" onclick="nextQ1()" disabled>下一题</button>
+      <button class="btn btn-primary" id="q1-next" style="margin-top:32px;" onclick="nextQ1()" disabled>下一题</button>
     </div>
   </section>
 
   <!-- Q2 -->
   <section id="screen-q2" class="screen">
-    <div class="card" style="margin-top:8px;">
-      <div style="font-size:12px;color:#aaa;margin-bottom:4px;">02 / 03 · 单选</div>
-      <h2 style="font-size:20px;font-weight:800;line-height:1.35;">每个月烧掉多少 Tokens？</h2>
-      <p style="font-size:13px;color:#888;margin-top:6px;">不清楚也没事，挑个最接近的就行</p>
-      <div class="chips chips-1" id="q2-chips" style="margin-top:18px;"></div>
-      <button class="btn btn-ink" id="q2-next" style="margin-top:20px;" onclick="nextQ2()" disabled>下一题</button>
+    <div class="card">
+      <h2 class="section-title">02. 贵司目前的 AI 算力（Token）月均消耗量级？</h2>
+      <p class="section-desc">（单选）评估企业 AI 应用的规模化程度</p>
+      <div class="chips chips-1" id="q2-chips"></div>
+      <button class="btn btn-primary" id="q2-next" style="margin-top:32px;" onclick="nextQ2()" disabled>下一题</button>
     </div>
   </section>
 
   <!-- Q3 -->
   <section id="screen-q3" class="screen">
-    <div class="card" style="margin-top:8px;">
-      <div style="font-size:12px;color:#aaa;margin-bottom:4px;">03 / 03 · 多选</div>
-      <h2 style="font-size:20px;font-weight:800;line-height:1.35;">你的 AI 焦虑清单，打勾几条？</h2>
-      <p style="font-size:13px;color:#888;margin-top:6px;">讲真，选得越多越说明你真的在认真用</p>
-      <div class="chips chips-1" id="q3-chips" style="margin-top:18px;"></div>
-      <div style="margin-top:12px;">
-        <textarea id="q3-other" rows="2" placeholder="还有别的糟心事？写这儿…"></textarea>
+    <div class="card">
+      <h2 class="section-title">03. 推进 AI 落地过程中，贵司面临的核心痛点是？</h2>
+      <p class="section-desc">（多选）评估企业面临的阻力与技术诉求</p>
+      <div class="chips chips-1" id="q3-chips"></div>
+      <div style="margin-top:16px;">
+        <textarea id="q3-other" rows="2" placeholder="其他核心痛点（请补充）"></textarea>
       </div>
-      <button class="btn btn-accent" style="margin-top:20px;" onclick="nextQ3()">出结果 ✨</button>
+      <button class="btn btn-primary" style="margin-top:32px;" onclick="nextQ3()">生成诊断报告</button>
     </div>
   </section>
 
-  <!-- 结果 -->
+  <!-- 结果页 -->
   <section id="screen-result" class="screen">
-
-    <!-- 徽章卡 -->
-    <div id="badge-card" class="badge-card" style="margin-top:8px;">
-      <span id="badge-emoji" class="badge-emoji">🚀</span>
-      <div id="badge-title" class="badge-title">—</div>
-      <div id="badge-sub" class="badge-sub">—</div>
-    </div>
-
-    <!-- 结果描述 -->
-    <div class="card" style="margin-top:12px;">
-      <p id="result-desc" class="result-desc">—</p>
-      <div id="result-tips" class="result-tips"></div>
-      <button class="btn btn-ghost" style="margin-top:8px;" onclick="restart()">↩ 再测一次</button>
-    </div>
-
-    <!-- 联系方式收集 -->
-    <div class="contact-block">
-      <h3>想基于你的诊断结果做针对性优化？</h3>
-      <p>留下联系方式，我们主动找你聊 · 完全可选，不骚扰</p>
-      <div class="contact-fields">
-        <input type="text" id="ct-name" placeholder="你的称呼（可填昵称）" />
-        <input type="text" id="ct-company" placeholder="公司名称（可选）" />
-        <input type="text" id="ct-contact" placeholder="手机号 / 微信 / 邮箱（三选一）" />
+    
+    <!-- MBTI 风人格卡 -->
+    <div id="mbti-card" class="mbti-card">
+      <div id="mbti-code" class="mbti-code">DEEP</div>
+      <div id="mbti-title" class="mbti-title">AI 全栈实践者</div>
+      
+      <div id="mbti-tags" class="mbti-tags">
+        <!-- 动态注入标签 -->
       </div>
-      <button class="btn btn-ink" style="margin-top:16px;font-size:16px;" onclick="submitContact()">提交，等你们来找我</button>
-      <div class="contact-ok" id="ct-ok">已收到，我们会主动联系你 🤝</div>
+      
+      <div id="mbti-desc" class="mbti-desc">
+        —
+      </div>
+      
+      <div class="mbti-solution">
+        <div class="mbti-solution-title">华为云专属建议</div>
+        <div id="mbti-solution-text">—</div>
+      </div>
     </div>
 
-    <p style="text-align:center;font-size:12px;color:#ccc;margin-top:20px;line-height:1.6;">
-第十届万物生长大会 · 华为云调研卷<br/>本次调研仅供参考，不代表专业诊断
-    </p>
+    <button class="btn btn-outline" onclick="restart()">重新评估</button>
+
+    <!-- 联系表单 -->
+    <div class="contact-block">
+      <h3>获取定制化解决方案</h3>
+      <p>留下联系方式，华为云技术专家将基于您的诊断结果，提供针对性的 AI 落地咨询与优化方案。</p>
+      <div class="contact-fields">
+        <input type="text" id="ct-name" placeholder="姓名 / 称呼" />
+        <input type="text" id="ct-company" placeholder="公司名称" />
+        <input type="text" id="ct-contact" placeholder="联系电话 / 邮箱" />
+      </div>
+      <button class="btn btn-primary" style="margin-top:20px;" onclick="submitContact()">提交咨询需求</button>
+      <div class="contact-ok" id="ct-ok">提交成功，华为云专家将尽快与您联系。</div>
+    </div>
+
+    <div class="footer">
+      第十届万物生长大会 · 华为云调研卷<br/>
+      Powered by 华为云浙江区域
+    </div>
   </section>
 
 </div><!-- /wrap -->
 
 <script>
-/* ===== 题目数据 ===== */
+/* ===== 题目数据 (融合商务严肃风格) ===== */
 const Q1 = [
-  {k:'rd',   t:'研发编码提效'},
-  {k:'mk',   t:'营销内容生成'},
-  {k:'cs',   t:'客服与问答'},
-  {k:'da',   t:'数据分析洞察'},
-  {k:'doc',  t:'文档协作与知识库'},
-  {k:'agent',t:'Agent / 自动化流程'},
+  {k:'rd',   t:'研发编码与代码审查'},
+  {k:'mk',   t:'营销文案与内容生成'},
+  {k:'cs',   t:'智能客服与知识问答'},
+  {k:'da',   t:'数据分析与商业洞察'},
+  {k:'doc',  t:'文档协作与知识管理'},
+  {k:'agent',t:'Agent 与业务流程自动化'},
 ];
 const Q2 = [
-  {k:'none',   t:'基本没用'},
-  {k:'lt1w',   t:'月 1 万 Token 以内（尝鲜）'},
-  {k:'1_10w',  t:'1 万 ~ 10 万（小范围试水）'},
+  {k:'none',   t:'尚未规模化使用'},
+  {k:'lt1w',   t:'月 1 万 Token 以内（初步尝鲜）'},
+  {k:'1_10w',  t:'1 万 ~ 10 万（小范围试点）'},
   {k:'10_100w',t:'10 万 ~ 100 万（部门级应用）'},
   {k:'gt100w', t:'100 万 Token 以上（企业级规模化）'},
-  {k:'unknown',t:'不清楚 / 没统计过'},
+  {k:'unknown',t:'缺乏统计 / 暂不清楚'},
 ];
 const Q3 = [
-  {k:'roi',  t:'ROI 算不清，老板要数据'},
-  {k:'user', t:'员工不会用 / 不愿用'},
-  {k:'data', t:'数据安全顾虑'},
-  {k:'pick', t:'选型困难，工具太多'},
-  {k:'cost', t:'成本失控，账单吓人'},
-  {k:'lag',  t:'怕被友商甩开'},
+  {k:'roi',  t:'投入产出比 (ROI) 难以量化'},
+  {k:'user', t:'员工使用意愿或技能不足'},
+  {k:'data', t:'企业核心数据隐私与安全合规'},
+  {k:'pick', t:'底层模型与工具链选型困难'},
+  {k:'cost', t:'算力成本高昂与预算失控'},
+  {k:'lag',  t:'行业竞争加剧引发的技术焦虑'},
 ];
 
 /* ===== 状态 ===== */
@@ -260,7 +272,7 @@ function goto(id){
   if(step[id]){
     pw.style.display='block';
     document.getElementById('progress-fill').style.width = (step[id]/3*100)+'%';
-    document.getElementById('progress-label').innerText = `第 ${step[id]} / 3 题`;
+    document.getElementById('progress-label').innerText = `0${step[id]} / 03`;
   } else {
     pw.style.display='none';
   }
@@ -270,35 +282,31 @@ function nextQ1(){ S.q1other = document.getElementById('q1-other').value.trim();
 function nextQ2(){ goto('q3'); }
 function nextQ3(){ S.q3other = document.getElementById('q3-other').value.trim(); compute(); goto('result'); }
 
-/* ===== 画像算法 ===== */
+/* ===== MBTI风画像算法 ===== */
 const PERSONAS = {
-  addict:{
-    grad:'grad-addict', emoji:'🚀',
-    title:'AI 重度上瘾型',
-    sub:'已经戒不掉了系列',
-    desc:'场景铺得广、Token 烧得猛、焦虑还不多——你家 AI 是真的跑起来了，是圈里那种「别人家的 AI 部门」。建议继续保持，并准备好迎接账单。',
-    tips:'下一阶段重点：ROI 量化 + 治理。把各场景的 Token 成本、调用频次、业务价值串成看板，别让老板某天问「这钱花得值吗」你答不上来。'
+  DEEP:{
+    bg:'bg-DEEP', code:'DEEP', title:'AI 全栈实践者',
+    tags:['多场景覆盖','Token消耗大户','技术驱动'],
+    desc:'贵司在 AI 领域的探索已进入深水区，场景覆盖广且算力消耗庞大。你们不仅是行业技术的先驱者，更是「别人家的 AI 团队」。随着规模化应用的深入，如何从「用起来」向「用得精」转变，是当前的核心命题。',
+    solution:'建议下一阶段聚焦于「ROI 量化与全域治理」。华为云提供企业级 AI 算力底座与精细化运营看板，助您实现算力成本的透明化管控，并确保核心业务数据的绝对安全。'
   },
-  anxious:{
-    grad:'grad-anxious', emoji:'😵‍💫',
-    title:'AI 纠结型',
-    sub:'用了，但焦虑拉满型',
-    desc:'你已经在用 AI，但每天都在「选型 / 合规 / 成本 / 员工不会用」之间反复横跳。恭喜，这说明你家真的在做事——不做事的人是没资格焦虑的。',
-    tips:'建议三步走：① 把最焦虑的一条写下来；② 找外部一次性聊明白（选型咨询 / 合规对标）；③ 把剩下的交给时间，别一个人扛着所有事。'
+  LOST:{
+    bg:'bg-LOST', code:'LOST', title:'ROI 纠结派',
+    tags:['痛点密集','选型焦虑','成本敏感'],
+    desc:'贵司已经开启了 AI 转型之路，但正深陷于「合规、成本、选型、落地效果」的复杂博弈中。这恰恰说明你们在做真正的业务变革——因为只有深入业务，才会遇到真实的阻力。',
+    solution:'破局的关键在于「解耦与专业外脑支持」。华为云盘古大模型及专家咨询服务，可为您提供从场景规划、合规对标到模型选型的端到端落地方案，让您不再孤军奋战。'
   },
-  watcher:{
-    grad:'grad-watcher', emoji:'🕶️',
-    title:'AI 观望型',
-    sub:'只闻其声未见其人',
-    desc:'你家 AI 处于「试了一两个场景，还在看效果」的阶段。不错，至少上车了，但油门还没踩下去。这个位置最危险——投入不够看不到效果，容易被一句「AI 也就那样」劝退。',
-    tips:'建议选 1 个核心业务场景做深，哪怕只做一个功能，也要做到「离不开」。宽而浅 → 窄而深，是这个阶段的关键切换。'
+  WAIT:{
+    bg:'bg-WAIT', code:'WAIT', title:'谨慎试水者',
+    tags:['小范围试点','效能观望','稳健策略'],
+    desc:'贵司对待 AI 展现出极具理性的商业克制，目前处于单点场景试水阶段。稳健的策略规避了试错成本，但如果迟迟不进行纵深探索，可能会在不知不觉中丧失技术代差带来的竞争优势。',
+    solution:'建议选择 1-2 个高价值核心场景进行深度打透。借助华为云开箱即用的 AI 行业解决方案（如智能客服、研发提效等），低门槛实现业务闭环，快速验证 AI 带来的真实增量。'
   },
-  newbie:{
-    grad:'grad-newbie', emoji:'🐣',
-    title:'AI 小白企业',
-    sub:'再不抓紧就掉队型',
-    desc:'你家 AI 目前还在「听说过」阶段，同行们都在偷偷用 Copilot 写代码、用 Agent 跑流程了，你还在观望？别让 AI 变成下一个「错过的移动互联网」。',
-    tips:'建议从最痛的一个场景切入（比如研发 Copilot 或客服问答），先跑通一个小闭环，再铺开。预算不用大，关键是跑起来。'
+  ZERO:{
+    bg:'bg-ZERO', code:'ZERO', title:'AI 观察员',
+    tags:['尚未入局','零消耗','需求酝酿'],
+    desc:'贵司目前对 AI 仍保持远距离观察姿态。在当前技术周期下，行业头部企业已通过 AI 重塑生产力。与其担忧被技术浪潮颠覆，不如立刻寻找一个最痛的业务切口，迈出数字化的第一步。',
+    solution:'起步无需庞大预算。华为云提供轻量化的 AI 体验服务与初创企业扶持计划，帮助您以极低的成本快速构建首个 AI 助手，轻松跨越技术门槛。'
   }
 };
 
@@ -310,20 +318,20 @@ function compute(){
   const isBlank = (S.q2==='none' || S.q2==='lt1w') && scenes===0;
 
   let key;
-  if(isBlank && depth<=1)          key='newbie';
-  else if(depth>=6 && worries<=2)  key='addict';
-  else if(worries>=4)              key='anxious';
-  else if(depth>=2 && depth<=5)    key='watcher';
-  else                             key='newbie';
+  if(isBlank && depth<=1)          key='ZERO';
+  else if(depth>=6 && worries<=2)  key='DEEP';
+  else if(worries>=4)              key='LOST';
+  else if(depth>=2 && depth<=5)    key='WAIT';
+  else                             key='ZERO';
 
   const p = PERSONAS[key];
-  const card = document.getElementById('badge-card');
-  card.className = 'badge-card '+p.grad;
-  document.getElementById('badge-emoji').innerText = p.emoji;
-  document.getElementById('badge-title').innerText = p.title;
-  document.getElementById('badge-sub').innerText = p.sub;
-  document.getElementById('result-desc').innerText = p.desc;
-  document.getElementById('result-tips').innerText = '🎯 小建议：'+p.tips;
+  const card = document.getElementById('mbti-card');
+  card.className = 'mbti-card '+p.bg;
+  document.getElementById('mbti-code').innerText = p.code;
+  document.getElementById('mbti-title').innerText = p.title;
+  document.getElementById('mbti-tags').innerHTML = p.tags.map(t=>`<span class="mbti-tag">${t}</span>`).join('');
+  document.getElementById('mbti-desc').innerText = p.desc;
+  document.getElementById('mbti-solution-text').innerText = p.solution;
 
   const rec = {ts:new Date().toISOString(), answers:{q1:S.q1,q1other:S.q1other,q2:S.q2,q3:S.q3,q3other:S.q3other}, persona:key, personaTitle:p.title};
   try{
@@ -339,7 +347,7 @@ function submitContact(){
   const name    = document.getElementById('ct-name').value.trim();
   const company = document.getElementById('ct-company').value.trim();
   const contact = document.getElementById('ct-contact').value.trim();
-  if(!contact){ alert('至少留一个联系方式哦～'); return; }
+  if(!contact){ alert('请至少提供一项联系方式。'); return; }
   const last = JSON.parse(localStorage.getItem('ai_quiz_last')||'{}');
   try{
     const arr=JSON.parse(localStorage.getItem('ai_quiz_contact')||'[]');
