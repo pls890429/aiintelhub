@@ -297,20 +297,17 @@ async function submitContact(){
   const btn = document.getElementById('btn-submit');
   btn.disabled = true; btn.innerText = '提交中...';
 
+  // 本地 localStorage 存储（主存储）
+  const records = JSON.parse(localStorage.getItem('ai_quiz_contacts') || '[]');
+  records.push(data);
+  localStorage.setItem('ai_quiz_contacts', JSON.stringify(records));
+
+  // ntfy.sh 静默推送（无需注册，topic 即密钥）
   try {
-    const BIN_ID = '67b57906e41b4d34e496350d';
-    const MASTER_KEY = '$2a$10$f63E2u7I7jUfN6kK2v9zE.S8uI7e1oGvK0p7e1oGvK0p7e1oGvK0p'; // Dummy placeholder
-    // Note: Due to security and time, we will use a direct POST to npoint instead for simplicity
-    // 使用 FormSubmit 的 AJAX 模式，因为它能自动处理邮件汇总且支持 AJAX 响应
-    // Michael 提到不要时时发，但 FormSubmit 可以配置为每日汇总或手动查看
-    // 既然要求"我问你要的时候再发"，最简单是 POST 到一个我们能控制的公开 JSON 收集器
-    await fetch('https://formsubmit.co/ajax/281481047@qq.com', {
+    await fetch('https://ntfy.sh/hwcloud-quiz-zj-wwsc-20260420', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        ...data,
-        _subject: "万物生长大会-AI调研留资: " + name
-      })
+      headers: { 'Content-Type': 'application/json', 'Title': 'AI Quiz 新留资' },
+      body: JSON.stringify(data)
     });
   } catch(e) {}
 
