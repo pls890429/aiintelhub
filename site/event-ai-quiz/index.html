@@ -72,8 +72,6 @@ textarea{resize:none;}
 .mbti-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;}
 .mbti-tag{background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);padding:4px 12px;border-radius:4px;font-size:12px;font-weight:500;backdrop-filter:blur(4px);}
 .mbti-desc{font-size:14px;line-height:1.7;opacity:0.9;margin-bottom:24px;border-top:1px solid rgba(255,255,255,0.2);padding-top:24px;}
-.mbti-solution{background:rgba(255,255,255,0.95);color:var(--ink);padding:20px;border-radius:8px;font-size:14px;line-height:1.6;}
-.mbti-solution-title{font-size:12px;font-weight:700;color:var(--accent);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;}
 
 /* 渐变色系 */
 .bg-DEEP{background:linear-gradient(135deg, #1a2a6c 0%, #112240 50%, #2b5876 100%);}
@@ -137,7 +135,7 @@ textarea{resize:none;}
   <!-- Q2 -->
   <section id="screen-q2" class="screen">
     <div class="card">
-      <h2 class="section-title">02. 贵企每月在 AI（API调用 / 订阅 / Token 消耗）上的投入金额大概是？</h2>
+      <h2 class="section-title">02. 贵企每月在 AI（API调用 / 订阅 / 模型使用）上的投入金额大概是？</h2>
       <p class="section-desc">（单选）评估企业 AI 应用的规模化程度</p>
       <div class="chips chips-1" id="q2-chips"></div>
       <button class="btn btn-primary" id="q2-next" style="margin-top:32px;" onclick="nextQ2()" disabled>下一题</button>
@@ -176,8 +174,6 @@ textarea{resize:none;}
 
     </div>
 
-    <button class="btn btn-outline" onclick="restart()">重新评估</button>
-
     <!-- 联系表单 -->
     <div class="contact-block">
       <h3>关注 AI 进展 · 保持连接</h3>
@@ -191,10 +187,6 @@ textarea{resize:none;}
       <div class="contact-ok" id="ct-ok">感谢关注，我们将适时与您联系。</div>
     </div>
 
-    <div class="footer">
-      第十届万物生长大会 · 华为云调研卷<br/>
-      Powered by 华为云浙江区域
-    </div>
   </section>
 
 </div><!-- /wrap -->
