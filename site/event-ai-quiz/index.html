@@ -261,8 +261,7 @@ function compute(){
   let key = 'WAIT';
   if(sceneCount >= 2 && budgetScore >= 2) key = 'DEEP';
   else if(anxietyCount >= 3) key = 'LOST';
-  else if(sceneCount <= 1 && budgetScore <= 1) key = 'ZERO';
-
+  else  if(sceneCount <= 1 && budgetScore === 0) key = 'ZERO';
   const p = PERSONAS[key];
   const card = document.getElementById('mbti-card');
   card.className = 'mbti-card ' + p.bg;
