@@ -21,6 +21,8 @@ import sys
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JSON_PATH = os.path.join(REPO_ROOT, 'data', 'reports.json')
 JS_PATH = os.path.join(REPO_ROOT, 'site', 'assets', 'index-D4sgLSXZ.js')
+CSS_PATH = os.path.join(REPO_ROOT, 'site', 'assets', 'index-7D7zrsbW.css')
+EXTRA_CSS_PATH = os.path.join(REPO_ROOT, 'data', 'detail-style.css')
 
 VENDOR_MAP = {
     'aliyun': '阿里云',
@@ -151,15 +153,48 @@ def build_us(reports):
     return items_out
 
 
+def md_to_html(md):
+    """极简 markdown → HTML（仅处理 ##/###/段落/列表/加粗）"""
+    if not md:
+        return '<p></p>'
+    lines = md.split('\n')
+    out = []
+    in_ul = False
+    for ln in lines:
+        s = ln.rstrip()
+        if not s:
+            if in_ul:
+                out.append('</ul>'); in_ul = False
+            continue
+        if s.startswith('### '):
+            if in_ul: out.append('</ul>'); in_ul = False
+            out.append(f'<h3>{s[4:]}</h3>')
+        elif s.startswith('## '):
+            if in_ul: out.append('</ul>'); in_ul = False
+            out.append(f'<h3>{s[3:]}</h3>')
+        elif s.startswith('- ') or s.startswith('* '):
+            if not in_ul: out.append('<ul>'); in_ul = True
+            out.append(f'<li>{s[2:]}</li>')
+        else:
+            if in_ul: out.append('</ul>'); in_ul = False
+            # 加粗
+            t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', s)
+            out.append(f'<p>{t}</p>')
+    if in_ul: out.append('</ul>')
+    return '\n'.join(out)
+
+
 def build_xr(articles):
-    """构造老站 Xr 数组（文章列表）"""
+    """构造老站 Xr 数组（文章列表）。如果 article 已带 sections，直接用；否则 fallback 把 content 当 markdown 渲染"""
     out = []
     for art in articles:
-        # content 转 sections
-        sections = [{
-            'title': '正文',
-            'content': '<div>' + art.get('content', '').replace('\n', '<br/>') + '</div>',
-        }]
+        if art.get('sections'):
+            sections = art['sections']
+        else:
+            sections = [{
+                'title': '正文',
+                'content': md_to_html(art.get('content', '')),
+            }]
         out.append({
             'id': str(art['id']),
             'title': art['title'],
@@ -170,6 +205,20 @@ def build_xr(articles):
             'sections': sections,
         })
     return out
+
+
+def merge_extra_css():
+    """把 data/detail-style.css 合并到主 CSS 末尾（去重幂等）"""
+    if not os.path.exists(EXTRA_CSS_PATH):
+        return
+    extra = open(EXTRA_CSS_PATH).read().strip()
+    base = open(CSS_PATH).read()
+    marker = '/* ============================================'
+    if marker in base:
+        # 已有附加CSS，先去掉再追加最新
+        base = base[:base.index(marker)].rstrip() + '\n'
+    open(CSS_PATH, 'w').write(base + '\n' + extra + '\n')
+    print(f"✓ CSS 合并完成: +{len(extra)} 字节")
 
 
 def main():
@@ -232,6 +281,9 @@ def main():
     print(f"  日报 items: {len(us_arr)} 条")
     print(f"  文章: {len(xr_arr)} 篇")
     print(f"  bundle 大小: {len(bundle)} → {len(new_bundle)} 字节")
+
+    # 合并附加 CSS
+    merge_extra_css()
 
 
 if __name__ == '__main__':

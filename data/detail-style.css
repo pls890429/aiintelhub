@@ -1,0 +1,420 @@
+/* ============================================
+   aiintelhub 详情页咨询报告级样式增强
+   参考: huaweianalys-agwm7u9h
+   ============================================ */
+
+/* 富文本基础排版 */
+.prose-magazine {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #2c3e50;
+}
+
+.prose-magazine h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1B2A4A;
+  margin: 0 0 32px 0;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #f1e8df;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+.prose-magazine h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1B2A4A;
+  margin: 36px 0 16px 0;
+  padding-left: 14px;
+  border-left: 4px solid #D4380D;
+  line-height: 1.4;
+}
+
+.prose-magazine h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1B2A4A;
+  margin: 28px 0 12px 0;
+}
+
+.prose-magazine p {
+  margin: 0 0 18px 0;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #344054;
+}
+
+.prose-magazine strong {
+  color: #1B2A4A;
+  font-weight: 700;
+  background: linear-gradient(180deg, transparent 60%, rgba(212, 56, 13, 0.15) 60%);
+  padding: 0 2px;
+}
+
+.prose-magazine em {
+  color: #D4380D;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.prose-magazine ul,
+.prose-magazine ol {
+  margin: 0 0 22px 0;
+  padding-left: 28px;
+}
+
+.prose-magazine li {
+  margin-bottom: 10px;
+  line-height: 1.8;
+  color: #344054;
+}
+
+.prose-magazine ul li::marker {
+  color: #D4380D;
+}
+
+.prose-magazine a {
+  color: #D4380D;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* 数据卡片矩阵 */
+.prose-magazine .data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.prose-magazine .data-card {
+  background: #faf6f1;
+  border-left: 4px solid #D4380D;
+  padding: 20px 22px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.prose-magazine .data-card .num {
+  display: block;
+  font-size: 36px;
+  font-weight: 800;
+  color: #D4380D;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+  font-family: -apple-system, "Segoe UI", sans-serif;
+}
+
+.prose-magazine .data-card .label {
+  display: block;
+  font-size: 13px;
+  color: #5a6c80;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.prose-magazine .data-card .sub {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 11px;
+  color: #D4380D;
+  background: rgba(212, 56, 13, 0.08);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* 关键洞察块 */
+.prose-magazine .insight {
+  background: linear-gradient(135deg, #fff8f3 0%, #fff4e8 100%);
+  border-left: 4px solid #f59e0b;
+  padding: 20px 24px;
+  margin: 28px 0;
+  border-radius: 6px;
+  position: relative;
+}
+
+.prose-magazine .insight::before {
+  content: "⚠️ 关键洞察";
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #b45309;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  background: rgba(245, 158, 11, 0.15);
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+
+.prose-magazine .insight p {
+  margin: 6px 0 0 0;
+  font-size: 15px;
+  color: #78350f;
+  font-weight: 500;
+}
+
+/* 销售话术专属块 */
+.prose-magazine .pitch {
+  background: linear-gradient(135deg, #1B2A4A 0%, #2c3e6b 100%);
+  color: #fff;
+  padding: 24px 28px;
+  border-radius: 10px;
+  margin: 28px 0;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(27, 42, 74, 0.18);
+}
+
+.prose-magazine .pitch::before {
+  content: "🎯 一句话焦虑话术";
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffd5c2;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  background: rgba(212, 56, 13, 0.3);
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+.prose-magazine .pitch p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #fff;
+  font-style: italic;
+}
+
+/* 引用块 */
+.prose-magazine blockquote {
+  border-left: 3px solid #D4380D;
+  background: #faf6f1;
+  margin: 24px 0;
+  padding: 16px 20px;
+  font-style: italic;
+  color: #5a6c80;
+  border-radius: 0 6px 6px 0;
+}
+
+.prose-magazine blockquote p {
+  margin: 0;
+}
+
+/* 行业卡片矩阵 */
+.prose-magazine .industry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin: 28px 0;
+}
+
+.prose-magazine .industry-card {
+  background: #fff;
+  border: 1px solid #e8ddd0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.prose-magazine .industry-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(27, 42, 74, 0.08);
+}
+
+.prose-magazine .industry-card .ic-head {
+  background: #1B2A4A;
+  color: #fff;
+  padding: 12px 18px;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prose-magazine .industry-card .ic-head .tag {
+  background: rgba(255, 255, 255, 0.18);
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.prose-magazine .industry-card .ic-body {
+  padding: 16px 18px;
+}
+
+.prose-magazine .industry-card .ic-body p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #475467;
+}
+
+.prose-magazine .industry-card .ic-body strong {
+  color: #1B2A4A;
+  background: none;
+  padding: 0;
+}
+
+/* 不同行业卡片头部色条变体 */
+.prose-magazine .industry-card.finance .ic-head { background: #c0392b; }
+.prose-magazine .industry-card.auto .ic-head { background: #1B2A4A; }
+.prose-magazine .industry-card.internet .ic-head { background: #2980b9; }
+.prose-magazine .industry-card.gov .ic-head { background: #27ae60; }
+.prose-magazine .industry-card.energy .ic-head { background: #d35400; }
+
+/* 表格美化 */
+.prose-magazine table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(27, 42, 74, 0.06);
+}
+
+.prose-magazine table thead {
+  background: #1B2A4A;
+  color: #fff;
+}
+
+.prose-magazine table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+.prose-magazine table td {
+  padding: 12px 16px;
+  border-top: 1px solid #f1e8df;
+  color: #475467;
+}
+
+.prose-magazine table tbody tr:hover {
+  background: #faf6f1;
+}
+
+/* 时间线/章节小标 */
+.prose-magazine .timeline {
+  margin: 24px 0;
+  border-left: 2px solid #f1e8df;
+  padding-left: 22px;
+}
+
+.prose-magazine .timeline .tl-item {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.prose-magazine .timeline .tl-item::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #D4380D;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 1px #D4380D;
+}
+
+.prose-magazine .timeline .tl-date {
+  font-weight: 700;
+  color: #D4380D;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.prose-magazine .timeline .tl-text {
+  color: #475467;
+  font-size: 15px;
+}
+
+/* CTA 末尾行动按钮区 */
+.prose-magazine .cta-block {
+  background: linear-gradient(135deg, #1B2A4A 0%, #2c3e6b 100%);
+  color: #fff;
+  padding: 32px 36px;
+  border-radius: 12px;
+  margin: 36px 0 16px 0;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(27, 42, 74, 0.2);
+}
+
+.prose-magazine .cta-block h3 {
+  color: #fff;
+  border: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+  font-size: 22px;
+}
+
+.prose-magazine .cta-block p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.prose-magazine .cta-block .cta-btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.prose-magazine .cta-block .cta-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #D4380D;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.prose-magazine .cta-block .cta-btn:hover {
+  background: #b22f0a;
+}
+
+.prose-magazine .cta-block .cta-btn.secondary {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 高亮关键词 */
+.prose-magazine .hl {
+  color: #D4380D;
+  font-weight: 700;
+}
+
+.prose-magazine .hl-num {
+  font-family: -apple-system, "Segoe UI", sans-serif;
+  font-weight: 800;
+  color: #D4380D;
+  font-size: 1.1em;
+}
+
+/* 章节段落首字下沉 */
+.prose-magazine section > p:first-of-type::first-letter {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #1B2A4A;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .prose-magazine h2 { font-size: 22px; }
+  .prose-magazine h3 { font-size: 18px; }
+  .prose-magazine .data-card .num { font-size: 28px; }
+  .prose-magazine .industry-grid { grid-template-columns: 1fr; }
+}

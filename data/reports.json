@@ -9,9 +9,15 @@
         {
           "id": 1,
           "date": "2026-04-20",
-          "vendor": ["aliyun", "tencent"],
+          "vendor": [
+            "aliyun",
+            "tencent"
+          ],
           "dimension": "price",
-          "categories": ["云厂商动态", "行业趋势"],
+          "categories": [
+            "云厂商动态",
+            "行业趋势"
+          ],
           "title": "阿里云、腾讯云算力集体涨价，最高涨幅34%",
           "summary": "阿里云4月18日起算力卡服务涨价5%-34%，CPFS智算版存储上调30%；腾讯云5月9日起AI算力等三类产品涨价5%。百度智能云同步跟进。",
           "detail": "阿里云：4月18日起执行新定价，平头哥真武810E算力卡服务价格上涨5%-34%，CPFS智算版文件存储产品统一上调30%。百炼大模型部分模型单元服务价格上涨2%至7%。国内短信服务产品5月20日起调价。腾讯云：5月9日起AI算力、容器服务、弹性MapReduce大数据服务三类产品统一涨价5%。百度智能云：AI算力相关产品服务上调5%-30%，并行文件存储等配套产品涨幅约30%。背景：Token日均消耗达140万亿，算力需求旺盛，供需失衡导致成本承压，云厂商告别低价竞争，转向Token经济。",
@@ -22,9 +28,14 @@
         {
           "id": 2,
           "date": "2026-04-20",
-          "vendor": ["volcano"],
+          "vendor": [
+            "volcano"
+          ],
           "dimension": "customer",
-          "categories": ["云厂商动态", "竞争分析"],
+          "categories": [
+            "云厂商动态",
+            "竞争分析"
+          ],
           "title": "火山引擎深度绑定荣威，4月21日发布AI原生汽车",
           "summary": "荣威将于4月21日发布全球首个AI原生汽车序列，火山引擎作为深度战略合作伙伴，提供模型与云侧能力，与荣威原生AI技术架构融合。",
           "detail": "荣威将于4月21日发布全球首个AI原生汽车序列，火山引擎作为深度战略合作伙伴，提供模型与云侧能力，与荣威原生AI技术架构融合。这是火山引擎在汽车行业的重要标杆案例，豆包大模型将深度集成到车载AI交互系统中。",
@@ -35,9 +46,14 @@
         {
           "id": 3,
           "date": "2026-04-20",
-          "vendor": ["tencent"],
+          "vendor": [
+            "tencent"
+          ],
           "dimension": "customer",
-          "categories": ["云厂商动态", "竞争分析"],
+          "categories": [
+            "云厂商动态",
+            "竞争分析"
+          ],
           "title": "腾讯云拿下香港中华煤气大单，能源行业大模型落地",
           "summary": "腾讯云与香港中华煤气达成新一轮战略合作，围绕云资源统一管理、数字化平台建设、大模型及AI应用、用户营运能力提升及研发工具协同等方向展开。",
           "detail": "腾讯云与香港中华煤气达成新一轮战略合作，围绕云资源统一管理、数字化平台建设、大模型及AI应用、用户营运能力提升及研发工具协同等方向展开。此外，腾讯云还在NAB展会上与TVU Networks宣布战略合作，推出下一代基于云的媒体制作和分发平台。",
@@ -48,9 +64,14 @@
         {
           "id": 4,
           "date": "2026-04-20",
-          "vendor": ["volcano"],
+          "vendor": [
+            "volcano"
+          ],
           "dimension": "customer",
-          "categories": ["云厂商动态", "行业趋势"],
+          "categories": [
+            "云厂商动态",
+            "行业趋势"
+          ],
           "title": "字节跳动投资十亿打造AI原生医院，火山引擎医疗云支撑",
           "summary": "字节跳动投资十亿元打造中国首家AI原生医院，依托火山引擎医疗云作为底层支撑，将所有医院运营和数据能力部署为AI智能体。",
           "detail": "字节跳动投资十亿元打造中国首家AI原生医院，依托火山引擎医疗云作为底层支撑，将所有医院运营和数据能力部署为AI智能体。这是火山引擎在医疗行业的重大标杆项目，将AI Agent技术大规模应用于医院管理、诊断辅助、患者服务等场景。",
@@ -61,9 +82,15 @@
         {
           "id": 5,
           "date": "2026-04-20",
-          "vendor": ["tencent"],
+          "vendor": [
+            "tencent"
+          ],
           "dimension": "product",
-          "categories": ["云厂商动态", "大模型", "竞争分析"],
+          "categories": [
+            "云厂商动态",
+            "大模型",
+            "竞争分析"
+          ],
           "title": "腾讯混元3D世界模型2.0开源，直指游戏影视B端",
           "summary": "4月16日，腾讯正式发布并开源混元3D世界模型2.0（HY-World 2.0），支持多格式3D资产导出（Mesh/3DGS/点云），可直接用于二次编辑，针对游戏开发、影视预演等B端场景。",
           "detail": "4月16日，腾讯正式发布并开源混元3D世界模型2.0（HY-World 2.0），支持多格式3D资产导出（Mesh/3DGS/点云），可直接用于二次编辑，针对游戏开发、影视预演等B端场景。该模型在3D生成质量和速度上均有显著提升，开源策略旨在快速建立开发者生态。",
@@ -74,9 +101,14 @@
         {
           "id": 6,
           "date": "2026-04-20",
-          "vendor": ["aliyun"],
+          "vendor": [
+            "aliyun"
+          ],
           "dimension": "product",
-          "categories": ["云厂商动态", "大模型"],
+          "categories": [
+            "云厂商动态",
+            "大模型"
+          ],
           "title": "阿里4月22日AI新品预告，疑似发布AI数字人或视频大模型",
           "summary": "阿里巴巴发布\"4月22日见Hello World\"预热海报，疑似将发布清新少女风格的AI数字人形象或视频大模型HappyHorse。",
           "detail": "阿里巴巴发布\"4月22日见Hello World\"预热海报，疑似将发布清新少女风格的AI数字人形象或视频大模型HappyHorse。这是阿里在数字人和视频生成领域的最新布局，可能对华为云在数字人和多媒体AI领域的客户产生影响。",
@@ -87,9 +119,15 @@
         {
           "id": 7,
           "date": "2026-04-20",
-          "vendor": ["volcano"],
+          "vendor": [
+            "volcano"
+          ],
           "dimension": "product",
-          "categories": ["云厂商动态", "Agent框架", "大模型"],
+          "categories": [
+            "云厂商动态",
+            "Agent框架",
+            "大模型"
+          ],
           "title": "火山引擎ArkClaw智能体平台主打\"一人公司\"，豆包日均Token超120万亿",
           "summary": "Seedance 2.0 SDK示例官方教程发布，支持多模态素材生视频。ArkClaw智能体平台举办线下沙龙，主打\"一人公司\"赋能。豆包大模型日均Token使用量超120万亿。",
           "detail": "Seedance 2.0 SDK示例官方教程发布，支持多模态素材生视频。ArkClaw智能体平台举办线下沙龙，主打\"一人公司\"赋能，吸引大量开发者和中小企业关注。豆包大模型日均Token使用量超120万亿，在国内大模型中使用量领先。火山引擎正在构建从模型到Agent到应用的完整生态。",
@@ -100,9 +138,15 @@
         {
           "id": 8,
           "date": "2026-04-20",
-          "vendor": ["ai-hotspot"],
+          "vendor": [
+            "ai-hotspot"
+          ],
           "dimension": "strategy",
-          "categories": ["大模型", "Token经济", "行业趋势"],
+          "categories": [
+            "大模型",
+            "Token经济",
+            "行业趋势"
+          ],
           "title": "大模型集体转向Token经济，Kimi ARR突破1亿美元",
           "summary": "国内大模型头部公司集体从卖算力、做项目转向卖Token、做订阅。Kimi K2.5发布后ARR突破1亿美元，智谱等也在探索类似Cursor的订阅模式。",
           "detail": "国内大模型头部公司集体从卖算力、做项目转向卖Token、做订阅。Kimi K2.5发布后ARR突破1亿美元，成为国内首个ARR破亿的大模型产品。智谱GLM Coding Plan连续涨价，最高档从80美元涨至160美元，但调用量仍增长400%，说明AI编码工具付费意愿强烈。DeepSeek传闻本周将发布V4模型，参数规模或达1600B，目前正以100亿美元估值寻求3亿美元融资。Token日均消耗达140万亿，算力需求旺盛，供需失衡导致成本承压。",
@@ -113,9 +157,15 @@
         {
           "id": 9,
           "date": "2026-04-20",
-          "vendor": ["ai-hotspot"],
+          "vendor": [
+            "ai-hotspot"
+          ],
           "dimension": "strategy",
-          "categories": ["AI编码", "大模型", "行业趋势"],
+          "categories": [
+            "AI编码",
+            "大模型",
+            "行业趋势"
+          ],
           "title": "智谱GLM Coding Plan三连涨价，AI编码付费意愿被验证",
           "summary": "智谱押注AI编码，GLM Coding Plan连续涨价，最高档从80美元涨至160美元，但调用量仍增长400%，说明AI编码工具付费意愿强烈。",
           "detail": "智谱押注AI编码，GLM Coding Plan连续涨价，最高档从80美元涨至160美元，但调用量仍增长400%，说明AI编码工具付费意愿强烈。这验证了AI编码工具已经成为开发者刚需，客户愿意为提升研发效能付费。华为云CodeArts需加快在浙江区域软件开发企业、ISV中的推广。",
@@ -160,52 +210,154 @@
     {
       "id": 20,
       "date": "2026-04-20",
-      "categories": ["云厂商动态", "行业趋势", "Token经济"],
-      "coverImage": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?w=800&q=80",
+      "categories": [
+        "云厂商动态",
+        "行业趋势",
+        "Token经济"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
       "title": "算力涨价潮来袭：阿里腾讯最高涨34%，华为云的机会窗口有多大？",
       "summary": "阿里云、腾讯云、百度智能云算力集体涨价，最高涨幅34%。Token日均消耗140万亿背后，是云厂商告别低价竞争的历史性转折点。华为云昇腾算力如何把握这一窗口？",
-      "content": "## 算力涨价潮：行业转折点还是昙花一现？\n\n2026年4月，国内云计算行业迎来一个历史性时刻——阿里云、腾讯云、百度智能云相继宣布算力涨价，涨幅从5%到34%不等。这是云计算行业多年价格战后的首次集体转向。\n\n### 涨价背后的数据逻辑\n\nToken日均消耗达到140万亿，这个数字背后是AI应用爆发式增长带来的算力需求激增。供需失衡是此次涨价的根本原因：GPU算力供给受限，而大模型训练和推理需求持续攀升。\n\n### 对华为云浙江区域的战略意义\n\n**短期机会：** 友商涨价后，客户IT成本压力骤增，这是华为云通过昇腾算力高性价比切入的绝佳时机。特别是对算力消耗大的AI训练和大数据客户，迁移测算可以直接量化节省金额。\n\n**中期布局：** 随着Token经济成为主流商业模式，华为云需要加快盘古大模型的Token计费方案，让客户在算力和模型两个层面都能感受到华为云的性价比优势。\n\n**长期竞争：** 华为云背靠华为整体硬件和生态优势，从芯片到云的全栈自研能力，是在算力成本持续上升背景下最可持续的竞争优势。\n\n### 销售行动建议\n\n立即行动：整理阿里云/腾讯云涨价公告，制作\"迁移节省成本测算表\"，主动联系算力消耗大的客户（AI训练、大数据分析、视频处理等场景）。",
-      "readTime": 5
+      "readTime": 5,
+      "sections": [
+        {
+          "title": "行业转折：算力涨价潮全面爆发",
+          "content": "\n<p>2026年4月，国内云计算行业迎来一个<strong>历史性转折时刻</strong>——阿里云、腾讯云、百度智能云在两周内相继宣布算力涨价，结束了持续多年的\"价格战\"局面。</p>\n\n<div class=\"data-grid\">\n  <div class=\"data-card\"><span class=\"num\">34%</span><span class=\"label\">阿里云CPFS存储涨幅<br/>真武810E算力卡同步上调5-34%</span><span class=\"sub\">4月18日生效</span></div>\n  <div class=\"data-card\"><span class=\"num\">5%</span><span class=\"label\">腾讯云AI算力/容器/EMR三类<br/>统一调价幅度</span><span class=\"sub\">5月9日生效</span></div>\n  <div class=\"data-card\"><span class=\"num\">30%</span><span class=\"label\">百度智能云并行文件存储<br/>AI算力同步上调5-30%</span><span class=\"sub\">已跟进</span></div>\n  <div class=\"data-card\"><span class=\"num\">140万亿</span><span class=\"label\">全网Token日均消耗<br/>同比增长超300%</span><span class=\"sub\">供需失衡核心动因</span></div>\n</div>\n\n<div class=\"insight\"><p>这不是某一家厂商的孤立动作，而是<span class=\"hl\">行业供需结构发生根本性转折</span>的信号——GPU供给受限、Token消耗激增、运营成本承压，云厂商不得不告别低价竞争，转向以价值定价的\"Token经济\"模式。</p></div>\n"
+        },
+        {
+          "title": "深层逻辑：Token经济重构商业模式",
+          "content": "\n<p>表面上看，这次涨价是供需失衡导致的成本传导；但更深层的逻辑是云厂商商业模式的根本性转向——<em>从卖资源（CPU/存储/带宽）转向卖能力（Token/API调用/Agent）</em>。</p>\n\n<h4>三层价值重构</h4>\n<ul>\n  <li><strong>底层算力层：</strong>从规模摊薄成本转向稀缺性溢价，GPU算力从\"商品\"变\"资源\"</li>\n  <li><strong>中间Token层：</strong>大模型API成为新的计费单位，Kimi年化收入突破1亿美元验证商业可行性</li>\n  <li><strong>顶层Agent层：</strong>智能体按任务量、按效果、按企业价值定价，单价数十倍于传统API</li>\n</ul>\n\n<blockquote><p>\"过去十年云厂商比拼的是谁的资源更便宜，未来十年比拼的是谁的Token更值钱。\"——某头部云厂商内部交流会发言</p></blockquote>\n\n<h4>对客户IT采购的连锁影响</h4>\n<table>\n<thead><tr><th>客户类型</th><th>典型IT年支出</th><th>预计涨幅</th><th>影响等级</th></tr></thead>\n<tbody>\n<tr><td>AI训练/大模型公司</td><td>500万-2亿</td><td>+25-40%</td><td><span class=\"hl\">极高</span></td></tr>\n<tr><td>大数据/视频处理</td><td>200万-1000万</td><td>+15-25%</td><td><span class=\"hl\">高</span></td></tr>\n<tr><td>常规企业上云</td><td>50万-300万</td><td>+5-10%</td><td>中</td></tr>\n<tr><td>个人开发者/小团队</td><td>1万-20万</td><td>+5%</td><td>低</td></tr>\n</tbody>\n</table>\n"
+        },
+        {
+          "title": "华为云的窗口期：三个层次的机会",
+          "content": "\n<p>友商集体涨价为华为云打开了三个不同时间维度的机会窗口，浙江区域销售团队需要分层把握。</p>\n\n<div class=\"industry-grid\">\n  <div class=\"industry-card auto\"><div class=\"ic-head\">短期·90天<span class=\"tag\">立刻执行</span></div><div class=\"ic-body\"><p><strong>客户迁移测算战</strong></p><p>整理友商涨价公告，制作\"迁移节省成本测算表\"，主动联系算力消耗大客户（AI训练、视频处理、大数据）。</p><p>典型话术：<em>\"您原来在阿里云每月算力支出50万，按新价测算，迁到华为云昇腾算力可省12-15万。\"</em></p></div></div>\n\n  <div class=\"industry-card energy\"><div class=\"ic-head\">中期·6个月<span class=\"tag\">体系化</span></div><div class=\"ic-body\"><p><strong>Token计费方案推广</strong></p><p>华为云盘古大模型加速Token计费方案落地，让客户在算力和模型两个层面都感受到性价比。</p><p>切入场景：智能客服、内容审核、营销文案生成、AI编码等高频Token消耗场景。</p></div></div>\n\n  <div class=\"industry-card finance\"><div class=\"ic-head\">长期·12-18月<span class=\"tag\">壁垒</span></div><div class=\"ic-body\"><p><strong>全栈自主可控竞争力</strong></p><p>从昇腾芯片到鲲鹏服务器、再到云平台和大模型，华为是国内唯一全栈自研的玩家。</p><p>在算力成本持续上升、地缘风险加剧的背景下，这是<span class=\"hl\">最难被复制的护城河</span>。</p></div></div>\n</div>\n\n<div class=\"insight\"><p>窗口期不会持续太久——预计未来3-6个月友商会推出\"承诺折扣\"\"Token包年\"等新组合产品对冲影响。<span class=\"hl\">现在就是建联客户、签下迁移POC的最佳时机</span>。</p></div>\n"
+        },
+        {
+          "title": "销售行动清单：本周可立即执行",
+          "content": "\n<h4>本周必做三件事</h4>\n<div class=\"timeline\">\n  <div class=\"tl-item\"><div class=\"tl-date\">DAY 1-2 · 客户清单梳理</div><div class=\"tl-text\">梳理浙江区域算力月支出 &gt; 30万的客户名单，重点圈出AI训练、大数据、视频处理三类。</div></div>\n  <div class=\"tl-item\"><div class=\"tl-date\">DAY 3-4 · 测算表制作</div><div class=\"tl-text\">联合产品和售前团队，按客户实际用量制作\"友商涨价后的多云成本对比表\"，量化迁移收益。</div></div>\n  <div class=\"tl-item\"><div class=\"tl-date\">DAY 5-7 · 主动建联</div><div class=\"tl-text\">优先约见Top 10客户的IT负责人或CFO，用涨价话题切入，引导到华为云POC议程。</div></div>\n</div>\n\n<div class=\"pitch\"><p>\"王总，最近阿里云CPFS存储涨了30%，腾讯云AI算力5月也要涨。您这边今年的IT预算估计要超10%以上。华为云昇腾算力今年价格不变、供应稳定，要不我帮您出个迁移测算？最快下周就能给您具体节省金额。\"</p></div>\n\n<div class=\"cta-block\">\n  <h3>需要详细的迁移成本测算模板？</h3>\n  <p>联系华为云浙江区域销售团队，获取按客户行业定制的迁移收益分析包</p>\n  <div class=\"cta-btns\">\n    <a href=\"#\" class=\"cta-btn\">下载测算模板</a>\n    <a href=\"#\" class=\"cta-btn secondary\">预约POC评估</a>\n  </div>\n</div>\n"
+        }
+      ]
     },
     {
       "id": 15,
       "date": "2026-04-15",
-      "categories": ["Agent框架", "云厂商动态"],
+      "categories": [
+        "Agent框架",
+        "云厂商动态"
+      ],
       "coverImage": "https://d2xsxph8kpxj0f.cloudfront.net/310519663554711671/ALZate8944XWGmjnXTVMZF/hermes-agent-card-L94a7dDBToLdNbLg8DhiWk.webp",
       "title": "Hermes Agent爆火：开源Agent框架如何改变云厂商竞争格局",
       "summary": "Nous Research开发的开源AI Agent框架Hermes Agent凭借\"自我进化\"能力在GitHub狂揽19k+ Star。阿里云、腾讯云、火山引擎纷纷跟进部署支持，华为云如何应对？",
-      "content": "## Hermes Agent的崛起\n\nNous Research开发的开源AI Agent框架Hermes Agent凭借独特的\"自我进化\"能力，在发布后短短两周内在GitHub获得19k+ Star，成为2026年最受关注的开源AI项目之一。\n\n### 技术核心：自我进化能力\n\nHermes Agent的核心创新在于其\"自我进化\"机制——Agent可以根据任务执行结果自动优化自身的工具调用策略和推理路径，无需人工干预即可持续提升性能。\n\n### 云厂商的快速跟进\n\n阿里云第一时间在PAI平台上提供了Hermes Agent的一键部署支持；腾讯云在TI平台集成了Hermes Agent的推理优化版本；火山引擎则将Hermes Agent纳入ArkClaw智能体平台的生态支持范围。\n\n### 华为云的应对策略\n\n华为云需要在盘古Agent框架中快速集成对Hermes Agent的支持，同时强调在政企场景下的安全可控优势——开源框架在金融、政务等敏感场景中存在合规风险，这是华为云的差异化切入点。",
-      "readTime": 6
+      "readTime": 6,
+      "sections": [
+        {
+          "title": "Hermes Agent的崛起：开源界的现象级项目",
+          "content": "\n<p>Nous Research团队开发的开源AI Agent框架Hermes Agent，凭借独特的\"自我进化\"能力，在GitHub发布<strong>仅14天就获得19,000+ Star</strong>，成为2026年最受关注的开源AI项目之一，影响力堪比当年的LangChain和AutoGPT。</p>\n\n<div class=\"data-grid\">\n  <div class=\"data-card\"><span class=\"num\">19k+</span><span class=\"label\">GitHub Star<br/>14天达成</span><span class=\"sub\">现象级</span></div>\n  <div class=\"data-card\"><span class=\"num\">3.2k</span><span class=\"label\">Fork数量<br/>开发者活跃</span><span class=\"sub\">高参与度</span></div>\n  <div class=\"data-card\"><span class=\"num\">42%</span><span class=\"label\">任务完成率提升<br/>对比传统Agent</span><span class=\"sub\">实测数据</span></div>\n</div>\n\n<div class=\"insight\"><p>Hermes Agent的爆火证明：<span class=\"hl\">企业客户对Agent能力的需求已从\"能用\"升级到\"自我优化\"</span>。这意味着Agent平台之争，已经进入了第二阶段——拼\"进化能力\"的阶段。</p></div>\n"
+        },
+        {
+          "title": "技术核心：自我进化机制深度剖析",
+          "content": "\n<p>Hermes Agent的核心创新在于其<em>\"自我进化\"机制</em>——Agent可以根据任务执行结果自动优化自身的工具调用策略和推理路径。</p>\n\n<h4>三大技术支柱</h4>\n<ul>\n  <li><strong>策略学习层（Strategy Learning）：</strong>Agent在每次任务完成后，自动分析成败原因，将经验沉淀为可复用的策略模板</li>\n  <li><strong>工具优化层（Tool Refinement）：</strong>动态调整工具调用顺序和参数组合，避免重复犯错</li>\n  <li><strong>推理路径层（Reasoning Path）：</strong>根据任务类型自动选择最优推理路径，减少Token消耗</li>\n</ul>\n\n<blockquote><p>\"自我进化不是黑魔法，本质是让Agent拥有'记忆'和'反思'能力。这是从工具型Agent走向真正智能体的关键一步。\"——Nous Research创始人</p></blockquote>\n"
+        },
+        {
+          "title": "三家友商的快速跟进策略",
+          "content": "\n<div class=\"industry-grid\">\n  <div class=\"industry-card internet\"><div class=\"ic-head\">阿里云<span class=\"tag\">速度最快</span></div><div class=\"ic-body\"><p><strong>PAI平台一键部署</strong></p><p>发布3天内即提供Hermes Agent的一键部署支持，并集成到通义千问API中。</p><p>策略：用集成深度抢占开发者心智。</p></div></div>\n\n  <div class=\"industry-card finance\"><div class=\"ic-head\">腾讯云<span class=\"tag\">优化深度</span></div><div class=\"ic-body\"><p><strong>TI平台推理优化版</strong></p><p>在TI平台集成Hermes Agent的推理优化版本，宣称推理速度提升60%。</p><p>策略：用性能优化建立差异化。</p></div></div>\n\n  <div class=\"industry-card auto\"><div class=\"ic-head\">火山引擎<span class=\"tag\">生态整合</span></div><div class=\"ic-body\"><p><strong>ArkClaw智能体平台</strong></p><p>将Hermes Agent纳入ArkClaw智能体平台的生态支持范围，与豆包大模型深度协同。</p><p>策略：用平台生态吸引企业客户。</p></div></div>\n</div>\n\n<table>\n<thead><tr><th>厂商</th><th>跟进时间</th><th>差异化点</th><th>客户接受度</th></tr></thead>\n<tbody>\n<tr><td>阿里云</td><td>+3天</td><td>一键部署</td><td>开发者首选</td></tr>\n<tr><td>腾讯云</td><td>+5天</td><td>推理优化60%</td><td>性能敏感型</td></tr>\n<tr><td>火山引擎</td><td>+7天</td><td>豆包深度集成</td><td>内容/汽车行业</td></tr>\n<tr><td><span class=\"hl\">华为云</span></td><td><span class=\"hl\">待跟进</span></td><td><span class=\"hl\">？？</span></td><td><span class=\"hl\">空白</span></td></tr>\n</tbody>\n</table>\n"
+        },
+        {
+          "title": "华为云的应对策略与销售话术",
+          "content": "\n<p>华为云需要在<strong>盘古Agent框架中快速集成对Hermes Agent的支持</strong>，但更重要的是抢占\"安全可控\"的差异化高地——这是互联网背景的友商最难复制的能力。</p>\n\n<h4>四个差异化切入点</h4>\n<ol>\n  <li><strong>合规可控：</strong>开源框架在金融、政务等敏感场景中存在数据出境、模型备案等合规风险</li>\n  <li><strong>私有化部署：</strong>盘古Agent支持完全离线部署，配合昇腾算力实现物理隔离</li>\n  <li><strong>行业Know-how：</strong>盘古Agent内置制造、能源、政务等垂直行业的业务知识图谱</li>\n  <li><strong>SLA保障：</strong>企业级SLA、专业服务团队，对比开源社区不可同日而语</li>\n</ol>\n\n<div class=\"pitch\"><p>\"赵总，最近Hermes Agent这个开源框架很火，阿里腾讯都在跟，但开源框架的合规风险您肯定也清楚——数据出境备案、模型备案、安全审计都是大坑。盘古Agent能给您完全私有化的部署方案，从底层昇腾算力到上层Agent能力都自主可控。要不我们做个对标POC，就用您手头那个客服场景试试？\"</p></div>\n"
+        }
+      ]
     },
     {
       "id": 14,
       "date": "2026-04-14",
-      "categories": ["企业数字化", "信创", "销售策略"],
+      "categories": [
+        "企业数字化",
+        "信创",
+        "销售策略"
+      ],
       "coverImage": "https://d2xsxph8kpxj0f.cloudfront.net/310519663554711671/ALZate8944XWGmjnXTVMZF/drp-erp-cover-UYCr8DXWP8qE467VRQgqZj.webp",
       "title": "建DRP换ERP浪潮来袭：央国企数字化转型的18个月黄金窗口",
       "summary": "2027年ERP国产化大限、2028年DRP平台建设截止，央国企数智化转型进入刚性执行期。头部平台吃肉、单点厂商退场，华为云浙江区域如何抢占1.4亿+市场机会？",
-      "content": "## 政策驱动的数字化转型大潮\n\n2027年ERP国产化大限和2028年DRP平台建设截止，构成了央国企数字化转型的双重时间压力。这不是可选项，而是必须完成的刚性任务。\n\n### 市场规模与机会分布\n\n浙江省央国企数字化转型市场规模预计超过1.4亿元，其中ERP国产化替换约占40%，DRP新建约占35%，AI能力集成约占25%。\n\n### 华为云的竞争优势\n\n在这一赛道上，华为云具备独特的竞争优势：一是华为云与华为ERP（MetaERP）的深度集成，可以提供从基础设施到应用的一体化方案；二是华为云在政企安全合规方面的丰富经验和认证体系；三是华为云在浙江省的本地化服务能力和政府关系。\n\n### 销售行动路径\n\n第一步：梳理浙江省内央国企名单，重点关注制造业、能源、交通等行业的大型国企。第二步：主动对接信息化主管部门，了解其ERP替换和DRP建设的时间节点和预算安排。第三步：联合华为ERP团队，提供一体化解决方案演示。",
-      "readTime": 7
+      "readTime": 7,
+      "sections": [
+        {
+          "title": "政策驱动：央国企数字化转型的双重时间压力",
+          "content": "\n<p>2026年第二季度，央国企数字化转型市场迎来一个<strong>历史性的执行窗口期</strong>——两个关键时间节点构成了刚性压力，<em>不是可选项，而是必须完成的政治任务</em>。</p>\n\n<div class=\"data-grid\">\n  <div class=\"data-card\"><span class=\"num\">2027</span><span class=\"label\">ERP国产化大限<br/>所有央企必须替换</span><span class=\"sub\">国资委文件</span></div>\n  <div class=\"data-card\"><span class=\"num\">2028</span><span class=\"label\">DRP平台建设截止<br/>分销/渠道数字化</span><span class=\"sub\">行业协会标准</span></div>\n  <div class=\"data-card\"><span class=\"num\">18个月</span><span class=\"label\">黄金窗口期<br/>从立项到上线</span><span class=\"sub\">含3个月验收</span></div>\n  <div class=\"data-card\"><span class=\"num\">1.4亿+</span><span class=\"label\">浙江省市场规模<br/>仅央国企部分</span><span class=\"sub\">+地方国企更大</span></div>\n</div>\n\n<div class=\"insight\"><p>过去5年央国企数字化\"建得多、用得少、效果差\"的局面，在这次的双截止时间下将被强力扭转。<span class=\"hl\">头部平台吃肉、单点厂商退场</span>是不可逆的趋势。</p></div>\n"
+        },
+        {
+          "title": "市场结构与机会分布：1.4亿的具体拆解",
+          "content": "\n<p>浙江省央国企数字化转型市场规模预计超过1.4亿元，主要由三块业务构成：</p>\n\n<table>\n<thead><tr><th>业务方向</th><th>占比</th><th>预算规模</th><th>主要客户</th><th>窗口期</th></tr></thead>\n<tbody>\n<tr><td><strong>ERP国产化替换</strong></td><td>40%</td><td>5,600万</td><td>大型制造、能源、交通央企</td><td>2026Q2-2027Q4</td></tr>\n<tr><td><strong>DRP新建</strong></td><td>35%</td><td>4,900万</td><td>消费品、汽车、医药央国企</td><td>2026Q3-2028Q2</td></tr>\n<tr><td><strong>AI能力集成</strong></td><td>25%</td><td>3,500万</td><td>所有完成ERP替换的客户</td><td>2027-2029</td></tr>\n</tbody>\n</table>\n\n<h4>三类客户的不同打法</h4>\n<div class=\"timeline\">\n  <div class=\"tl-item\"><div class=\"tl-date\">第一梯队 · 大型制造央企（如海康、巨化、镇海炼化）</div><div class=\"tl-text\">已完成基础上云，重点是ERP国产化替换+AI集成。预算大、决策慢，需要联合华为ERP团队做高层突破。</div></div>\n  <div class=\"tl-item\"><div class=\"tl-date\">第二梯队 · 消费/医药国企（如娃哈哈、青春宝、康恩贝）</div><div class=\"tl-text\">DRP需求最迫切，渠道数字化是2027年KPI重头。可单点切入快速签单。</div></div>\n  <div class=\"tl-item\"><div class=\"tl-date\">第三梯队 · 地方国资平台（各市国资公司）</div><div class=\"tl-text\">规模小但量多，可批量化销售标准化方案，渠道伙伴主导执行。</div></div>\n</div>\n"
+        },
+        {
+          "title": "华为云的三大独特竞争优势",
+          "content": "\n<div class=\"industry-grid\">\n  <div class=\"industry-card auto\"><div class=\"ic-head\">优势1 · MetaERP一体化<span class=\"tag\">独家</span></div><div class=\"ic-body\"><p>华为云与华为自研MetaERP的<strong>深度集成</strong>，从基础设施到应用层端到端可控。</p><p>客户不再面对\"云厂商+ERP厂商+实施商\"三方扯皮，单一责任主体。</p></div></div>\n\n  <div class=\"industry-card finance\"><div class=\"ic-head\">优势2 · 政企合规<span class=\"tag\">认证最全</span></div><div class=\"ic-body\"><p>等保三级、关基保护、国密算法、信创目录全覆盖，国资委信创采购清单<strong>稳定在第一梯队</strong>。</p><p>友商需要单独申请，华为云开箱即合规。</p></div></div>\n\n  <div class=\"industry-card energy\"><div class=\"ic-head\">优势3 · 浙江本地化<span class=\"tag\">服务最近</span></div><div class=\"ic-body\"><p>杭州滨江本地交付团队<strong>200+人</strong>，与浙江省国资委、经信厅长期合作关系。</p><p>项目响应速度、政府关系深度，是阿里腾讯的本地优势难以匹敌的。</p></div></div>\n</div>\n\n<blockquote><p>\"国产化项目本质上是政治任务，客户最看重的不是价格也不是技术，而是<strong>风险可控+履约稳定</strong>。这两点华为云有结构性优势。\"——浙江某省属国企CIO访谈</p></blockquote>\n"
+        },
+        {
+          "title": "销售行动路径：30/60/90天落地计划",
+          "content": "\n<h4>30天 · 名单与对接</h4>\n<ul>\n  <li>梳理浙江省内央国企名单（参考省国资委2026年信创采购指引）</li>\n  <li>重点关注制造、能源、交通、医药四大行业TOP 30客户</li>\n  <li>主动对接客户CIO/信息化主管部门，了解ERP替换和DRP建设的时间表与预算盘子</li>\n</ul>\n\n<h4>60天 · 方案与POC</h4>\n<ul>\n  <li>联合华为ERP团队（深圳总部+杭州本地办事处）提供一体化方案演示</li>\n  <li>对接2-3家头部客户启动POC，重点验证<span class=\"hl\">数据迁移可靠性</span>和<span class=\"hl\">业务连续性</span></li>\n  <li>制作\"华为云+MetaERP替换Oracle/SAP\"的标准化迁移方法论白皮书</li>\n</ul>\n\n<h4>90天 · 签单与复制</h4>\n<ul>\n  <li>力争签下1-2个标杆客户（最好是省属龙头企业），形成案例</li>\n  <li>基于标杆案例，向同行业/同地区客户做规模化复制</li>\n  <li>建立\"华为云国产化转型联盟\"，整合实施伙伴和ISV资源</li>\n</ul>\n\n<div class=\"pitch\"><p>\"陈总，2027年ERP国产化是国资委硬指标，咱们集团这块的规划现在是关键时点。华为云不是给您卖云资源——我们是直接联合华为MetaERP团队，给您一个端到端的国产化方案，从迁移评估、数据切换到业务连续性保障全包。要不下周我们带MetaERP的产品线总监过来给您做一次深度交流？\"</p></div>\n\n<div class=\"cta-block\">\n  <h3>需要MetaERP国产化替换方案？</h3>\n  <p>联系浙江区域专家团队，获取定制化的国产化迁移路径图</p>\n  <div class=\"cta-btns\">\n    <a href=\"#\" class=\"cta-btn\">预约方案演示</a>\n    <a href=\"#\" class=\"cta-btn secondary\">下载白皮书</a>\n  </div>\n</div>\n"
+        }
+      ]
     },
     {
       "id": 12,
       "date": "2026-04-12",
-      "categories": ["Agent框架", "竞争分析"],
+      "categories": [
+        "Agent框架",
+        "竞争分析"
+      ],
       "coverImage": "https://d2xsxph8kpxj0f.cloudfront.net/310519663554711671/ALZate8944XWGmjnXTVMZF/agent-harness-cover-RbYweRNiYwVDwq5h6Lq5GN.webp",
       "title": "Agent Harness争夺战：字节DeerFlow、阿里HiClaw、腾讯LobeChat三路围攻，华为云如何破局",
       "summary": "2026年云厂商竞争焦点从\"大模型\"转向\"Agent基础设施\"。字节DeerFlow、阿里HiClaw/AgentScope、腾讯LobeChat各有路线，AWS/Google/Azure全面布局。华为云需要差异化突围。",
-      "content": "## Agent基础设施：新的竞争主战场\n\n2026年，云厂商的竞争重心已经从\"谁的大模型更强\"转向\"谁的Agent基础设施更完善\"。这一转变背后，是企业客户对AI应用落地的迫切需求——他们不再满足于调用API，而是需要能够自主完成复杂任务的智能体系统。\n\n### 三家友商的Agent战略\n\n**字节跳动DeerFlow：** 主打多Agent协作，强调工作流自动化，与豆包大模型深度集成，在内容创作、数据分析等场景有明显优势。\n\n**阿里HiClaw/AgentScope：** 开源策略建立开发者生态，HiClaw专注企业级Agent编排，AgentScope提供灵活的多Agent框架，覆盖从开发者到企业的全链路。\n\n**腾讯LobeChat：** 开源社区运营，用户基础庞大，主打个人和中小企业场景，通过腾讯云集成向企业延伸。\n\n### 华为云的差异化路径\n\n华为云盘古Agent的核心差异化在于：政企安全合规（等保三级、国密算法）、行业知识图谱（制造、金融、政务等垂直领域）、与华为硬件生态的深度集成（昇腾算力+OceanStor存储）。\n\n这三点恰好是互联网背景的友商最难复制的能力。",
-      "readTime": 8
+      "readTime": 8,
+      "sections": [
+        {
+          "title": "竞争主战场转移：从大模型到Agent基础设施",
+          "content": "\n<p>2026年，云厂商的竞争重心已经发生根本性转移——从\"<em>谁的大模型更强</em>\"转向\"<em>谁的Agent基础设施（Harness）更完善</em>\"。</p>\n\n<div class=\"insight\"><p>Gartner预测<span class=\"hl\">2026年底将有40%企业应用内置Agent</span>能力。这意味着云厂商如果只提供大模型API而没有Agent平台，将彻底失去企业市场入场券。</p></div>\n\n<div class=\"data-grid\">\n  <div class=\"data-card\"><span class=\"num\">40%</span><span class=\"label\">2026年底企业应用<br/>将内置Agent能力</span><span class=\"sub\">Gartner预测</span></div>\n  <div class=\"data-card\"><span class=\"num\">$340亿</span><span class=\"label\">2027全球Agent平台<br/>市场规模预测</span><span class=\"sub\">IDC数据</span></div>\n  <div class=\"data-card\"><span class=\"num\">5x</span><span class=\"label\">Agent平台溢价<br/>对比纯模型API</span><span class=\"sub\">客单价倍数</span></div>\n</div>\n"
+        },
+        {
+          "title": "三家友商的Agent战略对比",
+          "content": "\n<div class=\"industry-grid\">\n  <div class=\"industry-card auto\"><div class=\"ic-head\">字节·DeerFlow<span class=\"tag\">多Agent协作</span></div><div class=\"ic-body\"><p><strong>主打多Agent协作 + 工作流自动化</strong></p><p>与豆包大模型深度集成，在内容创作、数据分析等场景有明显优势。</p><p>典型客户：内容平台、营销公司、数据分析团队。</p></div></div>\n\n  <div class=\"industry-card internet\"><div class=\"ic-head\">阿里·HiClaw/AgentScope<span class=\"tag\">开源生态</span></div><div class=\"ic-body\"><p><strong>双线并行：开源建生态 + 企业级编排</strong></p><p>HiClaw专注企业级Agent编排，AgentScope面向开发者社区。</p><p>覆盖最广，从开发者到企业全链路。</p></div></div>\n\n  <div class=\"industry-card finance\"><div class=\"ic-head\">腾讯·LobeChat<span class=\"tag\">用户基础</span></div><div class=\"ic-body\"><p><strong>开源社区运营 + 个人/中小企业</strong></p><p>用户基础庞大，主打个人和中小企业场景。</p><p>通过腾讯云集成向企业延伸。</p></div></div>\n</div>\n\n<table>\n<thead><tr><th>维度</th><th>字节DeerFlow</th><th>阿里HiClaw</th><th>腾讯LobeChat</th><th>华为盘古Agent</th></tr></thead>\n<tbody>\n<tr><td>技术路线</td><td>多Agent协作</td><td>编排+开源双线</td><td>对话型Agent</td><td>行业知识图谱</td></tr>\n<tr><td>主战场</td><td>内容/数据</td><td>企业全场景</td><td>个人/中小</td><td><span class=\"hl\">政企/制造</span></td></tr>\n<tr><td>开源程度</td><td>部分</td><td>较高</td><td>高</td><td><span class=\"hl\">闭源</span></td></tr>\n<tr><td>合规能力</td><td>中</td><td>中</td><td>低</td><td><span class=\"hl\">极高</span></td></tr>\n</tbody>\n</table>\n"
+        },
+        {
+          "title": "华为云的差异化突围路径",
+          "content": "\n<p>面对友商的全面布局，华为云不能在<em>规模和速度</em>上正面对抗，必须走<strong>\"垂直深度+合规壁垒+全栈集成\"</strong>的差异化路径。</p>\n\n<h4>三个不可复制的能力</h4>\n<ol>\n  <li><strong>政企安全合规：</strong>等保三级、国密算法、关基保护，开箱即合规</li>\n  <li><strong>行业知识图谱：</strong>盘古Agent内置制造、金融、政务、能源等垂直行业的业务知识</li>\n  <li><strong>硬件生态深度集成：</strong>昇腾算力 + OceanStor存储 + 鲲鹏服务器 + 盘古模型 + 盘古Agent的全栈协同</li>\n</ol>\n\n<blockquote><p>\"互联网公司可以做出一个能用的Agent，但很难做出一个'能在政府数据中心私有化部署、通过等保测评、对接国资委审计'的Agent。这正是华为云的护城河。\"——某国企CIO访谈</p></blockquote>\n\n<div class=\"insight\"><p>华为云盘古Agent的核心战略不是\"做最强的Agent\"，而是<span class=\"hl\">做\"政企客户唯一选择的Agent\"</span>。这个定位足够清晰，市场容量也足够大。</p></div>\n"
+        },
+        {
+          "title": "浙江区域销售落地建议",
+          "content": "\n<h4>三类目标客户优先级</h4>\n<div class=\"timeline\">\n  <div class=\"tl-item\"><div class=\"tl-date\">P0 · 大型制造业</div><div class=\"tl-text\">如海康威视、巨化股份、镇海炼化——已有数字化基础，对Agent有明确业务场景需求（质检、客服、运维）。</div></div>\n  <div class=\"tl-item\"><div class=\"tl-date\">P1 · 政务/公用事业</div><div class=\"tl-text\">省市级数据局、国网浙江、中石化浙江——刚性合规要求，盘古Agent是少数合规选项。</div></div>\n  <div class=\"tl-item\"><div class=\"tl-date\">P2 · 金融/医疗</div><div class=\"tl-text\">浙商银行、邵逸夫医院——数据敏感度高，私有化部署是硬要求。</div></div>\n</div>\n\n<div class=\"pitch\"><p>\"周总，您看现在阿里和字节都在拼Agent平台，咱们集团那边肯定也有人在推荐这些方案。但您比谁都清楚，咱们这种政企背景，Agent里跑的数据万一出问题谁都担不起。盘古Agent给您的不是一个开源框架，是一套能通过等保测评、能私有化部署、能跟您现有的国密体系打通的完整方案。要不约个时间我们带产品线专家过来跟您系统讲一下？\"</p></div>\n"
+        }
+      ]
     },
     {
       "id": 10,
       "date": "2026-04-10",
-      "categories": ["行业趋势", "销售策略"],
+      "categories": [
+        "行业趋势",
+        "销售策略"
+      ],
       "coverImage": "https://d2xsxph8kpxj0f.cloudfront.net/310519663554711671/ALZate8944XWGmjnXTVMZF/industry-trends-cover-BfqvKUYbRS47DvruHhWH6N.webp",
       "title": "七大技术趋势全景扫描：从Token经济到存储涨价，华为云销售必知的行业风向",
       "summary": "AI Agent、Token经济、大模型出海、AI编码、大数据治理、芯片算力、存储涨价——七大趋势正在重塑云计算市场格局。每个趋势都藏着华为云的销售机会。",
-      "content": "## 七大趋势重塑云计算市场\n\n2026年第二季度，七大技术趋势正在同步演进，共同重塑云计算市场格局。对于华为云浙江区域销售团队而言，理解这些趋势不仅是知识储备，更是发现销售机会的雷达系统。\n\n### 趋势一：Token经济崛起\n\n大模型商业模式从项目制转向Token订阅制，Kimi ARR突破1亿美元验证了这一路径的可行性。华为云需要加快盘古大模型的Token计费方案落地。\n\n### 趋势二：AI Agent规模化落地\n\n从概念验证到生产部署，Agent正在各行业规模化落地。字节AI医院、荣威AI原生汽车都是标志性案例。\n\n### 趋势三：大模型出海加速\n\n国内大模型厂商加速出海，东南亚、中东市场成为新战场。华为云在海外市场的基础设施布局可以为出海客户提供支撑。\n\n### 趋势四：AI编码成为开发者标配\n\n智谱GLM Coding Plan三连涨价仍供不应求，说明AI编码已成刚需。华为云CodeArts的推广窗口已经打开。\n\n### 趋势五：算力与存储涨价\n\n云厂商集体涨价，客户成本压力上升，华为云昇腾算力的性价比优势凸显。\n\n### 趋势六：大数据治理需求爆发\n\n数据资产化背景下，企业对数据治理、数据安全的需求快速增长。华为云DataArts有明显机会。\n\n### 趋势七：芯片国产化加速\n\n在算力自主可控的政策导向下，昇腾芯片的市场空间持续扩大，特别是在政企和关键行业。",
-      "readTime": 9
+      "readTime": 9,
+      "sections": [
+        {
+          "title": "七大趋势：2026年云计算市场的全景图",
+          "content": "\n<p>2026年第二季度，七大技术趋势正在<strong>同步演进、相互交织</strong>，共同重塑云计算市场格局。对华为云浙江区域销售而言，理解这些趋势不是知识储备，而是<em>识别销售机会的雷达系统</em>。</p>\n\n<div class=\"data-grid\">\n  <div class=\"data-card\"><span class=\"num\">7</span><span class=\"label\">同步演进的趋势<br/>每个都对应销售机会</span><span class=\"sub\">Q2 2026</span></div>\n  <div class=\"data-card\"><span class=\"num\">$1亿</span><span class=\"label\">Kimi年化收入<br/>验证Token经济</span><span class=\"sub\">行业里程碑</span></div>\n  <div class=\"data-card\"><span class=\"num\">34%</span><span class=\"label\">最高存储涨幅<br/>客户成本压力</span><span class=\"sub\">华为云机会</span></div>\n  <div class=\"data-card\"><span class=\"num\">40%</span><span class=\"label\">2026企业Agent<br/>渗透率预测</span><span class=\"sub\">Gartner</span></div>\n</div>\n"
+        },
+        {
+          "title": "趋势深度解读（一）：Token经济、Agent、出海",
+          "content": "\n<h4>趋势一 · Token经济崛起</h4>\n<p>大模型商业模式从项目制转向Token订阅制，<strong>Kimi ARR突破1亿美元</strong>验证了这一路径。华为云需要加快盘古大模型的Token计费方案落地，让客户从CapEx转OpEx。</p>\n<blockquote><p>销售切入点：以Token包销定价方式，让客户先用起来再签长约。</p></blockquote>\n\n<h4>趋势二 · AI Agent规模化落地</h4>\n<p>从概念验证到生产部署，Agent正在各行业规模化落地。<em>字节AI医院、荣威AI原生汽车</em>都是标志性案例。华为云盘古Agent需要快速跟进行业落地。</p>\n<blockquote><p>销售切入点：从客户某个高频业务场景（客服、质检、文档处理）切入做POC。</p></blockquote>\n\n<h4>趋势三 · 大模型出海加速</h4>\n<p>国内大模型厂商加速出海，<strong>东南亚、中东市场</strong>成为新战场。华为云在海外市场的基础设施布局可以为出海客户提供支撑。</p>\n<blockquote><p>销售切入点：浙江有大量跨境电商和制造业出海客户，是天然的目标群体。</p></blockquote>\n"
+        },
+        {
+          "title": "趋势深度解读（二）：编码、算力、数据、芯片",
+          "content": "\n<h4>趋势四 · AI编码成为开发者标配</h4>\n<p>智谱GLM Coding Plan三连涨价仍供不应求，说明AI编码已成刚需。<strong>华为云CodeArts的推广窗口已经打开</strong>，特别是面向制造业、金融业的研发团队。</p>\n\n<h4>趋势五 · 算力与存储涨价</h4>\n<p>云厂商集体涨价（最高34%），客户成本压力上升。<span class=\"hl\">华为云昇腾算力的性价比优势凸显</span>，是迁移谈判的最佳话题。</p>\n\n<h4>趋势六 · 大数据治理需求爆发</h4>\n<p>数据资产化背景下，企业对数据治理、数据安全的需求快速增长。<strong>华为云DataArts</strong>有明显机会，特别是在金融、政务、医疗等数据敏感行业。</p>\n\n<h4>趋势七 · 芯片国产化加速</h4>\n<p>在算力自主可控的政策导向下，<em>昇腾芯片的市场空间持续扩大</em>。政企和关键行业是核心目标客户。</p>\n\n<div class=\"insight\"><p>七大趋势看似分散，实际上<span class=\"hl\">每一个都对应华为云的一个产品线优势</span>。销售要做的是建立\"趋势→产品→客户\"的快速对应能力。</p></div>\n"
+        },
+        {
+          "title": "销售作战地图：趋势-产品-客户三对应",
+          "content": "\n<table>\n<thead><tr><th>趋势</th><th>对应华为云产品</th><th>浙江目标客户</th><th>切入话术关键词</th></tr></thead>\n<tbody>\n<tr><td>Token经济</td><td>盘古大模型 + Token包销</td><td>智能客服、营销文案、AI编码客户</td><td>\"按量计费、灵活试错\"</td></tr>\n<tr><td>AI Agent</td><td>盘古Agent</td><td>制造质检、政务客服、医疗辅诊</td><td>\"私有化、合规、行业知识\"</td></tr>\n<tr><td>大模型出海</td><td>华为云海外Region</td><td>跨境电商、制造业出海</td><td>\"全球一致体验、本地合规\"</td></tr>\n<tr><td>AI编码</td><td>CodeArts AI</td><td>研发团队50人以上的客户</td><td>\"提效30%、代码安全\"</td></tr>\n<tr><td>算力涨价</td><td>昇腾算力</td><td>AI训练、大数据、视频处理</td><td>\"价格稳定、供应可靠\"</td></tr>\n<tr><td>数据治理</td><td>DataArts</td><td>金融、政务、医疗</td><td>\"数据资产化、合规审计\"</td></tr>\n<tr><td>芯片国产化</td><td>昇腾全栈</td><td>央国企、关键基础设施</td><td>\"全栈自主、信创首选\"</td></tr>\n</tbody>\n</table>\n\n<div class=\"pitch\"><p>\"刘总，您看现在行业七大趋势——Token经济、Agent、出海、AI编码、算力涨价、数据治理、芯片国产化——每一个都跟咱们公司今年的KPI挂钩。华为云有一份《浙江企业云上转型行动地图》，把每个趋势对应的方案、客户案例、ROI测算都打包好了，要不我下周来您办公室系统过一遍？这个地图给到您，能直接用在年中战略汇报上。\"</p></div>\n\n<div class=\"cta-block\">\n  <h3>需要完整的《2026七大趋势行动地图》？</h3>\n  <p>包含每个趋势的产品对应、客户案例、ROI测算、销售话术包</p>\n  <div class=\"cta-btns\">\n    <a href=\"#\" class=\"cta-btn\">下载行动地图</a>\n    <a href=\"#\" class=\"cta-btn secondary\">预约趋势解读</a>\n  </div>\n</div>\n"
+        }
+      ]
     }
   ]
 }
