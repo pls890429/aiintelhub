@@ -137,7 +137,7 @@ textarea{resize:none;}
   <!-- Q2 -->
   <section id="screen-q2" class="screen">
     <div class="card">
-      <h2 class="section-title">02. 贵司目前的 AI 算力（Token）月均消耗量级？</h2>
+      <h2 class="section-title">02. 贵企每月在 AI（API调用 / 订阅 / Token 消耗）上的投入金额大概是？</h2>
       <p class="section-desc">（单选）评估企业 AI 应用的规模化程度</p>
       <div class="chips chips-1" id="q2-chips"></div>
       <button class="btn btn-primary" id="q2-next" style="margin-top:32px;" onclick="nextQ2()" disabled>下一题</button>
@@ -173,25 +173,22 @@ textarea{resize:none;}
         —
       </div>
       
-      <div class="mbti-solution">
-        <div class="mbti-solution-title">华为云专属建议</div>
-        <div id="mbti-solution-text">—</div>
-      </div>
+
     </div>
 
     <button class="btn btn-outline" onclick="restart()">重新评估</button>
 
     <!-- 联系表单 -->
     <div class="contact-block">
-      <h3>获取定制化解决方案</h3>
-      <p>留下联系方式，华为云技术专家将基于您的诊断结果，提供针对性的 AI 落地咨询与优化方案。</p>
+      <h3>关注 AI 进展 · 保持连接</h3>
+      <p>留下您的联系方式，我们将就 AI 落地的共同话题与您进一步探讨。</p>
       <div class="contact-fields">
-        <input type="text" id="ct-name" placeholder="姓名 / 称呼" />
-        <input type="text" id="ct-company" placeholder="公司名称" />
-        <input type="text" id="ct-contact" placeholder="联系电话 / 邮箱" />
+        <input type="text" id="ct-name" placeholder="姓名（必填）" />
+        <input type="text" id="ct-company" placeholder="公司名称（必填）" />
+        <input type="text" id="ct-contact" placeholder="联系电话或邮箱（必填其一）" />
       </div>
-      <button class="btn btn-primary" style="margin-top:20px;" onclick="submitContact()">提交咨询需求</button>
-      <div class="contact-ok" id="ct-ok">提交成功，华为云专家将尽快与您联系。</div>
+      <button class="btn btn-primary" style="margin-top:20px;" onclick="submitContact()">提交</button>
+      <div class="contact-ok" id="ct-ok">感谢关注，我们将适时与您联系。</div>
     </div>
 
     <div class="footer">
@@ -213,12 +210,12 @@ const Q1 = [
   {k:'agent',t:'Agent 与业务流程自动化'},
 ];
 const Q2 = [
-  {k:'none',   t:'尚未规模化使用'},
-  {k:'lt1w',   t:'月 1 万 Token 以内（初步尝鲜）'},
-  {k:'1_10w',  t:'1 万 ~ 10 万（小范围试点）'},
-  {k:'10_100w',t:'10 万 ~ 100 万（部门级应用）'},
-  {k:'gt100w', t:'100 万 Token 以上（企业级规模化）'},
-  {k:'unknown',t:'缺乏统计 / 暂不清楚'},
+  {k:'none',   t:'基本没有投入'},
+  {k:'lt1w',   t:'月 1 万元以内'},
+  {k:'1_10w',  t:'1 万 ~ 10 万元 / 月'},
+  {k:'10_50w', t:'10 万 ~ 50 万元 / 月'},
+  {k:'gt50w',  t:'50 万元以上 / 月'},
+  {k:'unknown',t:'不清楚 / 未统计'},
 ];
 const Q3 = [
   {k:'roi',  t:'投入产出比 (ROI) 难以量化'},
@@ -285,38 +282,34 @@ function nextQ3(){ S.q3other = document.getElementById('q3-other').value.trim();
 
 /* ===== MBTI风画像算法 ===== */
 const PERSONAS = {
-  DEEP:{
+    DEEP:{
     bg:'bg-DEEP', code:'DEEP', title:'AI 全栈实践者',
-    tags:['多场景覆盖','Token消耗大户','技术驱动'],
-    desc:'贵司在 AI 领域的探索已进入深水区，场景覆盖广且算力消耗庞大。你们不仅是行业技术的先驱者，更是「别人家的 AI 团队」。随着规模化应用的深入，如何从「用起来」向「用得精」转变，是当前的核心命题。',
-    solution:'建议下一阶段聚焦于「ROI 量化与全域治理」。华为云提供企业级 AI 算力底座与精细化运营看板，助您实现算力成本的透明化管控，并确保核心业务数据的绝对安全。'
+    tags:['多场景覆盖','投入规模大','技术驱动'],
+    desc:'贵司在 AI 领域的探索已进入深水区，场景覆盖广且投入庞大。你们不仅是行业技术的先驱者，更是「别人家的 AI 团队」。随着规模化应用的深入，如何从「用起来」向「用得精」转变，是当前的核心命题。'
   },
-  LOST:{
+    LOST:{
     bg:'bg-LOST', code:'LOST', title:'ROI 纠结派',
     tags:['痛点密集','选型焦虑','成本敏感'],
-    desc:'贵司已经开启了 AI 转型之路，但正深陷于「合规、成本、选型、落地效果」的复杂博弈中。这恰恰说明你们在做真正的业务变革——因为只有深入业务，才会遇到真实的阻力。',
-    solution:'破局的关键在于「解耦与专业外脑支持」。华为云盘古大模型及专家咨询服务，可为您提供从场景规划、合规对标到模型选型的端到端落地方案，让您不再孤军奋战。'
+    desc:'贵司已经开启了 AI 转型之路，但正深陷于「合规、成本、选型、落地效果」的复杂博弈中。这恰恰说明你们在做真正的业务变革——因为只有深入业务，才会遇到真实的阻力。'
   },
-  WAIT:{
+    WAIT:{
     bg:'bg-WAIT', code:'WAIT', title:'谨慎试水者',
     tags:['小范围试点','效能观望','稳健策略'],
-    desc:'贵司对待 AI 展现出极具理性的商业克制，目前处于单点场景试水阶段。稳健的策略规避了试错成本，但如果迟迟不进行纵深探索，可能会在不知不觉中丧失技术代差带来的竞争优势。',
-    solution:'建议选择 1-2 个高价值核心场景进行深度打透。借助华为云开箱即用的 AI 行业解决方案（如智能客服、研发提效等），低门槛实现业务闭环，快速验证 AI 带来的真实增量。'
+    desc:'贵司对待 AI 展现出极具理性的商业克制，目前处于单点场景试水阶段。稳健的策略规避了试错成本，但如果迟迟不进行纵深探索，可能会在不知不觉中丧失技术代差带来的竞争优势。'
   },
-  ZERO:{
+    ZERO:{
     bg:'bg-ZERO', code:'ZERO', title:'AI 观察员',
-    tags:['尚未入局','零消耗','需求酝酿'],
-    desc:'贵司目前对 AI 仍保持远距离观察姿态。在当前技术周期下，行业头部企业已通过 AI 重塑生产力。与其担忧被技术浪潮颠覆，不如立刻寻找一个最痛的业务切口，迈出数字化的第一步。',
-    solution:'起步无需庞大预算。华为云提供轻量化的 AI 体验服务与初创企业扶持计划，帮助您以极低的成本快速构建首个 AI 助手，轻松跨越技术门槛。'
+    tags:['尚未入局','投入为零','需求酝酿'],
+    desc:'贵司目前对 AI 仍保持远距离观察姿态。在当前技术周期下，行业头部企业已通过 AI 重塑生产力。与其担忧被技术浪潮颠覆，不如立刻寻找一个最痛的业务切口，迈出数字化的第一步。'
   }
 };
 
 function compute(){
   const scenes = S.q1.filter(x=>x!=='none').length + (S.q1other?1:0);
-  const tokenScore = {none:0, lt1w:1, '1_10w':2, '10_100w':3, gt100w:4, unknown:1}[S.q2] ?? 0;
+  const tokenScore = {none:0, lt1w:1, '1_10w':2, '10_50w':3, gt50w:4, unknown:1}[S.q2] ?? 0;
   const worries = S.q3.length + (S.q3other?1:0);
   const depth = scenes + tokenScore;
-  const isBlank = (S.q2==='none' || S.q2==='lt1w') && scenes===0;
+  const isBlank = (S.q2==='none' || S.q2==='lt1w' || !S.q2) && scenes===0;
 
   let key;
   if(isBlank && depth<=1)          key='ZERO';
@@ -332,7 +325,7 @@ function compute(){
   document.getElementById('mbti-title').innerText = p.title;
   document.getElementById('mbti-tags').innerHTML = p.tags.map(t=>`<span class="mbti-tag">${t}</span>`).join('');
   document.getElementById('mbti-desc').innerText = p.desc;
-  document.getElementById('mbti-solution-text').innerText = p.solution;
+
 
   const rec = {ts:new Date().toISOString(), answers:{q1:S.q1,q1other:S.q1other,q2:S.q2,q3:S.q3,q3other:S.q3other}, persona:key, personaTitle:p.title};
   try{
