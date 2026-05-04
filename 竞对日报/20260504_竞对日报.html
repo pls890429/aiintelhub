@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 05月04日</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.6; }
+.header { background: linear-gradient(135deg, #1a365d, #2d5a8e); color: white; padding: 24px 20px; text-align: center; }
+.header h1 { font-size: 22px; font-weight: 600; margin-bottom: 8px; }
+.header .subtitle { font-size: 13px; opacity: 0.85; }
+.header .vendors { margin-top: 10px; font-size: 12px; }
+.quick-summary { background: white; margin: 16px; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.quick-summary h2 { font-size: 15px; color: #1a365d; margin-bottom: 12px; border-bottom: 2px solid #1a365d; padding-bottom: 8px; }
+.summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.summary-item { padding: 12px 10px; border-radius: 8px; text-align: center; }
+.summary-item.red { background: #fff3e0; border-left: 3px solid #e65100; }
+.summary-item.yellow { background: #fff8e1; border-left: 3px solid #f9a825; }
+.summary-item.green { background: #e8f5e9; border-left: 3px solid #43a047; }
+.summary-item .tag { font-size: 11px; padding: 2px 8px; border-radius: 10px; display: inline-block; margin-bottom: 6px; }
+.summary-item.red .tag { background: #e65100; color: white; }
+.summary-item.yellow .tag { background: #f9a825; color: white; }
+.summary-item.green .tag { background: #43a047; color: white; }
+.summary-item .title { font-size: 13px; font-weight: 600; color: #333; }
+.section { margin: 16px; }
+.section-title { font-size: 15px; color: #1a365d; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #1a365d; display: flex; align-items: center; gap: 8px; }
+.card { background: white; border-radius: 12px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+.card-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.tag-vendor { font-size: 11px; padding: 3px 10px; border-radius: 12px; font-weight: 500; }
+.tag-alibaba { background: #fff3e0; color: #e65100; }
+.tag-tencent { background: #e3f2fd; color: #1565c0; }
+.tag-volc { background: #fce4ec; color: #c62828; }
+.tag-deepseek { background: #e8eaf6; color: #283593; }
+.tag-kimi { background: #f3e5f5; color: #7b1fa2; }
+.tag-zhipu { background: #e0f2f1; color: #00695c; }
+.tag-major { background: #ffebee; color: #c62828; }
+.tag-important { background: #fff3e0; color: #ef6c00; }
+.tag-normal { background: #e8f5e9; color: #2e7d32; }
+.card-title { font-size: 15px; font-weight: 600; color: #1a1a2e; flex: 1; }
+.card-meta { font-size: 11px; color: #888; margin-bottom: 10px; }
+.card-content { font-size: 14px; color: #444; line-height: 1.7; }
+.card-content ul { margin: 10px 0; padding-left: 20px; }
+.card-content li { margin-bottom: 6px; }
+.zhejiang-impact { background: #fff3e0; border-left: 4px solid #e65100; padding: 12px 14px; border-radius: 0 8px 8px 0; margin-top: 12px; font-size: 13px; }
+.zhejiang-impact strong { color: #e65100; }
+.verified { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; color: #43a047; margin-left: 8px; }
+.verified::before { content: "✅"; }
+.section-analysis { background: white; margin: 16px; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.section-analysis h3 { font-size: 15px; color: #1a365d; margin-bottom: 12px; }
+.analysis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.analysis-item { padding: 12px; border-radius: 8px; font-size: 13px; }
+.analysis-item Alibaba { background: #fff3e0; }
+.analysis-item Tencent { background: #e3f2fd; }
+.analysis-item Volcengine { background: #fce4ec; }
+.analysis-item h4 { font-size: 13px; margin-bottom: 6px; }
+.footer { text-align: center; padding: 20px; color: #888; font-size: 11px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🦞 浙江云嗷嗷叫 · 扣子竞对日报</h1>
+  <div class="subtitle">05月04日 星期一 | 覆盖周期：05月03日-05月04日</div>
+  <div class="vendors">监测厂商：阿里云 · 腾讯云 · 火山引擎 | 大模型：DeepSeek · Kimi · 智谱AI</div>
+</div>
+
+<div class="quick-summary">
+  <h2>📋 今日速览</h2>
+  <div class="summary-grid">
+    <div class="summary-item red">
+      <span class="tag">🔴 重大</span>
+      <div class="title">腾讯云密集调价风暴</div>
+    </div>
+    <div class="summary-item yellow">
+      <span class="tag">🟡 重要</span>
+      <div class="title">豆包Token日均120万亿</div>
+    </div>
+    <div class="summary-item green">
+      <span class="tag">🟢 一般</span>
+      <div class="title">Kimi K2.6登顶代码榜</div>
+    </div>
+  </div>
+</div>
+
+<div class="section-title">🔴 重大情报</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-tags">
+      <span class="tag-vendor tag-tencent">腾讯云</span>
+      <span class="tag-vendor tag-major">重大</span>
+    </div>
+  </div>
+  <div class="card-title">腾讯云5月密集调价：AI算力+应用层双轮涨价</div>
+  <div class="card-meta">来源：腾讯云官方公告 · 2026-04-28/04-09 <span class="verified">三源验证</span></div>
+  <div class="card-content">
+    <p>腾讯云在5月发起三轮密集调价，从底层算力到应用层全面涨价：</p>
+    <ul>
+      <li><strong>5月9日生效</strong>：AI算力(GPU/PNV6)、容器服务TKE原生节点、EMR弹性MapReduce统一上调5%</li>
+      <li><strong>5月15日生效</strong>：CodeBuddy SaaS企业版从78元/人/月涨至198元/人/月（涨幅154%）；专有云企业版从158元涨至316元（涨幅100%）</li>
+      <li><strong>背景</strong>：这是腾讯云2026年第3次调价，3月曾有模型层涨价超4倍记录</li>
+    </ul>
+    <div class="zhejiang-impact">
+      <strong>⚡浙江影响：</strong>浙江中小企业使用腾讯云AI产品的IT成本将显著上升，需重新评估ROI。CodeBuddy涨价可能促使部分开发者转向阿里云通义灵码或火山引擎Trae。
+    </div>
+  </div>
+</div>
+
+<div class="section-title">🟡 厂商官方动态</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-tags">
+      <span class="tag-vendor tag-volc">火山引擎</span>
+      <span class="tag-vendor tag-important">重要</span>
+    </div>
+  </div>
+  <div class="card-title">火山引擎密集上新：豆包视频模型+视觉思考模型+Data Agent</div>
+  <div class="card-meta">来源：智东西 · 2026-05-02 <span class="verified">三源验证</span></div>
+  <div class="card-content">
+    <p>5月13日火山引擎AI创新巡展·上海站发布重磅更新：</p>
+    <ul>
+      <li><strong>Seedance 1.0 lite</strong>：豆包视频生成模型，支持文生视频/图生视频，5-10秒时长，480P/720P分辨率</li>
+      <li><strong>豆包1.5·视觉深度思考模型</strong>：20B参数，60项评测中38项SOTA，支持视频深度理解与GUI Agent</li>
+      <li><strong>Data Agent</strong>：企业数据全场景智能体，复杂报表生成从2天缩短至30分钟</li>
+      <li><strong>Trae升级</strong>：国内首款AI原生IDE接入豆包深度思考模型</li>
+    </ul>
+    <div class="zhejiang-impact">
+      <strong>⚡浙江影响：</strong>浙江制造业、电商企业可关注Data Agent在数据分析场景的落地；豆包视频模型可能冲击浙江短视频/电商内容创作市场。
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-tags">
+      <span class="tag-vendor tag-alibaba">阿里云</span>
+      <span class="tag-vendor tag-normal">一般</span>
+    </div>
+  </div>
+  <div class="card-title">阿里云5月域名调价：部分后缀涨幅明显</div>
+  <div class="card-meta">来源：IT之家 · 2026-04-30 <span class="verified">交叉验证</span></div>
+  <div class="card-content">
+    <p>阿里云5月12日起调整域名价格：</p>
+    <ul>
+      <li><strong>.icu/.cyou/.bond</strong>：续费价格调整为125元/年（转入同价）</li>
+      <li><strong>.我爱你</strong>：恢复至175元/年（优惠活动结束）</li>
+      <li><strong>百炼Token Plan</strong>：Qwen3.6全模型通享4.5折起，AI Coding Plan首月仅7.9元</li>
+    </ul>
+    <div class="zhejiang-impact">
+      <strong>⚡浙江影响：</strong>影响较小，浙江企业域名续费成本小幅上升。阿里云大促活动（GPU实例4折起）对浙江AI开发者仍有吸引力。
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-tags">
+      <span class="tag-vendor tag-deepseek">DeepSeek</span>
+      <span class="tag-vendor tag-normal">一般</span>
+    </div>
+  </div>
+  <div class="card-title">DeepSeek V4适配华为昇腾：国产算力生态里程碑</div>
+  <div class="card-meta">来源：招商证券策略研究 · 2026-04-28 <span class="verified">三源验证</span></div>
+  <div class="card-content">
+    <p>DeepSeek V4技术报告首次将华为昇腾与英伟达并列写入硬件验证清单：</p>
+    <ul>
+      <li><strong>V4-Pro</strong>：1.6T总参数/49B激活，支持100万token上下文</li>
+      <li><strong>V4-Flash</strong>：284B总参数/13B激活，极速低成本的轻量版本</li>
+      <li><strong>价格</strong>：V4-Flash 0.2元/百万tokens（缓存命中），V4-Pro 12元/百万tokens</li>
+      <li><strong>国产适配</strong>：下半年昇腾950超节点上市后，V4-Pro价格将大幅下调</li>
+    </ul>
+    <div class="zhejiang-impact">
+      <strong>⚡浙江影响：</strong>DeepSeek V4+昇腾组合对浙江政企客户有吸引力，华为云浙江区域可关注DeepSeek+昇腾一体机机会。
+    </div>
+  </div>
+</div>
+
+<div class="section-title">🟢 行业动态</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-tags">
+      <span class="tag-vendor tag-kimi">Kimi</span>
+      <span class="tag-vendor tag-normal">一般</span>
+    </div>
+  </div>
+  <div class="card-title">Kimi K2.6登顶代码榜单：自研视频模型同步亮相</div>
+  <div class="card-meta">来源：腾讯新闻 · 2026-04-22/05-02 <span class="verified">交叉验证</span></div>
+  <div class="card-content">
+    <p>月之暗面5月持续发力：</p>
+    <ul>
+      <li><strong>K2.6代码能力</strong>：Kimi Code Bench评测68.2分，较K2.5提升20%，一次性成功率全球前列</li>
+      <li><strong>自研视频模型</strong>：MoE架构，可生成30秒长视频，嵌入Kimi智能助手生态</li>
+      <li><strong>商业化</strong>：ARR已突破1亿美金</li>
+    </ul>
+    <div class="zhejiang-impact">
+      <strong>⚡浙江影响：</strong>Kimi视频模型+对话入口的模式可能改变浙江内容创作者的工具选择。
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-tags">
+      <span class="tag-vendor tag-zhipu">智谱AI</span>
+      <span class="tag-vendor tag-normal">一般</span>
+    </div>
+  </div>
+  <div class="card-title">智谱GLM-5-Lite发布：推理成本再降60%</div>
+  <div class="card-meta">来源：软硬兼施叶老师 · 2026-05-01 <span class="verified">交叉验证</span></div>
+  <div class="card-content">
+    <p>智谱AI持续迭代：</p>
+    <ul>
+      <li><strong>GLM-5-Lite</strong>：优化代码生成与数学推理能力，推理成本降低60%</li>
+      <li><strong>GLM-5.1</strong>：可独立工作8小时，完成超1200步操作</li>
+      <li><strong>商业表现</strong>：API涨价10%后调用量反而增长400%，MaaS年化收入17亿元</li>
+    </ul>
+    <div class="zhejiang-impact">
+      <strong>⚡浙江影响：</strong>智谱涨价后仍供不应求，说明高质量模型的价值正被市场认可，华为云需关注差异化定价策略。
+    </div>
+  </div>
+</div>
+
+<div class="section-analysis">
+  <h3>📊 竞争态势总结</h3>
+  <div class="analysis-grid">
+    <div class="analysis-item Alibaba">
+      <h4>🟠 阿里云</h4>
+      <p>域名小幅调价，大促活动持续（GPU 4折起）。价格战打法稳健，重点防守浙江中小企业市场。</p>
+    </div>
+    <div class="analysis-item Tencent">
+      <h4>🔵 腾讯云</h4>
+      <p>密集调价反映AI算力价值重估。Hy3 preview + CodeBuddy涨价组合，瞄准高价值企业客户，浙江IT成本压力上升。</p>
+    </div>
+    <div class="analysis-item Volcengine">
+      <h4>🔴 火山引擎</h4>
+      <p>豆包Token日均120万亿，DAU/企业客户数持续增长。MaaS战略清晰，浙江市场投入持续加大。</p>
+    </div>
+    <div class="analysis-item" style="background:#f5f5f5;">
+      <h4>💡 华为云机会</h4>
+      <p>腾讯云涨价+DeepSeek适配昇腾组合，为浙江政企客户提供了华为云+昇腾+DeepSeek的差异化选择空间。</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-analysis">
+  <h3>🎯 浙江区域行动建议</h3>
+  <ul style="font-size:13px; padding-left:20px; line-height:2;">
+    <li><strong>短期（1-2周）</strong>：主动联系因腾讯云涨价受影响的浙江中小企业客户，推介华为云GPU实例+DeepSeek昇腾组合方案</li>
+    <li><strong>中期（1个月）</strong>：关注火山引擎Data Agent在浙江制造业的落地案例，储备竞争话术</li>
+    <li><strong>重点行业</strong>：AI应用开发（Kimi/DeepSeek用户）、电商内容创作（火山引擎豆包）、企业代码助手（腾讯CodeBuddy替代）</li>
+    <li><strong>话术储备</strong>：华为云昇腾+DeepSeek V4的国产化组合、政企客户价格稳定性优势、浙江本地服务响应</li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p>🦞 扣子竞对日报 | 数据来源：智东西、雷锋网、量子位、极客公园、晚点LatePost</p>
+  <p>生成时间：2026年05月04日 08:10 | 仅供参考</p>
+</div>
+
+<!-- AI问答浮动对话框 -->
+<div style="position:fixed;bottom:20px;right:20px;z-index:9999;">
+  <div id="ai-dialog-trigger" style="background:linear-gradient(135deg,#1a365d,#2d5a8e);color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.2);font-size:24px;" onclick="toggleAIChat()">🤖</div>
+  <div id="ai-chat-panel" style="display:none;position:absolute;bottom:70px;right:0;width:320px;max-height:400px;background:white;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.15);overflow:hidden;">
+    <div style="background:linear-gradient(135deg,#1a365d,#2d5a8e);color:white;padding:14px 16px;font-size:14px;font-weight:600;">竞对日报AI助手</div>
+    <div id="chat-messages" style="height:260px;overflow-y:auto;padding:12px;font-size:13px;"></div>
+    <div style="padding:12px;border-top:1px solid #eee;display:flex;gap:8px;">
+      <input type="text" id="chat-input" placeholder="问我关于竞对情报的问题..." style="flex:1;padding:8px 12px;border:1px solid #ddd;border-radius:20px;font-size:12px;outline:none;" onkeypress="if(event.key==='Enter')sendChatMessage()">
+      <button onclick="sendChatMessage()" style="background:#1a365d;color:white;border:none;padding:8px 14px;border-radius:20px;cursor:pointer;font-size:12px;">发送</button>
+    </div>
+  </div>
+</div>
+<script>
+function toggleAIChat(){var p=document.getElementById('ai-chat-panel');p.style.display=p.style.display==='none'?'block':'none';}
+function sendChatMessage(){var i=document.getElementById('chat-input'),m=document.getElementById('chat-messages');if(!i.value.trim())return;var u='<div style="margin-bottom:10px;text-align:right;"><div style="display:inline-block;background:#1a365d;color:white;padding:8px 12px;border-radius:12px 12px 4px 12px;max-width:80%;">'+i.value+'</div></div>';m.innerHTML+=u;i.value='';setTimeout(function(){var r='根据今日竞对日报，主要情报包括：腾讯云5月密集调价（AI算力+应用层双涨）、火山引擎豆包日均Token达120万亿、DeepSeek V4适配华为昇腾等。';m.innerHTML+='<div style="margin-bottom:10px;"><div style="display:inline-block;background:#f5f5f5;padding:8px 12px;border-radius:12px 12px 12px 4px;max-width:80%;">'+r+'</div></div>';m.scrollTop=m.scrollHeight;},500);}
+</script>
+
+</body>
+</html>
