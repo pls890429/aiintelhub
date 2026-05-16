@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>CRH380B 漫画版 - 小小高铁迷</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            text-align: center;
+            color: #e0e0ff;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .scene {
+            background: linear-gradient(to bottom, #87CEEB 0%, #B0E0E6 60%, #90EE90 60%, #7FCD7F 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            height: 400px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        .clouds {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .cloud {
+            position: absolute;
+            background: #fff;
+            border-radius: 50px;
+            opacity: 0.9;
+        }
+        .cloud::before, .cloud::after {
+            content: '';
+            position: absolute;
+            background: #fff;
+            border-radius: 50px;
+        }
+        .cloud1 {
+            width: 80px; height: 30px;
+            top: 40px; left: -100px;
+            animation: floatCloud 20s linear infinite;
+        }
+        .cloud1::before { width: 40px; height: 40px; top: -20px; left: 10px; }
+        .cloud1::after { width: 50px; height: 35px; top: -15px; right: 10px; }
+        .cloud2 {
+            width: 60px; height: 25px;
+            top: 80px; left: -80px;
+            animation: floatCloud 25s linear infinite;
+            animation-delay: -5s;
+        }
+        .cloud2::before { width: 35px; height: 35px; top: -18px; left: 8px; }
+        .cloud2::after { width: 40px; height: 30px; top: -12px; right: 8px; }
+        @keyframes floatCloud {
+            0% { left: -100px; }
+            100% { left: calc(100% + 50px); }
+        }
+        .ground {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 35%;
+            background: linear-gradient(to bottom, #7FCD7F 0%, #228B22 100%);
+        }
+        .track {
+            position: absolute;
+            bottom: 60px;
+            width: 100%;
+            height: 20px;
+            background: #555;
+        }
+        .track::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #888;
+            transform: translateY(-50%);
+        }
+        .rail {
+            position: absolute;
+            bottom: 55px;
+            width: 100%;
+            height: 8px;
+            background: #8B4513;
+        }
+        .train-wrapper {
+            position: absolute;
+            bottom: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .train-wrapper:active {
+            transform: translateX(-50%) scale(0.95);
+        }
+        .train-wrapper.rumble {
+            animation: rumble 0.15s ease-in-out 3;
+        }
+        @keyframes rumble {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            25% { transform: translateX(-50%) translateY(-2px); }
+            75% { transform: translateX(-50%) translateY(2px); }
+        }
+        .smoke {
+            position: absolute;
+            top: -30px;
+            right: -20px;
+            pointer-events: none;
+        }
+        .smoke-particle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: rgba(255,255,255,0.6);
+            border-radius: 50%;
+            animation: smokeUp 2s ease-out forwards;
+        }
+        @keyframes smokeUp {
+            0% { opacity: 0.8; transform: scale(0.5) translateY(0); }
+            100% { opacity: 0; transform: scale(2) translateY(-80px) translateX(30px); }
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .btn-whistle { background: linear-gradient(45deg, #FF6B6B, #FF8E53); }
+        .btn-run { background: linear-gradient(45deg, #4ECDC4, #44A08D); }
+        .btn-night { background: linear-gradient(45deg, #667eea, #764ba2); }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+        .btn:active { transform: translateY(0); }
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .card-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .card h3 {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        .card p {
+            color: #666;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        .speed-display {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(0,0,0,0.7);
+            color: #0f0;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-family: monospace;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .eye-blink {
+            animation: blink 3s infinite;
+        }
+        @keyframes blink {
+            0%, 90%, 100% { transform: scaleY(1); }
+            95% { transform: scaleY(0.1); }
+        }
+        .night-mode .scene {
+            background: linear-gradient(to bottom, #0a0a2e 0%, #1a1a3e 60%, #2d5016 60%, #1a3a0a 100%);
+        }
+        .night-mode .cloud { opacity: 0.3; }
+        .night-mode .speed-display { color: #ff0; }
+        .star {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: #fff;
+            border-radius: 50%;
+            animation: twinkle 2s infinite;
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+        .wheel-spin {
+            animation: spin 0.5s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .train-move {
+            animation: trainGo 3s ease-in-out;
+        }
+        @keyframes trainGo {
+            0% { transform: translateX(-50%) translateX(-200px); opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { transform: translateX(-50%) translateX(200px); opacity: 0; }
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 22px; }
+            .scene { height: 300px; }
+            .btn { padding: 10px 18px; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚄 CRH380B 和谐号漫画版</h1>
+        <p class="subtitle">点点小车车，看看会发生什么~</p>
+
+        <div class="scene" id="scene">
+            <div class="speed-display" id="speed">0 km/h</div>
+            <div class="clouds">
+                <div class="cloud cloud1"></div>
+                <div class="cloud cloud2"></div>
+            </div>
+            <div class="ground"></div>
+            <div class="rail"></div>
+            <div class="track"></div>
+            <div class="train-wrapper" id="train" onclick="whistle()">
+                <svg width="360" height="140" viewBox="0 0 360 140" id="trainSvg">
+                    <!-- CRH380B Q版漫画风格 -->
+                    <defs>
+                        <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#f5f5f5"/>
+                            <stop offset="100%" style="stop-color:#e0e0e0"/>
+                        </linearGradient>
+                        <linearGradient id="noseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#e0e0e0"/>
+                            <stop offset="100%" style="stop-color:#f5f5f5"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- 阴影 -->
+                    <ellipse cx="180" cy="132" rx="170" ry="8" fill="rgba(0,0,0,0.2)"/>
+
+                    <!-- 车身主体 -->
+                    <rect x="80" y="45" width="220" height="65" rx="8" fill="url(#bodyGrad)" stroke="#ccc" stroke-width="2"/>
+
+                    <!-- 流线型车头 -->
+                    <path d="M80 55 Q20 55 15 75 Q20 100 80 105 Z" fill="url(#noseGrad)" stroke="#ccc" stroke-width="2"/>
+
+                    <!-- 红色腰线 -->
+                    <rect x="15" y="82" width="280" height="6" rx="3" fill="#DC143C"/>
+
+                    <!-- 车窗 -->
+                    <rect x="95" y="55" width="35" height="20" rx="5" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
+                    <rect x="140" y="55" width="35" height="20" rx="5" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
+                    <rect x="185" y="55" width="35" height="20" rx="5" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
+                    <rect x="230" y="55" width="35" height="20" rx="5" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
+
+                    <!-- 车窗高光 -->
+                    <rect x="100" y="58" width="15" height="3" rx="1" fill="rgba(255,255,255,0.4)"/>
+                    <rect x="145" y="58" width="15" height="3" rx="1" fill="rgba(255,255,255,0.4)"/>
+                    <rect x="190" y="58" width="15" height="3" rx="1" fill="rgba(255,255,255,0.4)"/>
+                    <rect x="235" y="58" width="15" height="3" rx="1" fill="rgba(255,255,255,0.4)"/>
+
+                    <!-- 车头灯 -->
+                    <ellipse cx="28" cy="72" rx="10" ry="12" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+                    <ellipse cx="28" cy="72" rx="6" ry="8" fill="#FFFACD"/>
+                    <circle cx="30" cy="70" r="3" fill="#fff"/>
+
+                    <!-- 卡通眼睛（让车车有生命） -->
+                    <g id="eyes">
+                        <circle cx="45" cy="65" r="8" fill="white" stroke="#333" stroke-width="1.5"/>
+                        <circle cx="45" cy="65" r="5" fill="#333" class="eye-blink"/>
+                        <circle cx="47" cy="63" r="2" fill="white"/>
+                        <circle cx="62" cy="65" r="8" fill="white" stroke="#333" stroke-width="1.5"/>
+                        <circle cx="62" cy="65" r="5" fill="#333" class="eye-blink"/>
+                        <circle cx="64" cy="63" r="2" fill="white"/>
+                    </g>
+
+                    <!-- 微笑 -->
+                    <path d="M48 82 Q54 87 60 82" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+
+                    <!-- CRH380B 标识 -->
+                    <text x="280" y="75" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#DC143C">CRH380B</text>
+                    <text x="280" y="90" font-family="Arial, sans-serif" font-size="9" fill="#666">和谐号</text>
+
+                    <!-- 受电弓 -->
+                    <path d="M150 45 L140 30 L160 30 L150 45" fill="none" stroke="#666" stroke-width="2"/>
+                    <line x1="130" y1="30" x2="170" y2="30" stroke="#666" stroke-width="2"/>
+
+                    <!-- 车轮 -->
+                    <g id="wheels">
+                        <circle cx="100" cy="120" r="18" fill="#444" stroke="#222" stroke-width="3"/>
+                        <circle cx="100" cy="120" r="10" fill="#666"/>
+                        <circle cx="100" cy="120" r="4" fill="#999"/>
+                        <line x1="100" y1="102" x2="100" y2="138" stroke="#222" stroke-width="2"/>
+                        <line x1="82" y1="120" x2="118" y2="120" stroke="#222" stroke-width="2"/>
+
+                        <circle cx="160" cy="120" r="18" fill="#444" stroke="#222" stroke-width="3"/>
+                        <circle cx="160" cy="120" r="10" fill="#666"/>
+                        <circle cx="160" cy="120" r="4" fill="#999"/>
+                        <line x1="160" y1="102" x2="160" y2="138" stroke="#222" stroke-width="2"/>
+                        <line x1="142" y1="120" x2="178" y2="120" stroke="#222" stroke-width="2"/>
+
+                        <circle cx="220" cy="120" r="18" fill="#444" stroke="#222" stroke-width="3"/>
+                        <circle cx="220" cy="120" r="10" fill="#666"/>
+                        <circle cx="220" cy="120" r="4" fill="#999"/>
+                        <line x1="220" y1="102" x2="220" y2="138" stroke="#222" stroke-width="2"/>
+                        <line x1="202" y1="120" x2="238" y2="120" stroke="#222" stroke-width="2"/>
+
+                        <circle cx="280" cy="120" r="18" fill="#444" stroke="#222" stroke-width="3"/>
+                        <circle cx="280" cy="120" r="10" fill="#666"/>
+                        <circle cx="280" cy="120" r="4" fill="#999"/>
+                        <line x1="280" y1="102" x2="280" y2="138" stroke="#222" stroke-width="2"/>
+                        <line x1="262" y1="120" x2="298" y2="120" stroke="#222" stroke-width="2"/>
+                    </g>
+                </svg>
+                <div class="smoke" id="smoke"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-whistle" onclick="whistle()">🔔 鸣笛</button>
+            <button class="btn btn-run" onclick="toggleRun()">🚄 跑起来</button>
+            <button class="btn btn-night" onclick="toggleNight()">🌙 夜间模式</button>
+        </div>
+
+        <div class="info-cards">
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>最高时速</h3>
+                <p>380 km/h<br>中国高铁骄傲</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔌</div>
+                <h3>动力类型</h3>
+                <p>电力动车组<br>8节编组</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏭</div>
+                <h3>生产厂家</h3>
+                <p>唐山/长春客车<br>中德合作技术</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>外观特点</h3>
+                <p>流线型车头<br>红白经典配色</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let isRunning = false;
+        let isNight = false;
+        let runInterval;
+        let currentSpeed = 0;
+
+        function whistle() {
+            const train = document.getElementById('train');
+            const smoke = document.getElementById('smoke');
+            
+            // 震动效果
+            train.classList.add('rumble');
+            setTimeout(() => train.classList.remove('rumble'), 500);
+            
+            // 烟雾效果
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    const p = document.createElement('div');
+                    p.className = 'smoke-particle';
+                    p.style.left = (Math.random() * 20) + 'px';
+                    p.style.animationDelay = (Math.random() * 0.3) + 's';
+                    smoke.appendChild(p);
+                    setTimeout(() => p.remove(), 2000);
+                }, i * 100);
+            }
+        }
+
+        function toggleRun() {
+            const wheels = document.getElementById('wheels');
+            const train = document.getElementById('train');
+            const speedDisplay = document.getElementById('speed');
+            
+            if (isRunning) {
+                wheels.classList.remove('wheel-spin');
+                train.classList.remove('train-move');
+                clearInterval(runInterval);
+                currentSpeed = 0;
+                speedDisplay.textContent = '0 km/h';
+                isRunning = false;
+            } else {
+                wheels.classList.add('wheel-spin');
+                train.classList.add('train-move');
+                currentSpeed = 0;
+                runInterval = setInterval(() => {
+                    if (currentSpeed < 380) {
+                        currentSpeed += Math.floor(Math.random() * 20) + 10;
+                        if (currentSpeed > 380) currentSpeed = 380;
+                        speedDisplay.textContent = currentSpeed + ' km/h';
+                    }
+                }, 200);
+                setTimeout(() => {
+                    if (isRunning) {
+                        train.classList.remove('train-move');
+                        // 循环动画
+                        setInterval(() => {
+                            if (isRunning) {
+                                train.classList.remove('train-move');
+                                void train.offsetWidth; // 强制重绘
+                                train.classList.add('train-move');
+                            }
+                        }, 3000);
+                    }
+                }, 3000);
+                isRunning = true;
+            }
+        }
+
+        function toggleNight() {
+            const body = document.body;
+            const scene = document.getElementById('scene');
+            isNight = !isNight;
+            
+            if (isNight) {
+                body.classList.add('night-mode');
+                // 添加星星
+                for (let i = 0; i < 20; i++) {
+                    const star = document.createElement('div');
+                    star.className = 'star';
+                    star.style.left = Math.random() * 100 + '%';
+                    star.style.top = Math.random() * 50 + '%';
+                    star.style.animationDelay = Math.random() * 2 + 's';
+                    scene.appendChild(star);
+                }
+            } else {
+                body.classList.remove('night-mode');
+                document.querySelectorAll('.star').forEach(s => s.remove());
+            }
+        }
+
+        // 点击车身也可以互动
+        document.getElementById('trainSvg').addEventListener('click', (e) => {
+            e.stopPropagation();
+            whistle();
+        });
+    </script>
+</body>
+</html>
