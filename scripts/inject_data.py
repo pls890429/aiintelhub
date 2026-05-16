@@ -112,10 +112,25 @@ def build_us(reports):
     """构造老站 us 数组（扁平item列表）。把所有日报的所有item铺开，按日期降序，最新的在前。"""
     items_out = []
     item_id = 1
-    # 按日期降序遍历
     sorted_reports = sorted(reports, key=lambda r: r['date'], reverse=True)
     for rpt in sorted_reports:
-        for it in rpt['items']:
+        # 兼容新格式（reports.json）和旧格式（dailyReports）
+        items = rpt.get('items')
+        if items is None:
+            # 新格式：从 key_highlights 生成 items
+            items = []
+            for hl in rpt.get('key_highlights', []):
+                items.append({
+                    'vendor': rpt.get('vendor_tags', ['ai-hotspot'])[0] if rpt.get('vendor_tags') else 'ai-hotspot',
+                    'dimension': 'strategy',
+                    'title': hl,
+                    'detail': hl,
+                    'hwImplication': '关注竞品动态，及时跟进客户',
+                    'anxietyScript': '您好，近期友商有相关动作，建议您了解华为云最新方案',
+                    'date': rpt['date'],
+                    'categories': rpt.get('vendor_tags', []),
+                })
+        for it in items:
             vendor_str = vendor_to_str(it['vendor'])
             product = DIM_MAP.get(it['dimension'], it['dimension'])
             action_tag = urgency_to_action_tag(it.get('urgency', 'medium'), it['dimension'])
@@ -225,7 +240,7 @@ def main():
     with open(JSON_PATH, 'r') as f:
         data = json.load(f)
 
-    us_arr = build_us(data['dailyReports'])
+    us_arr = build_us(data.get('dailyReports') or data.get('reports', []))
     xr_arr = build_xr(data.get('hotspotArticles', []))
 
     us_js = to_js_literal(us_arr)
@@ -257,7 +272,8 @@ def main():
 
     # ===== 替换日报页硬编码的日期和核心研判 =====
     # 取最新一天的日报作为标题日期/核心研判源
-    latest = sorted(data['dailyReports'], key=lambda r: r['date'], reverse=True)[0]
+    reports = data.get('dailyReports') or data.get('reports', [])
+    latest = sorted(reports, key=lambda r: r['date'], reverse=True)[0]
     y, m, d = latest['date'].split('-')
     new_date_label = f"{y}年{int(m)}月{int(d)}日"
     new_subtitle = f"{new_date_label} · 追踪阿里云、腾讯云、火山引擎及大模型厂商最新动态 · 每天 8:00 自动更新"
