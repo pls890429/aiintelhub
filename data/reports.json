@@ -1,11 +1,39 @@
 {
   "reports": [
     {
+      "id": "20260518",
+      "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260518",
+      "date": "2026-05-18",
+      "weekday": "星期一",
+      "summary": "火山引擎Agent Plan发布 · Kimi WebBridge亮相 · 豆包付费引发算力讨论",
+      "vendor_tags": [
+        "火山引擎",
+        "Kimi",
+        "豆包",
+        "阿里云",
+        "DeepSeek"
+      ],
+      "key_highlights": [
+        "火山引擎发布Agent Plan，首个Agent套餐包搅局MaaS市场",
+        "Kimi发布WebBridge，让Agent像真人一样操作浏览器",
+        "豆包付费订阅引发行业讨论，Token经济学成焦点"
+      ],
+      "file": "20260518_竞对日报.html",
+      "url": "https://www.coze.cn/s/Wof-k1SxmK8/"
+    },
+    {
       "id": "20260517",
       "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260517",
       "date": "2026-05-17",
       "summary": "DeepSeek适配昇腾 · 豆包付费确认 · GLM-5.1登顶开源",
-      "vendor_tags": ["阿里云", "腾讯云", "火山引擎", "DeepSeek", "Kimi", "智谱AI"],
+      "vendor_tags": [
+        "阿里云",
+        "腾讯云",
+        "火山引擎",
+        "DeepSeek",
+        "Kimi",
+        "智谱AI"
+      ],
       "key_highlights": [
         "DeepSeek V4正式适配华为昇腾，黄仁勋称'可怕的结果'",
         "豆包付费订阅正式确认，68/200/500元三档定价",
@@ -18,7 +46,14 @@
       "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260515",
       "date": "2026-05-15",
       "summary": "DeepSeek 500亿天价融资 · Kimi 20亿美元融资 · 算力涨价潮持续",
-      "vendor_tags": ["阿里云", "腾讯云", "火山引擎", "DeepSeek", "Kimi", "智谱AI"],
+      "vendor_tags": [
+        "阿里云",
+        "腾讯云",
+        "火山引擎",
+        "DeepSeek",
+        "Kimi",
+        "智谱AI"
+      ],
       "key_highlights": [
         "DeepSeek 500亿天价融资启动，中国AI史上最大单笔融资",
         "Kimi完成20亿美元新融资，估值突破200亿美元",
