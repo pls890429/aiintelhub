@@ -1,6 +1,23 @@
 {
   "reports": [
     {
+      "id": "20260524",
+      "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260524",
+      "date": "20260524",
+      "summary": "DeepSeek API降价至1/4 + Harness团队对标Claude Code + 豆包月活3.45亿",
+      "vendor_tags": [
+        "DeepSeek",
+        "字节跳动",
+        "Kimi"
+      ],
+      "key_highlights": [
+        "DeepSeek API大降价，价格砍至1/4，V4 Pro不到国际同级1/10",
+        "DeepSeek Harness团队对标Claude Code，切入AI编程赛道",
+        "豆包月活3.45亿，GEO成企业新课题"
+      ],
+      "file": "20260524_竞对日报.html"
+    },
+    {
       "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260523",
       "date": "20260523",
       "summary": "DeepSeek 700亿融资落地 · 阿里云520峰会全栈Agent化 · 智谱GLM-5.1高速版400 tokens/s",
