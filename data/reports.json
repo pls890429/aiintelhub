@@ -1,140 +1,53 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260531</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:#f0f2f5;color:#333;line-height:1.6}
-.container{max-width:680px;margin:0 auto;background:#fff}
-
-/* 头部 */
-.header{background:linear-gradient(135deg,#1a365d,#2d5a8e);color:#fff;padding:28px 24px 22px;text-align:center}
-.header h1{font-size:20px;font-weight:700;letter-spacing:1px;margin-bottom:6px}
-.header .subtitle{font-size:13px;opacity:.85}
-.header .vendor-tags{margin-top:10px;display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
-.header .vendor-tags span{font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;color:#fff}
-.tag-ali{background:#FF6A00}
-.tag-tx{background:#00A4FF}
-.tag-hs{background:#0066FF}
-.tag-ds{background:#7C3AED}
-.tag-kimi{background:#EC4899}
-.tag-zhipu{background:#10B981}
-
-/* 今日速览 */
-.quick-section{padding:16px 18px;border-bottom:1px solid #eee}
-.quick-section h2{font-size:15px;font-weight:700;margin-bottom:10px;padding-left:10px;border-left:4px solid #e53e3e}
-.quick-item{padding:6px 0;font-size:14px;line-height:1.7}
-.quick-item .emoji{margin-right:4px}
-
-/* 分区 */
-.section{padding:16px 18px}
-.section-title{font-size:15px;font-weight:700;margin-bottom:12px;padding-bottom:6px;border-bottom:2px solid;display:flex;align-items:center;gap:6px}
-.section-title.red{color:#c62828;border-color:#c62828}
-.section-title.yellow{color:#e65100;border-color:#e65100}
-.section-title.green{color:#2e7d32;border-color:#2e7d32}
-
-/* 卡片 */
-.card{background:#fafafa;border-radius:8px;padding:14px 16px;margin-bottom:12px;border-left:4px solid #ddd}
-.card.red{border-left-color:#c62828}
-.card.yellow{border-left-color:#e65100}
-.card.green{border-left-color:#2e7d32}
-.card .card-tags{margin-bottom:6px}
-.card .card-tags span{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;color:#fff;margin-right:4px}
-.card .card-title{font-size:15px;font-weight:700;margin-bottom:6px}
-.card .card-meta{font-size:12px;color:#999;margin-bottom:8px}
-.card .card-body{font-size:14px;line-height:1.7;color:#444}
-.card .card-body p{margin-bottom:4px}
-.card .card-body ul{padding-left:18px;margin:4px 0}
-.card .card-body li{margin-bottom:3px}
-.card .impact{background:#fff3e0;border-radius:6px;padding:8px 12px;margin-top:8px;font-size:13px;color:#e65100;border-left:3px solid #ff9800}
-
-/* 态势总结 */
-.insight-section{background:linear-gradient(135deg,#1a365d,#2d5a8e);padding:18px;margin:0}
-.insight-section h2{font-size:15px;font-weight:700;color:#ffd54f;margin-bottom:10px}
-.insight-section ul{padding-left:18px}
-.insight-section li{font-size:14px;color:rgba(255,255,255,.9);line-height:1.8;margin-bottom:4px}
-.insight-section li strong{color:#ffd54f}
-
-/* 行动建议 */
-.action-section{background:#1a202c;padding:18px;margin:0}
-.action-section h2{font-size:15px;font-weight:700;color:#f6ad55;margin-bottom:10px}
-.action-section ul{padding-left:18px}
-.action-section li{font-size:14px;color:#e2e8f0;line-height:1.8;margin-bottom:4px}
-.action-section li strong{color:#ffd700}
-
-/* Footer */
-.footer{text-align:center;font-size:12px;color:#999;padding:14px;background:#fff;border-top:1px solid #eee}
-</style>
-</head>
-<body>
-<div class="container">
-
-<!-- 头部 -->
-<div class="header">
-  <h1>🦞 浙江云嗷嗷叫 · 扣子竞对日报</h1>
-  <div class="subtitle">20260531 星期日 · 覆盖过去24小时</div>
-  <div class="vendor-tags">
-    <span class="tag-ali">阿里云</span>
-    <span class="tag-tx">腾讯云</span>
-    <span class="tag-hs">火山引擎</span>
-    <span class="tag-ds">DeepSeek</span>
-    <span class="tag-kimi">Kimi</span>
-    <span class="tag-zhipu">智谱AI</span>
-  </div>
-</div>
-
-<!-- 今日速览 -->
-<div class="quick-section">
-  <h2>📋 今日速览</h2>
-  <div class="quick-item">🔴 国家大基金领投DeepSeek首轮融资700亿元，估值突破500亿美元</div>
-  <div class="quick-item">🔴 小米MiMo API永久降价99%，与DeepSeek价格全面对齐</div>
-  <div class="quick-item">🟡 火山引擎联手赛力斯造车，新品牌"赛豆"6月发布</div>
-</div>
-
-<!-- 🔴 重大情报 -->
-<div class="section">
-  <div class="section-title red">🔴 重大情报</div>
-  <div class="card red"><div class="card-tags"><span class="tag-ds">DeepSeek</span></div><div class="card-title">国家大基金领投DeepSeek首轮融资700亿元，估值突破500亿美元</div><div class="card-meta">2026-05-28 · 财经杂志/36氪 | ✅ 已验证</div><div class="card-body"><p>DeepSeek成立三年首次对外开放融资，由国家集成电路产业投资基金（国家大基金）领投，数家市场化机构参投。本轮融资700亿元人民币，投前估值450亿美元（约3057亿元人民币）。</p><p>21天内估值从100亿美元暴涨5倍至500亿美元，刷新中国AI大模型史上首轮融资规模纪录。</p><p>国家大基金成立12年来首次跨界投资纯大模型公司，被视为国家级AI战略平台定位确立。</p></div><div class="impact">⚡ 浙江影响：国家队入场意味着政策资源倾斜，浙江企业接入DeepSeek生态可能获得优先算力支持</div></div>
-  <div class="card red"><div class="card-tags"><span class="tag-ali">阿里云</span></div><div class="card-title">小米MiMo API永久降价99%，与DeepSeek价格全面对齐</div><div class="card-meta">2026-05-27 · IT之家/小米官方 | ✅ 已验证</div><div class="card-body"><p>小米MiMo-V2.5系列API永久降价，输入缓存命中价0.025元/百万tokens，与DeepSeek V4-Pro价格完全一致。套餐Token额度暴涨50-68倍。</p><p>两大厂商不约而同的定价策略，被视为共同"贴脸"划定行业价格底线。</p></div><div class="impact">⚡ 浙江影响：API价格战白热化，浙江中小企业的AI接入成本将持续降低</div></div>
-  <div class="card red"><div class="card-tags"><span class="tag-hs">火山引擎</span></div><div class="card-title">火山引擎联手赛力斯造车，新品牌"赛豆"6月发布</div><div class="card-meta">2026-05-30 · 晚点Auto/凤凰网 | ✅ 已验证</div><div class="card-body"><p>赛力斯集团旗下蓝电科技更名为"赛豆科技"，成为新汽车品牌法律主体。字节跳动火山引擎深度介入，介入程度超过与上汽荣威的"联合定义、联合开发"模式。</p><p>新品牌定位年轻、运动，国内海外同步销售，赛力斯已组建专门销售渠道。字节内部称该项目为"A项目"。</p></div><div class="impact">⚡ 浙江影响：字节造车正式落地，浙江车企面临新的跨界竞争者，需关注智能座舱/车机交互的差异化打法</div></div>
-</div>
-
-<!-- 🟡 厂商官方动态 -->
-<div class="section">
-  <div class="section-title yellow">🟡 厂商官方动态</div>
-  <div class="card yellow"><div class="card-tags"><span class="tag-hs">火山引擎</span></div><div class="card-title">豆包1.6发布：国内首个支持"分档调节思考长度"的大模型</div><div class="card-meta">2026-05-24 · 火山引擎官方 | ✅ 已验证</div><div class="card-body"><p>豆包大模型1.6全新升级，提供Minimal/Low/Medium/High四种思考长度，企业可按需平衡效果、时延和成本。1.6 lite版本综合使用成本较1.5 pro降低53.3%。</p><p>同时发布豆包语音合成模型2.0、声音复刻模型2.0，以及Seedream图像创作模型。</p></div><div class="impact">⚡ 浙江影响：豆包1.6思考长度可调功能值得关注，适合浙江制造业的实时质检/客服等场景</div></div>
-  <div class="card yellow"><div class="card-tags"><span class="tag-kimi">Kimi</span></div><div class="card-title">Kimi Code全端畅写+Kimi Claw Beta一键部署</div><div class="card-meta">2026-05-30 · 人人都是产品经理 | ✅ 已验证</div><div class="card-body"><p>Kimi祭出两大B端杀手锏：全端畅写的Kimi Code，以及一键部署OpenClaw的Kimi Claw Beta。</p><p>当价格战打到算力"像自来水一样廉价"时，Kimi选择用工程管线效率重塑竞争壁垒，直面企业级开发场景。</p></div><div class="impact">⚡ 浙江影响：Kimi的B端工具链对浙江ISV/软件外包企业有吸引力，可作为备选开发平台</div></div>
-  <div class="card yellow"><div class="card-tags"><span class="tag-tx">腾讯云</span></div><div class="card-title">腾讯云CodeBuddy计费调整：从"买助手"变"买燃料"</div><div class="card-meta">2026-05-30 · 头条号 | ✅ 已验证</div><div class="card-body"><p>CodeBuddy新计费方案5月15日起执行，个人专业版58元/月含2000 Credits。企业版198元/人/月，按人给Credits。</p><p>AI编程工具从"买会员"转向"买可消耗的研发动作"，高频使用的开发者成本显著上升。</p></div><div class="impact">⚡ 浙江影响：浙江企业评估AI编程工具时需关注实际消耗，不能只看月费</div></div>
-</div>
-
-<!-- 🟢 行业动态 -->
-<div class="section">
-  <div class="section-title green">🟢 行业动态</div>
-  <div class="card green"><div class="card-tags"><span class="tag-ds">DeepSeek</span></div><div class="card-title">DeepSeek限制重生成/改输入次数，因算力压力</div><div class="card-meta">2026-05-29 · Coze/36氪 | ✅ 已验证</div><div class="card-body"><p>5月29日下午起，DeepSeek普通对话重生成3-6次、专家模式重生成3次即达上限，修改输入上限6次。官方回应称因算力压力太大采取临时措施。</p><p>API接口暂不受影响。华为昇腾超节点新卡预计下半年上线，届时算力将大幅扩容。</p></div><div class="impact">⚡ 浙江影响：DeepSeek算力紧张持续，浙江企业需准备多平台备份方案</div></div>
-  <div class="card green"><div class="card-tags"><span class="tag-hs">火山引擎</span></div><div class="card-title">吉宏股份联合火山引擎，借Seedance打造跨境电商AI素材工厂</div><div class="card-meta">2026-05-30 · Coze | ✅ 已验证</div><div class="card-body"><p>吉宏股份与火山引擎深度合作，引入Seedance 2.0、Seedream 5.0 lite等模型，与自研GiiVideo工具深度整合，搭建跨境电商全场景智能内容生产体系。</p></div><div class="impact">⚡ 浙江影响：跨境电商AI素材生成已成火山引擎重点拓展场景，浙江跨境卖家可关注</div></div>
-  <div class="card green"><div class="card-tags"><span class="tag-ds">DeepSeek</span></div><div class="card-title">李飞飞团队开源1亿张授权图数据集GPIC</div><div class="card-meta">2026-05-31 · Coze | ✅ 已验证</div><div class="card-body"><p>斯坦福李飞飞、吴佳俊团队发布GPIC数据集，包含1亿张明确商用授权图片，总像素近28万亿，所有图片可免费用于研究和商业用途。</p><p>用Qwen3 VL 4B模型自动筛选图片，淘汰分辨率低、空白、不合规内容。</p></div><div class="impact">⚡ 浙江影响：浙江AI应用开发者可免费使用高质量训练数据，降低开发成本</div></div>
-</div>
-
-<!-- 竞争态势总结 -->
-<div class="insight-section">
-  <h2>📊 竞争态势总结</h2>
-  <ul><li><strong>价格战升级：</strong>DeepSeek与小米API价格全面对齐，0.025元/百万tokens成行业新地板价</li><li><strong>国家队入场：</strong>国家大基金领投DeepSeek，AI大模型正式上升为国家战略平台</li><li><strong>跨界造车：</strong>字节火山引擎深度联手赛力斯，跳出技术服务商定位，亲自下场造车</li><li><strong>算力瓶颈：</strong>DeepSeek限制功能、智谱启动限时退款，算力紧张倒逼厂商差异化</li></ul>
-</div>
-
-<!-- 浙江区域行动建议 -->
-<div class="action-section">
-  <h2>🎯 浙江区域行动建议</h2>
-  <ul><li><strong>算力备份：</strong>DeepSeek算力紧张持续，建议浙江企业准备豆包/智谱作为备选，避免单点依赖</li><li><strong>关注赛豆：</strong>字节造车新品牌6月发布，浙江车企需提前研究其智能座舱方案</li><li><strong>B端工具：</strong>Kimi Code/Claw Beta值得关注，可向浙江ISV推荐作为降本工具</li><li><strong>数据机会：</strong>GPIC开源数据集发布，浙江AI开发者可低成本获取高质量训练素材</li></ul>
-</div>
-
-<!-- Footer -->
-<div class="footer">
-  🦞 扣子竞对日报 | 数据来源：智东西/雷锋网/晚点LatePost/量子位等<br>
-  生成时间：20260531 | 仅供参考
-</div>
-
-</div>
-</body>
-</html>
+{
+  "reports": [
+    {
+      "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260601",
+      "date": "20260601",
+      "summary": "DeepSeek V4.1将发 · 价格战升级 · Kimi拆除VIE",
+      "vendors": ["DeepSeek", "Kimi", "火山引擎", "小米", "智谱AI", "阿里云"],
+      "highlights": [
+        "DeepSeek V4.1将于6月发布：新增多模态+MCP协议，首轮融资目标500亿元",
+        "DeepSeek V4-Pro永久降价2.5折，小米的MiMo API降价99%",
+        "Kimi母公司月之暗面5月下旬启动VIE架构拆除，新融资20亿美元"
+      ],
+      "url": "https://pls890429.github.io/aiintelhub/20260601_竞对日报.html"
+    },
+    {
+      "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260531",
+      "date": "20260531",
+      "summary": "国家大基金700亿投DeepSeek · 小米MiMo降价99% · 赛力斯赛豆发布",
+      "vendors": ["DeepSeek", "小米", "火山引擎", "Kimi", "豆包"],
+      "highlights": [
+        "国家大基金领投DeepSeek首轮融资700亿元，估值突破500亿美元",
+        "小米MiMo API永久降价99%，与DeepSeek价格全面对齐",
+        "火山引擎联手赛力斯造车，新品牌赛豆6月发布"
+      ],
+      "url": "https://pls890429.github.io/aiintelhub/20260531_竞对日报.html"
+    },
+    {
+      "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260530",
+      "date": "20260530",
+      "summary": "智谱GLM-5.1开源 · 阿里腾讯Agent升级 · 豆包1.6分档思考",
+      "vendors": ["智谱AI", "阿里云", "腾讯云", "豆包", "Kimi"],
+      "highlights": [
+        "智谱GLM-5.1编程能力开源，编程得分45.3分距全球最强仅差3分",
+        "阿里云百炼平台Agent能力升级，Qwen3-Max性能领先",
+        "豆包1.6发布：国内首个支持分档调节思考长度的大模型"
+      ],
+      "url": "https://pls890429.github.io/aiintelhub/20260530_竞对日报.html"
+    },
+    {
+      "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260529",
+      "date": "20260529",
+      "summary": "DeepSeek国家队700亿 · 阿里云Qwen Cloud出海 · 腾讯云Agent升级",
+      "vendors": ["DeepSeek", "阿里云", "腾讯云"],
+      "highlights": [
+        "DeepSeek国家队700亿融资传闻，估值500亿美元成国产AI最高",
+        "阿里云Qwen Cloud正式出海，覆盖全球18个区域",
+        "腾讯云Agent能力升级，企业级Agent套件发布"
+      ],
+      "url": "https://pls890429.github.io/aiintelhub/20260529_竞对日报.html"
+    }
+  ],
+  "last_updated": "2026-06-01T07:40:00+08:00"
+}
