@@ -1,10 +1,36 @@
 {
   "reports": [
     {
+      "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260602",
+      "date": "2026-06-02",
+      "summary": "DeepSeek V4.1定档6月（多模态+MCP+500亿融资）· 豆包6月下旬付费（68/200/500元三档+Force大会）· 腾讯云618推Token Plan 28元/月",
+      "vendors": [
+        "DeepSeek",
+        "豆包",
+        "腾讯云",
+        "阿里云",
+        "Kimi"
+      ],
+      "highlights": [
+        "DeepSeek V4.1定档6月：原生多模态+MCP协议+企业级工具链，500亿融资估值3500亿",
+        "豆包6月下旬正式付费+Force大会：68/200/500元三档订阅，打通抖音电商",
+        "腾讯云618推Token Plan：28元/月起，兼容OpenClaw/Claude Code等主流工具",
+        "Kimi月之暗面D轮20亿美元完成，拆除VIE赴港IPO，ARR超2亿美元"
+      ],
+      "url": "https://pls890429.github.io/aiintelhub/20260602_竞对日报.html"
+    },
+    {
       "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260601",
       "date": "20260601",
       "summary": "DeepSeek V4.1将发 · 价格战升级 · Kimi拆除VIE",
-      "vendors": ["DeepSeek", "Kimi", "火山引擎", "小米", "智谱AI", "阿里云"],
+      "vendors": [
+        "DeepSeek",
+        "Kimi",
+        "火山引擎",
+        "小米",
+        "智谱AI",
+        "阿里云"
+      ],
       "highlights": [
         "DeepSeek V4.1将于6月发布：新增多模态+MCP协议，首轮融资目标500亿元",
         "DeepSeek V4-Pro永久降价2.5折，小米的MiMo API降价99%",
@@ -16,7 +42,13 @@
       "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260531",
       "date": "20260531",
       "summary": "国家大基金700亿投DeepSeek · 小米MiMo降价99% · 赛力斯赛豆发布",
-      "vendors": ["DeepSeek", "小米", "火山引擎", "Kimi", "豆包"],
+      "vendors": [
+        "DeepSeek",
+        "小米",
+        "火山引擎",
+        "Kimi",
+        "豆包"
+      ],
       "highlights": [
         "国家大基金领投DeepSeek首轮融资700亿元，估值突破500亿美元",
         "小米MiMo API永久降价99%，与DeepSeek价格全面对齐",
@@ -28,7 +60,13 @@
       "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260530",
       "date": "20260530",
       "summary": "智谱GLM-5.1开源 · 阿里腾讯Agent升级 · 豆包1.6分档思考",
-      "vendors": ["智谱AI", "阿里云", "腾讯云", "豆包", "Kimi"],
+      "vendors": [
+        "智谱AI",
+        "阿里云",
+        "腾讯云",
+        "豆包",
+        "Kimi"
+      ],
       "highlights": [
         "智谱GLM-5.1编程能力开源，编程得分45.3分距全球最强仅差3分",
         "阿里云百炼平台Agent能力升级，Qwen3-Max性能领先",
@@ -40,7 +78,11 @@
       "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260529",
       "date": "20260529",
       "summary": "DeepSeek国家队700亿 · 阿里云Qwen Cloud出海 · 腾讯云Agent升级",
-      "vendors": ["DeepSeek", "阿里云", "腾讯云"],
+      "vendors": [
+        "DeepSeek",
+        "阿里云",
+        "腾讯云"
+      ],
       "highlights": [
         "DeepSeek国家队700亿融资传闻，估值500亿美元成国产AI最高",
         "阿里云Qwen Cloud正式出海，覆盖全球18个区域",
@@ -49,5 +91,5 @@
       "url": "https://pls890429.github.io/aiintelhub/20260529_竞对日报.html"
     }
   ],
-  "last_updated": "2026-06-01T07:40:00+08:00"
+  "last_updated": "2026-06-02T08:00:00+08:00"
 }
