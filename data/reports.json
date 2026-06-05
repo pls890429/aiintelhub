@@ -1,6 +1,23 @@
 {
   "reports": [
     {
+      "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260606",
+      "date": "2026-06-06",
+      "summary": "首届全国AI高质量发展大会杭州开幕 · 腾讯云发布WorkBuddy企业版+ADP 4.0 · 阿里云蝉联GenAI IaaS市场份额第一",
+      "vendors": [
+        "阿里云",
+        "腾讯云",
+        "火山引擎",
+        "DeepSeek"
+      ],
+      "highlights": [
+        "首届全国AI高质量发展大会杭州开幕：院士+阿里华为商汤字节同台，工信部发布十大揭榜场景",
+        "腾讯云AI产业应用大会发布WorkBuddy企业版+ADP 4.0+TokenHub，姚顺雨首次公开系统分享",
+        "阿里云蝉联GenAI IaaS市场份额第一（30.3%），百炼平台ARR 6月破百亿，AI收入占云业务30%"
+      ],
+      "url": "https://pls890429.github.io/aiintelhub/20260606_竞对日报.html"
+    },
+    {
       "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260605",
       "date": "2026-06-05",
       "summary": "DeepSeek首轮融资500亿 · 豆包专业版确认收费 · 火山引擎发布应用工厂",
@@ -150,5 +167,5 @@
       "url": "https://pls890429.github.io/aiintelhub/20260529_竞对日报.html"
     }
   ],
-  "last_updated": "2026-06-05T08:00:00+08:00"
+  "last_updated": "2026-06-06T08:00:00+08:00"
 }
