@@ -361,10 +361,11 @@ def report_to_article(rpt):
 
 
 def build_xr(articles, reports=None):
-    """构造首页 Xr 数组。若没有 hotspotArticles，则从 reports 自动生成首页卡片。"""
+    """构造首页 Xr 数组。仅使用 hotspotArticles，避免日报条目覆盖深度文章。"""
     out = []
-    if not articles and reports:
-        return [report_to_article(rpt) for rpt in sorted(reports, key=lambda r: r['date'], reverse=True)]
+    if not articles:
+        print('! data/reports.json 未找到 hotspotArticles，首页 Xr 将保持为空，避免用日报条目覆盖深度文章。', file=sys.stderr)
+        return out
     for art in articles:
         if art.get('sections'):
             sections = art['sections']
@@ -455,6 +456,14 @@ def main():
         lambda m: m.group(0).replace(re.search(r'children:"(.*?)"', m.group(0)).group(1), new_insight) if re.search(r'children:"(.*?)"', m.group(0)) else m.group(0),
         new_bundle,
         count=1
+    )
+
+    # GitHub Pages 部署基路径为 /aiintelhub/。wouter 的 Link 会自动叠加 base，
+    # 因此首页 14 号 DRP/ERP 专题卡片的 href 需保持应用内路径 /drp-erp/，
+    # 点击时再用 window.location.href 跳到真实静态专题页，避免渲染为 /aiintelhub/aiintelhub/drp-erp/。
+    new_bundle = new_bundle.replace(
+        'href:(String(n.id)==="14"?"/aiintelhub/drp-erp/":`/hotspot/${n.id}`)',
+        'href:(String(n.id)==="14"?"/drp-erp/":`/hotspot/${n.id}`)'
     )
 
     with open(JS_PATH, 'w') as f:
