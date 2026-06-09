@@ -117,9 +117,10 @@ def build_us(reports):
         # 兼容新格式（reports.json）和旧格式（dailyReports）
         items = rpt.get('items')
         if items is None:
-            # 新格式：从 key_highlights 生成 items
+            # 新格式：从 key_highlights 或 highlights 生成 items
             items = []
-            for hl in rpt.get('key_highlights', []):
+            highlights_list = rpt.get('key_highlights', []) or rpt.get('highlights', [])
+            for hl in highlights_list:
                 items.append({
                     'vendor': rpt.get('vendor_tags', ['ai-hotspot'])[0] if rpt.get('vendor_tags') else 'ai-hotspot',
                     'dimension': 'strategy',
