@@ -1,6 +1,27 @@
 {
   "reports": [
     {
+      "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 2026年6月25日",
+      "date": "2026-06-25",
+      "summary": "豆包专业版6.24正式上线+三级阶梯定价68/200/500元月+梁汝波定调火山MaaS是字节基础业务 · 阿里Qwen3.7峰谷Token+Qwen-AgentWorld世界模型双发 · 腾讯HY-World 2.0真3D开源+企业微信\"大圆\"内测+微信\"小微\"灰度",
+      "vendors": [
+        "火山引擎",
+        "阿里云",
+        "腾讯云",
+        "DeepSeek",
+        "智谱AI"
+      ],
+      "highlights": [
+        "豆包专业版6.24正式上线+三级阶梯定价68/200/500元月+办公任务模式：日均Token调用量180万亿+火山引擎MaaS市占率49.5%+200家年调用超1万亿+梁汝波定调\"火山MaaS是字节基础业务\"",
+        "阿里Qwen3.7峰谷Token 6.24上线（国内首个Agent峰谷电价机制，夜间2-4折）+Qwen-AgentWorld世界模型发布（七大领域Apache 2.0开源）：通义千问商业化全栈升级",
+        "腾讯混元HY-World 2.0真3D世界模型6.24开源+企业微信\"大圆\"Agent内测+微信\"小微\"灰度升级+EdgeOne Makers全球5分钟上线+Claw商业化加速",
+        "智谱6.24市值重回万亿+GLM-5.2开源SOTA+卓越睿新深度合作：科创板IPO+150亿募资落地在即+生态合作全面铺开",
+        "DeepSeek V4.1 Flash网页端灰度+510亿A轮融资落定+梁文锋自掏200亿+腾讯100亿领投+国产算力占比71%：Q3 V4正式发布+10万卡集群+IPO时间表",
+        "火山引擎FORCE大会6.24分论坛聚焦半导体+EdgeOne Makers商业化+.co域名+千问高考+钉钉AI小钉+EdgeOne Pages：6.24行业生态全栈升级"
+      ],
+      "url": "https://pls890429.github.io/aiintelhub/20260625_竞对日报.html"
+    },
+    {
       "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 2026年6月24日",
       "date": "2026-06-24",
       "summary": "豆包2.1 Pro/Turbo发布+Seedance 2.5亮相+综合成本较Claude Opus 4.6降80% · 豆包日均Token 180万亿+火山引擎MaaS市占率49.5% · 阿里云OSS Agent+SecOps Agent+Qwen3-VL系列+卓越睿新深度合作",
@@ -106,6 +127,5 @@
       "summary": "DeepSeek 700亿融资 · API降价1/4 · 智谱400 tokens/s",
       "path": "20260524_竞对日报.html"
     }
-  ],
-  "last_updated": "2026-06-24T07:45:06+08:00"
+  ]
 }
