@@ -1,6 +1,23 @@
 {
   "reports": [
     {
+      "date": "20260627",
+      "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260627",
+      "summary": "DeepSeek 510亿A轮融资/豆包2.1 Pro质变点/智谱GLM-5.2全球第三",
+      "vendors": [
+        "阿里云",
+        "腾讯云",
+        "火山引擎",
+        "DeepSeek",
+        "智谱AI"
+      ],
+      "highlights": [
+        "DeepSeek 510亿A轮融资，腾讯100亿领投，投后估值4000亿",
+        "豆包2.1 Pro日均180万亿Tokens，MaaS份额49.5%"
+      ],
+      "url": "https://pls890429.github.io/aiintelhub/data/20260627_竞对日报.html"
+    },
+    {
       "date": "20260626",
       "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260626",
       "summary": "豆包专业版68元/月正式上线，火山引擎MaaS市场份额49.5%；阿里云DNS免费版限流；腾讯云Claw商业化"
