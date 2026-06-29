@@ -1,6 +1,23 @@
 {
   "reports": [
     {
+      "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260630",
+      "date": "20260630",
+      "summary": "DeepSeek V4正式版7月上线+峰谷定价 · 智谱GLM-5.2开源登顶SOTA · 豆包2.1 Pro超越Claude Opus · Kimi K2.7 Code开源",
+      "vendors": [
+        "DeepSeek",
+        "火山引擎",
+        "智谱AI",
+        "Kimi"
+      ],
+      "highlights": [
+        "DeepSeek V4正式版7月中旬上线，同步引入峰谷定价机制，高峰时段价格翻倍",
+        "智谱发布GLM-5.2开源模型，漏洞挖掘能力比肩Anthropic Mythos，跻身全球开源SOTA",
+        "豆包2.1 Pro编程与Agent能力全面超越Claude Opus 4.6，综合成本降低80%"
+      ],
+      "path": "20260630_竞对日报.html"
+    },
+    {
       "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260629",
       "date": "2026-06-29",
       "summary": "微信AI小微灰度/DeepSeek开源DSpark推理加速/豆包180万亿Tokens/阿里连发三款AI产品",
