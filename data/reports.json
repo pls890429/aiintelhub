@@ -1,5 +1,19 @@
 [
   {
+    "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260721",
+    "date": "20260721",
+    "weekday": "星期二",
+    "summary": "阿里云发布智能体专用型轻量服务器(ANOLISA系统省30%Token)；DeepSeek V4即将GA引入峰谷计费；Kimi K3发布48小时算力告急暂停新订阅；腾讯混元Hy3调用量暴涨68倍登顶OpenRouter全球第一；火山引擎Agent Plan正式上线",
+    "tags": [
+      "阿里云",
+      "腾讯云",
+      "火山引擎",
+      "DeepSeek",
+      "Kimi"
+    ],
+    "url": "https://pls890429.github.io/aiintelhub/"
+  },
+  {
     "date": "20260720",
     "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260720",
     "summary": "阿里Token Plan个人版发布：Qwen3.8-Max-Preview 2.4T参数，一个API Key通吃8种编程工具+多模型；腾讯WAIC 2026具身智能全栈亮相：三大基座模型+Apexio智能体+ADP 4.0出海+WorkBuddy三端App；Kimi K3发布2.8T全球最大开源模型，智谱单日暴跌28.49%从高点累计跌60%；豆包Seed-Evolving\"无限进步\"模型上线：模型ID永不变，1M上下文，每周悄悄变强；豆包3.82亿月活断层领跑，付费后用户持续增长，日均Token调用量突破180万亿",
