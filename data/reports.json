@@ -1,5 +1,12 @@
 [
   {
+    "date": "20260730",
+    "weekday": "星期四",
+    "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260730",
+    "summary": "火山引擎FORCE Link厦门站发布AI全家桶扣子开源3天破万star · 月之暗面完成F轮35亿美元融资Pre-IPO轮目标500亿美元 · DeepSeek Harness内测截图流出V4正式版七月跳票将引入峰谷定价 · 火山引擎上线豆包搜索服务面向Agent提供联网检索API · 腾讯云Agent Runtime已支撑MiniMax 5-10万级并发实例 · 智谱股价再跌18.74%市值跌破5000亿港元 · 港股AI四巨头半年同步配售募资超610亿港元",
+    "html": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260730</title>\n<style>\n*{margin:0;padding:0;box-sizing:border-box}\nbody{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"PingFang SC\",\"Hiragino Sans GB\",\"Microsoft YaHei\",sans-serif;background:#f0f2f5;color:#333;line-height:1.6}\n.container{max-width:680px;margin:0 auto;background:#fff}\n\n/* 头部 */\n.header{background:linear-gradient(135deg,#1a365d,#2d5a8e);color:#fff;padding:28px 24px 22px;text-align:center}\n.header h1{font-size:20px;font-weight:700;letter-spacing:1px;margin-bottom:6px}\n.header .subtitle{font-size:13px;opacity:.85}\n.header .vendor-tags{margin-top:10px;display:flex;flex-wrap:wrap;justify-content:center;gap:6px}\n.header .vendor-tags span{font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;color:#fff}\n.tag-ali{background:#FF6A00}\n.tag-tx{background:#00A4FF}\n.tag-hs{background:#0066FF}\n.tag-ds{background:#7C3AED}\n.tag-kimi{background:#EC4899}\n.tag-zhipu{background:#10B981}\n\n/* 今日速览 */\n.quick-section{padding:16px 18px;border-bottom:1px solid #eee}\n.quick-section h2{font-size:15px;font-weight:700;margin-bottom:10px;padding-left:10px;border-left:4px solid #e53e3e}\n.quick-item{padding:6px 0;font-size:14px;line-height:1.7}\n.quick-item .emoji{margin-right:4px}\n\n/* 分区 */\n.section{padding:16px 18px}\n.section-title{font-size:15px;font-weight:700;margin-bottom:12px;padding-bottom:6px;border-bottom:2px solid;display:flex;align-items:center;gap:6px}\n.section-title.red{color:#c62828;border-color:#c62828}\n.section-title.yellow{color:#e65100;border-color:#e65100}\n.section-title.green{color:#2e7d32;border-color:#2e7d32}\n\n/* 卡片 */\n.card{background:#fafafa;border-radius:8px;padding:14px 16px;margin-bottom:12px;border-left:4px solid #ddd}\n.card.red{border-left-color:#c62828}\n.card.yellow{border-left-color:#e65100}\n.card.green{border-left-color:#2e7d32}\n.card .card-tags{margin-bottom:6px}\n.card .card-tags span{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;color:#fff;margin-right:4px}\n.card .card-title{font-size:15px;font-weight:700;margin-bottom:6px}\n.card .card-meta{font-size:12px;color:#999;margin-bottom:8px}\n.card .card-body{font-size:14px;line-height:1.7;color:#444}\n.card .card-body p{margin-bottom:4px}\n.card .card-body ul{padding-left:18px;margin:4px 0}\n.card .card-body li{margin-bottom:3px}\n.card .impact{background:#fff3e0;border-radius:6px;padding:8px 12px;margin-top:8px;font-size:13px;color:#e65100;border-left:3px solid #ff9800}\n\n/* 态势总结 */\n.insight-section{background:linear-gradient(135deg,#1a365d,#2d5a8e);padding:18px;margin:0}\n.insight-section h2{font-size:15px;font-weight:700;color:#ffd54f;margin-bottom:10px}\n.insight-section ul{padding-left:18px}\n.insight-section li{font-size:14px;color:rgba(255,255,255,.9);line-height:1.8;margin-bottom:4px}\n.insight-section li strong{color:#ffd54f}\n\n/* 行动建议 */\n.action-section{background:#1a202c;padding:18px;margin:0}\n.action-section h2{font-size:15px;font-weight:700;color:#f6ad55;margin-bottom:10px}\n.action-section ul{padding-left:18px}\n.action-section li{font-size:14px;color:#e2e8f0;line-height:1.8;margin-bottom:4px}\n.action-section li strong{color:#ffd700}\n\n/* Footer */\n.footer{text-align:center;font-size:12px;color:#999;padding:14px;background:#fff;border-top:1px solid #eee}\n</style>\n</head>\n<body>\n<div class=\"container\">\n\n<!-- 头部 -->\n<div class=\"header\">\n  <h1>🦞 浙江云嗷嗷叫 · 扣子竞对日报</h1>\n  <div class=\"subtitle\">20260730 星期四 · 覆盖过去24小时</div>\n  <div class=\"vendor-tags\">\n    <span class=\"tag-ali\">阿里云</span>\n    <span class=\"tag-tx\">腾讯云</span>\n    <span class=\"tag-hs\">火山引擎</span>\n    <span class=\"tag-ds\">DeepSeek</span>\n    <span class=\"tag-kimi\">Kimi</span>\n    <span class=\"tag-zhipu\">智谱AI</span>\n  </div>\n</div>\n\n<!-- 今日速览 -->\n<div class=\"quick-section\">\n  <h2>📋 今日速览</h2>\n  <div class=\"quick-item\">🔴 <strong>火山引擎FORCE Link厦门站发布AI全家桶</strong>：图像编辑3.0、同声传译2.0、豆包1.6升级，扣子核心能力开源3天破万star</div>\n  <div class=\"quick-item\">🔴 <strong>月之暗面完成F轮35亿美元融资</strong>：投后估值350亿美元，Pre-IPO轮提前启动目标500亿美元投前估值</div>\n  <div class=\"quick-item\">🔴 <strong>DeepSeek Harness内测截图流出</strong>：V4正式版七月跳票，将首次引入峰谷分时定价高峰翻倍</div>\n</div>\n\n<!-- 🔴 重大情报 -->\n<div class=\"section\">\n  <div class=\"section-title red\">🔴 重大情报</div>\n\n  <div class=\"card red\">\n    <div class=\"card-tags\"><span class=\"tag-hs\">火山引擎</span></div>\n    <div class=\"card-title\">火山引擎FORCE Link厦门站发布AI全家桶：扣子开源、同传2.0、图像编辑3.0同步亮相</div>\n    <div class=\"card-meta\">2026-07-28~30 · CSDN/IT之家/aibase | ✅ 已验证</div>\n    <div class=\"card-body\">\n      <p>火山引擎在FORCE Link AI创新巡展厦门站发布多项重磅产品更新。豆包·图像编辑模型SeedEdit 3.0基于Seedream 3.0文生图模型，支持1K以上高清图像生成与处理，能通过自然语言指令完成元素移除、光线调整、组件替换等复杂编辑操作，并高度保留原图主体和背景细节，图片中文字部分也可做到\"无损\"平替。</p>\n      <p>豆包·同声传译2.0采用端到端全双工语音翻译框架，将语音延迟从此前8-10秒压缩至2-3秒，接近人类同传水平，并支持0样本声音复刻——仅需3-5秒音频即可提取声纹特征，连方言口音也能精准复现。豆包大模型1.6系列同步升级，国内首个原生支持\"分档调节思考长度\"的模型，提供Minimal、Low、Medium、High四档选择，Low档总输出tokens下降77.5%、思考时间下降84.6%，效果不变。同时推出1.6 lite轻量版，企业级场景较1.5 pro提升14%，综合成本降低53.3%。</p>\n      <p>火山引擎正式开源扣子核心能力——Coze Studio（Agent开发）和Coze Loop（Agent迭代），均采用Apache 2.0协议无附加条款。开源仅三天，Coze Studio在GitHub stars破万，Coze Loop超3000 stars。火山方舟同步推出Responses API，原生上下文管理结合缓存能力可降低80%成本，将Agent开发从460行代码缩减至60行、1-2天缩减至1小时。</p>\n    </div>\n    <div class=\"impact\">⚡ 浙江影响：火山引擎扣子开源直接降低Agent开发门槛，Responses API大幅简化开发流程，浙江企业客户在Agent选型时火山引擎吸引力持续增强</div>\n  </div>\n\n  <div class=\"card red\">\n    <div class=\"card-tags\"><span class=\"tag-kimi\">Kimi</span></div>\n    <div class=\"card-title\">月之暗面完成F轮35亿美元融资，Pre-IPO轮提前启动目标500亿美元投前估值</div>\n    <div class=\"card-meta\">2026-07-29 · 科创板日报/金融界/市场资讯 | ✅ 已验证</div>\n    <div class=\"card-body\">\n      <p>7月29日，据科创板日报消息，月之暗面已完成F轮融资，融资金额超35亿美元，投后估值达350亿美元。因超原计划募资规模3倍多，本轮融资提前关闭。公司原定8月启动的G轮（Pre-IPO轮）已提前开始，投前估值升至500亿美元。据此前报道，月之暗面已向投资人发送上市议案，拟聘中金公司、高盛为联席保荐人，最快有望于今年内完成港股上市。</p>\n      <p>本轮超预期表现直接受益于7月16日Kimi K3模型的发布。K3以2.8万亿参数成为全球最大开源模型，在Frontend Code Arena以1679分登顶全球第一。发布后48小时内用户请求量大幅超出预估，公司被迫暂停C端新用户订阅。彭博社报道称本次融资\"得益于Kimi K3在硅谷引发的轰动效应\"。从43亿美元到350亿美元，半年内估值增长超7倍。</p>\n      <p>月之暗面商业化能力快速验证：年度经常性收入（ARR）从3月1亿美元增长至5月2亿美元，6月中旬突破3亿美元，三个月内三倍增长。收入结构上API业务占比已突破70%，从C端订阅单一模式进入B端规模化变现阶段。K3发布后API输出价定为100元/百万token，较K2.6的27元上涨超3.5倍。公司累计融资超39亿美元，成为国内大模型创业公司中累计融资最多的企业。</p>\n    </div>\n    <div class=\"impact\">⚡ 浙江影响：月之暗面资本化提速，500亿美元Pre-IPO估值刷新国内大模型公司纪录，浙江产业资本可关注参与机会</div>\n  </div>\n\n  <div class=\"card red\">\n    <div class=\"card-tags\"><span class=\"tag-ds\">DeepSeek</span></div>\n    <div class=\"card-title\">DeepSeek Harness内测招募截图流出，V4正式版七月跳票将引入峰谷分时定价</div>\n    <div class=\"card-meta\">2026-07-29 · 36氪/新浪财经 | ✅ 已验证</div>\n    <div class=\"card-body\">\n      <p>7月29日，一张DeepSeek Harness内部测试招募通知截图在各大AI社区流传。截图显示Harness计划于本周晚些时候开启内测，首批用户从小范围群组中筛选，入选者需提交个人资料、签署《保密承诺函》才能获得产品访问权限，一旦泄密将影响日后DeepSeek各类内测入选机会。此前DeepSeek研究员崔添翼（前Jane Street九年量化交易系统经验）于3月加入后组建Harness团队，曾表示Harness将与V4正式版同步发布。</p>\n      <p>V4正式版原计划7月中旬上线，但至今未发布。6月29日DeepSeek向API用户发邮件通知\"计划7月中旬上线\"，7月24日旧版模型接口deepseek-chat和deepseek-reasoner已停用并迁移至V4相关模型ID，底层架构切换已完成，但正式版仍未放出。有灰度测试者反馈，V4正式版整体表现接近Opus 4.8级别，编码能力不弱于GPT-5.6 Sol，Agent能力和3D、SVG生成能力大幅提升，同样的任务比同级竞品迭代轮数更少。</p>\n      <p>价格方面，V4正式版将首次引入峰谷分时定价机制：高峰时段（北京时间9:00-12:00和14:00-18:00）API价格直接翻倍。V4 Pro缓存未命中输入平时3元/百万token、高峰6元，输出平时6元、高峰12元。V4 Flash缓存未命中平时1元、高峰2元，输出平时2元、高峰4元。这不是DeepSeek首次在定价上创新，2025年2月曾推夜间错峰优惠，9月取消统一涨价50%。</p>\n    </div>\n    <div class=\"impact\">⚡ 浙江影响：DeepSeek峰谷定价将改变企业API调用成本结构，浙江客户需重新评估高峰时段使用策略，非紧急任务可挪至低谷时段执行</div>\n  </div>\n\n</div>\n\n<!-- 🟡 厂商官方动态 -->\n<div class=\"section\">\n  <div class=\"section-title yellow\">🟡 厂商官方动态</div>\n\n  <div class=\"card yellow\">\n    <div class=\"card-tags\"><span class=\"tag-hs\">火山引擎</span></div>\n    <div class=\"card-title\">火山引擎上线豆包搜索服务，面向Agent提供联网检索API</div>\n    <div class=\"card-meta\">2026-07-28 · IT之家/微博 | ✅ 已验证</div>\n    <div class=\"card-body\">\n      <p>7月28日，火山引擎宣布上线豆包搜索服务，提供跨语言、多模态、多垂类联网信息查询，融合全域互联网信息、行业专业知识以及字节跳动独家内容资源。该服务可直接输出Agent能使用的信息格式，支持原文markdown和结构化数据返回，同时支持精准定向查询、宽搜语义改写、多轮检索增强等模式，能理解自然语言任务意图，跟随Agent任务推进自动调整检索策略，识别信息缺口并发起补充检索，无需开发者手动拆解查询指令。</p>\n      <p>针对互联网低质内容和SEO灌水信息干扰，豆包搜索从网站站点和创作者两个维度建立权威分级体系，按行业分类做垂直治理。在SimpleQA、FreshQA、BrowseComp-ZH等多项行业公开评测中均表现优异。目前已服务知识问答、办公协同、金融投研、商业分析、内容生产等场景，已成为国内9成TOP手机厂商智能助手背后的信息引擎。</p>\n      <p>接入方式上，企业和开发者可直接登录火山引擎豆包搜索控制台开通服务，支持API、Skill、MCP等多种接入形态，也可基于火山引擎Agent Plan在harness工具里一键配置启用，无需额外联调。每月500次免费搜索额度，超出后按量后付费，也可选月卡低折扣套餐。</p>\n    </div>\n    <div class=\"impact\">⚡ 浙江影响：豆包搜索补齐Agent联网检索能力，浙江企业客户构建AI Agent时可一站式使用火山引擎全家桶，降低集成复杂度</div>\n  </div>\n\n  <div class=\"card yellow\">\n    <div class=\"card-tags\"><span class=\"tag-tx\">腾讯云</span></div>\n    <div class=\"card-title\">腾讯云Agent Runtime深度访谈曝光：已支撑MiniMax 5-10万级并发Agent实例</div>\n    <div class=\"card-meta\">2026-07-29 · DataFun | ✅ 已验证</div>\n    <div class=\"card-body\">\n      <p>7月29日，DataFun社区发布对腾讯云Agent Runtime团队的深度专访。Agent Runtime是腾讯云面向Agentic RL、Agentic Agent及企业级Agent平台构建场景推出的统一基础设施底座，围绕\"接入、运行、治理、智能\"四个层面构建完整能力体系。其底层核心Cube Sandbox于2026年4月21日以Apache 2.0协议正式开源，是业内首个兼顾硬件级强隔离与亚百毫秒启动的开源Agent沙箱服务，开源不到三个月已登上GitHub Trending全语言总榜第18位，Rust语言分类国内厂商第一。</p>\n      <p>访谈披露，腾讯云Agent Runtime已为MiniMax的大规模强化学习训练提供沙箱底座支撑，单个training step的rollout可一次性拉起数千个环境，全局同时运行实例达5到10万级。腾讯内部孵化的CodeBuddy同样部署在Agent Runtime之上，这类Coding Agent需要完整Linux、DinD、iptables环境并运行模型生成的不确定代码，对隔离边界要求极高。团队强调安全边界不退，复杂度由平台承担，凭证不直接进入沙箱而由网关动态注入短期最小权限凭证。</p>\n      <p>团队判断，Agent生产化需要在K8s之上补一层面向Agent的基础设施，包括Session Manager、State Store、Stream Gateway、Tool Gateway、强隔离Sandbox、暂停恢复和按任务计费等能力，K8s仍然是企业接入和治理Agent的重要入口，但不能当成Agent Runtime的全部答案。Cube Sandbox期望匹配三种场景：Agent tool use（60ms极速启动）、Agent Harness（百毫秒级快照回滚+暂停恢复）、以及Agent访问的服务（传统服务部署后原生变成Agent友好）。</p>\n    </div>\n    <div class=\"impact\">⚡ 浙江影响：腾讯云在Agent基础设施层布局领先，浙江企业客户构建生产级Agent时可关注Agent Runtime的治理和安全能力</div>\n  </div>\n\n  <div class=\"card yellow\">\n    <div class=\"card-tags\"><span class=\"tag-zhipu\">智谱AI</span></div>\n    <div class=\"card-title\">智谱股价再跌18.74%市值跌破5000亿港元，从高点蒸发超9000亿</div>\n    <div class=\"card-meta\">2026-07-28~29 · 盘间小记/新浪财经/21世纪经济报道 | ✅ 已验证</div>\n    <div class=\"card-body\">\n      <p>7月28日，港股\"大模型第一股\"智谱延续暴跌走势，盘中最低跌超20%，收报1041港元，跌18.74%，总市值约4847亿港元，成交额突破65亿港元，振幅超15%。此前7月17日单日暴跌28.49%、7月20日再跌19.56%，从6月22日盘中高点2980港元算起，智谱股价已跌去超65%，市值蒸发超9000亿港元，相当于跌没了一个半小米集团市值。</p>\n      <p>暴跌导火索多重叠加：7月8日首批基石投资者限售股解禁、7月中旬完成约314亿港元新股配售增加近2000万股抛压、7月16日月之暗面Kimi K3发布直接冲击智谱Coding赛道护城河——K3以1679分超越GLM 5.2登顶全球代码榜首。7月21日智谱宣布收购国产AI异构算力软件公司中科加禾、落地1GW级国产AI算力中心双重利好，股价单日暴涨36.89%，但利好消化后继续下行。7月28日MiniMax盘中同步跌超10%，港股AI板块集体承压。</p>\n      <p>智谱IPO募资使用率已达93.8%，剩余资金预计三季度耗尽，314亿港元配售属刚需驱动型融资，同时仍在推进A股科创板上市拟募资150亿元。有分析指出，智谱万亿市值建立在\"大模型第一股\"稀缺性溢价之上，随着Kimi K3等开源模型快速迭代、港股AI标的供给扩容，稀缺性正在消退。智谱2025年全年营收7.24亿元、净亏损47.18亿元，MaaS平台ARR约17亿元，市销率超400倍。</p>\n    </div>\n    <div class=\"impact\">⚡ 浙江影响：智谱估值回归反映市场对大模型公司竞争壁垒的重新审视，浙江客户在选型时应关注模型实际能力而非市值排名</div>\n  </div>\n\n</div>\n\n<!-- 🟢 行业动态 -->\n<div class=\"section\">\n  <div class=\"section-title green\">🟢 行业动态</div>\n\n  <div class=\"card green\">\n    <div class=\"card-tags\"><span class=\"tag-zhipu\">智谱AI</span></div>\n    <div class=\"card-title\">港股AI四巨头半年同步配售募资超610亿港元，融资动机与择时能力显著分化</div>\n    <div class=\"card-meta\">2026-07-29 · 新浪财经 | ✅ 已验证</div>\n    <div class=\"card-body\">\n      <p>2026年1月集中登陆港交所的四家AI企业（壁仞科技、天数智芯、智谱AI、MiniMax-W）在上市满六个月后同步落地大规模股本融资，募资规模从70.3亿到313.7亿港元不等，合计超610亿港元，所有配售均锚定上市满六个月的基石解禁节点。港股宽松的再融资规则与股东大会一般授权机制是企业上市仅半年就能落地大额配售的核心制度支撑。</p>\n      <p>融资动机呈现显著分化：智谱IPO募资使用率高达93.8%，314亿港元配售属刚需驱动型融资，存在清晰可观测的短期现金流缺口；MiniMax IPO资金仍有23.53亿港元结余，160亿港元再融资更多来自外部竞争倒逼的防御需求。择时能力同样分化明显——壁仞、天数智芯、智谱均在6月底阶段性高点附近启动配售，MiniMax待到7月推进时股价较高点已回落76%。</p>\n      <p>融资方案设计也截然不同：智谱选择结构极简的单一股权闪电配售，仅消耗22.18%一般授权额度，中长期保留充足再融资空间；MiniMax采用\"股权配售+零息可转债\"复合架构，股权配售叠加可转债全额转股后合计消耗近88%一般授权额度，大幅抬高未来再融资门槛。配售后股价表现分化：天数智芯唯一实现账面浮盈（+7.4%），智谱跌幅达34.4%，壁仞跌幅33.1%，MiniMax跌幅26.4%。</p>\n    </div>\n    <div class=\"impact\">⚡ 浙江影响：大模型资本军备竞赛白热化，浙江产业资本可关注港股AI标的解禁后的估值修复机会</div>\n  </div>\n\n</div>\n\n<!-- 竞争态势总结 -->\n<div class=\"insight-section\">\n  <h2>📊 竞争态势总结</h2>\n  <ul>\n    <li><strong>Agent基础设施成新战场：</strong>火山引擎扣子开源+Responses API、腾讯云Agent Runtime+Cube Sandbox，两家同步押注Agent Infra赛道，开源策略加速行业基础设施升级</li>\n    <li><strong>大模型资本化加速分化：</strong>月之暗面半年估值涨7倍冲刺IPO、智谱从万亿市值跌至5000亿、MiniMax弱势融资透支未来弹性，头部企业资本运作能力差距拉大</li>\n    <li><strong>DeepSeek定价模式创新：</strong>峰谷分时定价首次引入大模型API，将算力选择权交还用户，高峰翻倍定价可能成为行业新范式，倒逼企业优化调用策略</li>\n    <li><strong>搜索即服务成Agent标配：</strong>火山引擎豆包搜索上线，Agent联网检索能力从自建走向平台化服务，信源分级治理成为差异化卖点</li>\n  </ul>\n</div>\n\n<!-- 浙江区域行动建议 -->\n<div class=\"action-section\">\n  <h2>🎯 浙江区域行动建议</h2>\n  <ul>\n    <li><strong>火山引擎扣子开源应对：</strong>摸排浙江企业客户对扣子（Coze）开源的使用意向，梳理华为云Agent开发平台差异化卖点，重点突出安全合规与国产算力适配优势</li>\n    <li><strong>DeepSeek峰谷定价窗口利用：</strong>帮助浙江客户设计非紧急任务错峰执行方案，利用低谷时段降低API调用成本，同时评估高峰时段切换至其他模型的混合策略</li>\n    <li><strong>月之暗面Pre-IPO机会：</strong>对接浙江产业资本，挖掘参与月之暗面Pre-IPO轮或企业级Kimi API合作的机会，K3开源后API涨价3.5倍但ARR三倍增长验证B端商业化</li>\n    <li><strong>Agent Infra选型引导：</strong>浙江企业构建生产级Agent时，引导关注安全隔离、凭证管理、成本审计等治理能力，突出华为云在国产算力+Agent基础设施的一体化优势</li>\n  </ul>\n</div>\n\n<!-- Footer -->\n<div class=\"footer\">\n  🦞 扣子竞对日报 | 数据来源：智东西/雷锋网/晚点LatePost/量子位等<br>\n  生成时间：20260730 | 仅供参考\n</div>\n\n</div>\n</body>\n</html>"
+  },
+  {
     "date": "20260729",
     "weekday": "星期三",
     "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260729",
@@ -348,97 +355,5 @@
       "智谱AI"
     ],
     "path": "20260629_竞对日报.html"
-  },
-  {
-    "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 2026年6月28日",
-    "date": "2026-06-28",
-    "summary": "DeepSeek完成510亿A轮融资估值4000亿+腾讯100亿领投 | 豆包2.1 Pro日均180万亿Token、MaaS份额49.5% | 智谱GLM-5.2登顶全球第三开源第一 | 阿里云Flink 3.0全模态处理规划",
-    "path": "20260628_竞对日报.html"
-  },
-  {
-    "date": "20260627",
-    "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260627",
-    "summary": "DeepSeek 510亿A轮融资/豆包2.1 Pro质变点/智谱GLM-5.2全球第三",
-    "vendors": [
-      "阿里云",
-      "腾讯云",
-      "火山引擎",
-      "DeepSeek",
-      "智谱AI"
-    ],
-    "highlights": [
-      "DeepSeek 510亿A轮融资，腾讯100亿领投，投后估值4000亿",
-      "豆包2.1 Pro日均180万亿Tokens，MaaS份额49.5%"
-    ],
-    "url": "https://pls890429.github.io/aiintelhub/data/20260627_竞对日报.html"
-  },
-  {
-    "date": "20260626",
-    "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260626",
-    "summary": "豆包专业版68元/月正式上线，火山引擎MaaS市场份额49.5%；阿里云DNS免费版限流；腾讯云Claw商业化"
-  },
-  {
-    "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 2026年6月25日",
-    "date": "2026-06-25",
-    "summary": "豆包专业版6.24正式上线+三级阶梯定价68/200/500元月+梁汝波定调火山MaaS是字节基础业务 · 阿里Qwen3.7峰谷Token+Qwen-AgentWorld世界模型双发 · 腾讯HY-World 2.0真3D开源+企业微信\"大圆\"内测+微信\"小微\"灰度",
-    "vendors": [
-      "火山引擎",
-      "阿里云",
-      "腾讯云",
-      "DeepSeek",
-      "智谱AI"
-    ],
-    "highlights": [
-      "豆包专业版6.24正式上线+三级阶梯定价68/200/500元月+办公任务模式：日均Token调用量180万亿+火山引擎MaaS市占率49.5%+200家年调用超1万亿+梁汝波定调\"火山MaaS是字节基础业务\"",
-      "阿里Qwen3.7峰谷Token 6.24上线（国内首个Agent峰谷电价机制，夜间2-4折）+Qwen-AgentWorld世界模型发布（七大领域Apache 2.0开源）：通义千问商业化全栈升级",
-      "腾讯混元HY-World 2.0真3D世界模型6.24开源+企业微信\"大圆\"Agent内测+微信\"小微\"灰度升级+EdgeOne Makers全球5分钟上线+Claw商业化加速",
-      "智谱6.24市值重回万亿+GLM-5.2开源SOTA+卓越睿新深度合作：科创板IPO+150亿募资落地在即+生态合作全面铺开",
-      "DeepSeek V4.1 Flash网页端灰度+510亿A轮融资落定+梁文锋自掏200亿+腾讯100亿领投+国产算力占比71%：Q3 V4正式发布+10万卡集群+IPO时间表",
-      "火山引擎FORCE大会6.24分论坛聚焦半导体+EdgeOne Makers商业化+.co域名+千问高考+钉钉AI小钉+EdgeOne Pages：6.24行业生态全栈升级"
-    ],
-    "url": "https://pls890429.github.io/aiintelhub/20260625_竞对日报.html"
-  },
-  {
-    "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 2026年6月24日",
-    "date": "2026-06-24",
-    "summary": "豆包2.1 Pro/Turbo发布+Seedance 2.5亮相+综合成本较Claude Opus 4.6降80% · 豆包日均Token 180万亿+火山引擎MaaS市占率49.5% · 阿里云OSS Agent+SecOps Agent+Qwen3-VL系列+卓越睿新深度合作",
-    "vendors": [
-      "火山引擎",
-      "阿里云",
-      "腾讯云",
-      "DeepSeek",
-      "智谱AI"
-    ],
-    "highlights": [
-      "豆包2.1 Pro/Turbo发布+Seedance 2.5亮相+综合成本较Claude Opus 4.6降80%：Force原动力大会6.24分论坛聚焦硬件生态专场+中兴64卡液冷整机柜+800G交换机",
-      "豆包日均Token调用量180万亿+火山引擎MaaS市占率49.5%+200家年调用超1万亿+方舟CLI/AgentKit/HiAgent 3.0/ArkClaw/AI Trust全栈升级",
-      "阿里云6.23 OSS Agent+SecOps Agent+Qwen3-VL系列旗舰模型+卓越睿新深度合作：对象存储+安全运维+多模态三层AI Agent落地",
-      "腾讯云6.23 EdgeOne Makers发布+与SMG战略合作+企业微信\"大圆\"内测+智能体工作台+Claw模式商业化+HY-World 2.0：5分钟上线全球",
-      "DeepSeek V4.1灰度测试中+36氪深度稿确认AI Coding+Agent发力方向+7.24旧模型停用：510亿融资+估值4000亿+梁文锋自掏200亿后战略落点",
-      "字节AI战略大调整+豆包股两月涨48.5%+豆包付费版三档+比高集团三部影片AI创作授权+AI Trust安全体系全栈升级"
-    ],
-    "url": "https://pls890429.github.io/aiintelhub/20260624_竞对日报.html"
-  },
-  {
-    "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 2026年6月23日",
-    "date": "2026-06-23",
-    "summary": "智谱6.22股东会高票通过A股科创板IPO+150亿募资+市值1.2万亿港元 · DeepSeek完成510亿A轮融资+投后估值4000亿+梁文锋自掏200亿+腾讯100亿领投 · 火山引擎FORCE原动力大会6.23-24召开+豆包付费版+豆包股两月涨48.5%",
-    "vendors": [
-      "智谱AI",
-      "DeepSeek",
-      "火山引擎",
-      "阿里云",
-      "腾讯云",
-      "Kimi"
-    ],
-    "highlights": [
-      "智谱6.22股东会高票通过A股科创板IPO+150亿募资+英文名变更Z.AI Co., Ltd.+市值1.2万亿港元+7.8首批解禁2.2倍流通股",
-      "DeepSeek完成510亿A轮融资+投后估值4000亿+梁文锋自掏200亿+腾讯100亿领投+阿里爆冷出局：刷新国内AI行业单轮融资纪录",
-      "火山引擎FORCE原动力大会6.23-24召开+豆包付费版6月下旬上线+字节\"豆包股\"两月涨48.5%+Seedance 2.0单月营收破10亿",
-      "阿里云AI版支付宝\"阿宝\"6.16内测+卓越睿新6.22签署深度合作+7.15取消Tair月付优惠：阿里\"对话即服务\"重构10亿级App",
-      "腾讯云代码分析6.22新品发布+TDSQL-C MySQL备份商业化6.22+Buddy AI 7.1三档订阅99/199/999元+WorkBuddy 5.1.5抢先接入微信支付AI专属卡",
-      "Kimi Work上新目标（Goal）模式+插件中心接入钉钉/飞书/WPS/百度网盘/Notion+6月限时福利额度消耗减半：可连续工作24小时的国产Agent"
-    ],
-    "url": "https://pls890429.github.io/aiintelhub/20260623_竞对日报.html"
   }
 ]
