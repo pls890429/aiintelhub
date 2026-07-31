@@ -1,5 +1,12 @@
 [
   {
+    "date": "20260801",
+    "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260801",
+    "summary": "DeepSeek-V4-Flash正式版API公测上线，Agent能力9项基准全维度反超V4-Pro预览版 · 曝千问即将上车特斯拉：已进入中国车机深度测试，具备控车导航办事三层能力 · Kimi K3需求逼近算力上限，月之暗面暂停新增订阅，6月ARR达3亿美元",
+    "url": "https://pls890429.github.io/aiintelhub/",
+    "created_at": "2026-08-01T07:43:32+08:00"
+  },
+  {
     "date": "20260731",
     "weekday": "星期五",
     "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260731",
@@ -331,36 +338,5 @@
       "DeepSeek V4正式版7月中旬上线，同步引入峰谷定价机制，高峰时段API价格翻倍",
       "Kimi ARR突破3亿美元，海外付费用户增长400%，B端业务占比持续攀升"
     ]
-  },
-  {
-    "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260630",
-    "date": "20260630",
-    "summary": "DeepSeek V4正式版7月上线+峰谷定价 · 智谱GLM-5.2开源登顶SOTA · 豆包2.1 Pro超越Claude Opus · Kimi K2.7 Code开源",
-    "vendors": [
-      "DeepSeek",
-      "火山引擎",
-      "智谱AI",
-      "Kimi"
-    ],
-    "highlights": [
-      "DeepSeek V4正式版7月中旬上线，同步引入峰谷定价机制，高峰时段价格翻倍",
-      "智谱发布GLM-5.2开源模型，漏洞挖掘能力比肩Anthropic Mythos，跻身全球开源SOTA",
-      "豆包2.1 Pro编程与Agent能力全面超越Claude Opus 4.6，综合成本降低80%"
-    ],
-    "path": "20260630_竞对日报.html"
-  },
-  {
-    "title": "🦞 浙江云嗷嗷叫 · 扣子竞对日报 · 20260629",
-    "date": "2026-06-29",
-    "summary": "微信AI小微灰度/DeepSeek开源DSpark推理加速/豆包180万亿Tokens/阿里连发三款AI产品",
-    "vendors": [
-      "阿里云",
-      "腾讯云",
-      "火山引擎",
-      "DeepSeek",
-      "Kimi",
-      "智谱AI"
-    ],
-    "path": "20260629_竞对日报.html"
   }
 ]
